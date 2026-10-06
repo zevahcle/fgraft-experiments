@@ -1,0 +1,220 @@
+e08dc8491b21f6eec64bef708556f0ed  graft-ann/src/build.cpp
+ad2f4697ab1162d851cbefd454b0d706  PiPNN/algorithms/PipNN/pipnn.h
+[pend] === gist_m2_t160 ===
+Thu Oct  1 06:41:47 PDT 2026
+[pend] pipnn rc=0
+Thu Oct  1 06:42:58 PDT 2026
+[pend] fg rc=0
+Thu Oct  1 06:44:30 PDT 2026
+[pend] grade rc=0
+Thu Oct  1 06:45:02 PDT 2026
+Average table size: 57
+GRAFT-DUMP /mnt/raid/fgraft-campaign-2026-09-22/pipnn_ending/gist_m2_t160.cands C=160 mean reservoir 57.14 dump distances 57135482
+Parlay time: Final prune time: 11.2949
+BUILD_DISTANCES_PIPNN clustering=3362356489 leaf=7197737492 prune=789459353 total=11349553334
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:10.29
+  spine: HSP degree quantiles p10 6 p50 16 p90 16 p99 16 max 16 (cap 16)
+  spine: HSP over |S|=10000 sample points, out-degree mean 13.1 max 16, 131319 edges, 4.82s
+  dense: L=1 m=1 C=160 over n=1000000  leaves mean 1000000 max 0  leaders 0.00s candidates 1.18s prune 18.16s (64 threads), 881.4M dist (leaders 0.0M, candidates 0.0M, prune 781.5M, spine 100.0M in 4.82s)
+  candidates: 57135482 directed (57.1/vertex); edges: 28587877 directed (28.6/vertex, max 80); memory 122MB
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:32.03
+[pend] === gist_m5_t400 ===
+Thu Oct  1 06:45:02 PDT 2026
+[pend] pipnn rc=0
+Thu Oct  1 06:46:25 PDT 2026
+[pend] fg rc=0
+Thu Oct  1 06:48:19 PDT 2026
+[pend] grade rc=0
+Thu Oct  1 06:48:54 PDT 2026
+Average table size: 127
+GRAFT-DUMP /mnt/raid/fgraft-campaign-2026-09-22/pipnn_ending/gist_m5_t400.cands C=400 mean reservoir 127.7 dump distances 127702739
+Parlay time: Final prune time: 23.1954
+BUILD_DISTANCES_PIPNN clustering=3362356489 leaf=7197737492 prune=1428587216 total=11988681197
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:22.95
+  spine: HSP degree quantiles p10 6 p50 16 p90 16 p99 16 max 16 (cap 16)
+  spine: HSP over |S|=10000 sample points, out-degree mean 13.1 max 16, 131319 edges, 5.04s
+  dense: L=1 m=1 C=400 over n=1000000  leaves mean 1000000 max 0  leaders 0.00s candidates 2.34s prune 30.70s (64 threads), 1396.2M dist (leaders 0.0M, candidates 0.0M, prune 1296.2M, spine 100.0M in 5.04s)
+  candidates: 127702739 directed (127.7/vertex); edges: 37456333 directed (37.5/vertex, max 80); memory 158MB
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:53.89
+[pend] === gist_m10_t400 ===
+Thu Oct  1 06:48:55 PDT 2026
+[pend] pipnn rc=0
+Thu Oct  1 06:50:28 PDT 2026
+[pend] fg rc=0
+Thu Oct  1 06:52:06 PDT 2026
+[pend] grade rc=0
+Thu Oct  1 06:52:42 PDT 2026
+Average table size: 210
+GRAFT-DUMP /mnt/raid/fgraft-campaign-2026-09-22/pipnn_ending/gist_m10_t400.cands C=400 mean reservoir 210.4 dump distances 210365757
+Parlay time: Final prune time: 32.9013
+BUILD_DISTANCES_PIPNN clustering=3362356489 leaf=7197737492 prune=1896337237 total=12456431218
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:33.49
+  spine: HSP degree quantiles p10 6 p50 16 p90 16 p99 16 max 16 (cap 16)
+  spine: HSP over |S|=10000 sample points, out-degree mean 13.1 max 16, 131319 edges, 4.72s
+  dense: L=1 m=1 C=400 over n=1000000  leaves mean 1000000 max 0  leaders 0.00s candidates 2.75s prune 38.31s (64 threads), 1356.8M dist (leaders 0.0M, candidates 0.0M, prune 1256.8M, spine 100.0M in 4.72s)
+  candidates: 210365757 directed (210.4/vertex); edges: 35657963 directed (35.7/vertex, max 80); memory 151MB
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:38.34
+[pend] === glove_m2_t160 ===
+Thu Oct  1 06:52:43 PDT 2026
+[pend] pipnn rc=0
+Thu Oct  1 06:53:27 PDT 2026
+[pend] fg rc=0
+Thu Oct  1 06:53:50 PDT 2026
+[pend] grade rc=0
+Thu Oct  1 06:54:24 PDT 2026
+Average table size: 66
+GRAFT-DUMP /mnt/raid/fgraft-campaign-2026-09-22/pipnn_ending/glove_m2_t160.cands C=160 mean reservoir 66.06 dump distances 78183637
+Parlay time: Final prune time: 3.3935
+BUILD_DISTANCES_PIPNN clustering=3210336828 leaf=8492050375 prune=857471549 total=12559858752
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:44.19
+  spine: HSP degree quantiles p10 16 p50 16 p90 16 p99 16 max 16 (cap 16)
+  spine: HSP over |S|=10000 sample points, out-degree mean 16.0 max 16, 159936 edges, 2.02s
+  dense: L=1 m=1 C=160 over n=1183514  leaves mean 1183514 max 0  leaders 0.00s candidates 1.48s prune 7.78s (64 threads), 1833.0M dist (leaders 0.0M, candidates 0.0M, prune 1733.0M, spine 100.0M in 2.02s)
+  candidates: 78183637 directed (66.1/vertex); edges: 49011222 directed (41.4/vertex, max 80); memory 206MB
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:22.90
+[pend] === glove_m5_t400 ===
+Thu Oct  1 06:54:24 PDT 2026
+[pend] pipnn rc=0
+Thu Oct  1 06:55:18 PDT 2026
+[pend] fg rc=0
+Thu Oct  1 06:55:48 PDT 2026
+[pend] grade rc=0
+Thu Oct  1 06:56:30 PDT 2026
+Average table size: 144
+GRAFT-DUMP /mnt/raid/fgraft-campaign-2026-09-22/pipnn_ending/glove_m5_t400.cands C=400 mean reservoir 144.9 dump distances 171432679
+Parlay time: Final prune time: 7.8365
+BUILD_DISTANCES_PIPNN clustering=3210336828 leaf=8492050375 prune=1951693209 total=13654080412
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:53.54
+  spine: HSP degree quantiles p10 16 p50 16 p90 16 p99 16 max 16 (cap 16)
+  spine: HSP over |S|=10000 sample points, out-degree mean 16.0 max 16, 159936 edges, 2.89s
+  dense: L=1 m=1 C=400 over n=1183514  leaves mean 1183514 max 0  leaders 0.00s candidates 3.02s prune 12.21s (64 threads), 3731.0M dist (leaders 0.0M, candidates 0.0M, prune 3631.0M, spine 100.0M in 2.89s)
+  candidates: 171432679 directed (144.9/vertex); edges: 61119095 directed (51.6/vertex, max 80); memory 254MB
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:30.32
+[pend] === glove_m10_t400 ===
+Thu Oct  1 06:56:31 PDT 2026
+[pend] pipnn rc=0
+Thu Oct  1 06:57:30 PDT 2026
+[pend] fg rc=0
+Thu Oct  1 06:58:02 PDT 2026
+[pend] grade rc=0
+Thu Oct  1 06:58:39 PDT 2026
+Average table size: 246
+GRAFT-DUMP /mnt/raid/fgraft-campaign-2026-09-22/pipnn_ending/glove_m10_t400.cands C=400 mean reservoir 246.7 dump distances 292011016
+Parlay time: Final prune time: 10.2808
+BUILD_DISTANCES_PIPNN clustering=3210336828 leaf=8492050375 prune=2990670799 total=14693058002
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:59.32
+  spine: HSP degree quantiles p10 16 p50 16 p90 16 p99 16 max 16 (cap 16)
+  spine: HSP over |S|=10000 sample points, out-degree mean 16.0 max 16, 159936 edges, 1.99s
+  dense: L=1 m=1 C=400 over n=1183514  leaves mean 1183514 max 0  leaders 0.00s candidates 3.68s prune 13.37s (64 threads), 4361.3M dist (leaders 0.0M, candidates 0.0M, prune 4261.3M, spine 100.0M in 1.99s)
+  candidates: 292011016 directed (246.7/vertex); edges: 63129354 directed (53.3/vertex, max 80); memory 262MB
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:32.18
+[pend] === sift_m2_t160 ===
+Thu Oct  1 06:58:40 PDT 2026
+[pend] pipnn rc=0
+Thu Oct  1 06:59:16 PDT 2026
+[pend] fg rc=0
+Thu Oct  1 06:59:40 PDT 2026
+[pend] grade rc=0
+Thu Oct  1 07:00:05 PDT 2026
+Average table size: 37
+GRAFT-DUMP /mnt/raid/fgraft-campaign-2026-09-22/pipnn_ending/sift_m2_t160.cands C=160 mean reservoir 37.05 dump distances 37046852
+Parlay time: Final prune time: 2.4012
+BUILD_DISTANCES_PIPNN clustering=2198131395 leaf=7289822248 prune=389616775 total=9877570418
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:36.58
+  spine: HSP degree quantiles p10 10 p50 16 p90 16 p99 16 max 16 (cap 16)
+  spine: HSP over |S|=10000 sample points, out-degree mean 14.1 max 16, 140505 edges, 1.45s
+  dense: L=1 m=1 C=160 over n=1000000  leaves mean 1000000 max 0  leaders 0.00s candidates 1.08s prune 3.98s (64 threads), 508.9M dist (leaders 0.0M, candidates 0.0M, prune 409.0M, spine 100.0M in 1.45s)
+  candidates: 37046852 directed (37.0/vertex); edges: 20263372 directed (20.3/vertex, max 79); memory 89MB
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:23.65
+[pend] === sift_m5_t400 ===
+Thu Oct  1 07:00:05 PDT 2026
+[pend] pipnn rc=0
+Thu Oct  1 07:00:49 PDT 2026
+[pend] fg rc=0
+Thu Oct  1 07:01:09 PDT 2026
+[pend] grade rc=0
+Thu Oct  1 07:01:36 PDT 2026
+Average table size: 86
+GRAFT-DUMP /mnt/raid/fgraft-campaign-2026-09-22/pipnn_ending/sift_m5_t400.cands C=400 mean reservoir 86.6 dump distances 86601156
+Parlay time: Final prune time: 5.8561
+BUILD_DISTANCES_PIPNN clustering=2198131395 leaf=7289822248 prune=1160568807 total=10648522450
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:44.40
+  spine: HSP degree quantiles p10 10 p50 16 p90 16 p99 16 max 16 (cap 16)
+  spine: HSP over |S|=10000 sample points, out-degree mean 14.1 max 16, 140505 edges, 1.80s
+  dense: L=1 m=1 C=400 over n=1000000  leaves mean 1000000 max 0  leaders 0.00s candidates 2.14s prune 6.16s (64 threads), 1027.6M dist (leaders 0.0M, candidates 0.0M, prune 927.6M, spine 100.0M in 1.80s)
+  candidates: 86601156 directed (86.6/vertex); edges: 30143072 directed (30.1/vertex, max 80); memory 129MB
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:19.46
+[pend] === sift_m10_t400 ===
+Thu Oct  1 07:01:37 PDT 2026
+[pend] pipnn rc=0
+Thu Oct  1 07:02:25 PDT 2026
+[pend] fg rc=0
+Thu Oct  1 07:02:56 PDT 2026
+[pend] grade rc=0
+Thu Oct  1 07:03:27 PDT 2026
+Average table size: 159
+GRAFT-DUMP /mnt/raid/fgraft-campaign-2026-09-22/pipnn_ending/sift_m10_t400.cands C=400 mean reservoir 159.5 dump distances 159457318
+Parlay time: Final prune time: 7.5333
+BUILD_DISTANCES_PIPNN clustering=2198131395 leaf=7289822248 prune=2005744717 total=11493698360
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:48.19
+  spine: HSP degree quantiles p10 10 p50 16 p90 16 p99 16 max 16 (cap 16)
+  spine: HSP over |S|=10000 sample points, out-degree mean 14.1 max 16, 140505 edges, 1.49s
+  dense: L=1 m=1 C=400 over n=1000000  leaves mean 1000000 max 0  leaders 0.00s candidates 2.51s prune 8.78s (64 threads), 1481.8M dist (leaders 0.0M, candidates 0.0M, prune 1381.8M, spine 100.0M in 1.49s)
+  candidates: 159457318 directed (159.5/vertex); edges: 35179967 directed (35.2/vertex, max 80); memory 149MB
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:30.89
+[pend] === deep10m_m2_t160 ===
+Thu Oct  1 07:03:27 PDT 2026
+[pend] pipnn rc=0
+Thu Oct  1 07:05:52 PDT 2026
+[pend] fg rc=0
+Thu Oct  1 07:08:11 PDT 2026
+[pend] grade rc=0
+Thu Oct  1 07:08:47 PDT 2026
+Average table size: 53
+GRAFT-DUMP /mnt/raid/fgraft-campaign-2026-09-22/pipnn_ending/deep10m_m2_t160.cands C=160 mean reservoir 53.1 dump distances 530976611
+Parlay time: Final prune time: 26.3343
+BUILD_DISTANCES_PIPNN clustering=59271577006 leaf=66095787656 prune=8348161138 total=133715525800
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:24.97
+  spine: HSP degree quantiles p10 16 p50 16 p90 16 p99 16 max 16 (cap 16)
+  spine: HSP over |S|=10000 sample points, out-degree mean 15.9 max 16, 159381 edges, 8.56s
+  dense: L=1 m=1 C=160 over n=10000000  leaves mean 10000000 max 0  leaders 0.00s candidates 11.34s prune 43.31s (64 threads), 7911.2M dist (leaders 0.0M, candidates 0.0M, prune 7811.2M, spine 100.0M in 8.56s)
+  candidates: 530976611 directed (53.1/vertex); edges: 298197786 directed (29.8/vertex, max 80); memory 1273MB
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:18.83
+[pend] === deep10m_m5_t400 ===
+Thu Oct  1 07:08:49 PDT 2026
+[pend] pipnn rc=0
+Thu Oct  1 07:12:03 PDT 2026
+[pend] fg rc=0
+Thu Oct  1 07:14:31 PDT 2026
+[pend] grade rc=0
+Thu Oct  1 07:15:12 PDT 2026
+Average table size: 119
+GRAFT-DUMP /mnt/raid/fgraft-campaign-2026-09-22/pipnn_ending/deep10m_m5_t400.cands C=400 mean reservoir 119.3 dump distances 1193298691
+Parlay time: Final prune time: 61.4956
+BUILD_DISTANCES_PIPNN clustering=59271577006 leaf=66095787656 prune=18773631500 total=144140996162
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:14.65
+  spine: HSP degree quantiles p10 16 p50 16 p90 16 p99 16 max 16 (cap 16)
+  spine: HSP over |S|=10000 sample points, out-degree mean 15.9 max 16, 159381 edges, 12.90s
+  dense: L=1 m=1 C=400 over n=10000000  leaves mean 10000000 max 0  leaders 0.00s candidates 23.17s prune 72.40s (64 threads), 16492.7M dist (leaders 0.0M, candidates 0.0M, prune 16392.7M, spine 100.0M in 12.90s)
+  candidates: 1193298691 directed (119.3/vertex); edges: 425431852 directed (42.5/vertex, max 80); memory 1782MB
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:28.30
+[pend] === deep10m_m10_t400 ===
+Thu Oct  1 07:15:16 PDT 2026
+[pend] pipnn rc=0
+Thu Oct  1 07:19:05 PDT 2026
+[pend] fg rc=0
+Thu Oct  1 07:22:27 PDT 2026
+[pend] grade rc=0
+Thu Oct  1 07:23:08 PDT 2026
+Average table size: 212
+GRAFT-DUMP /mnt/raid/fgraft-campaign-2026-09-22/pipnn_ending/deep10m_m10_t400.cands C=400 mean reservoir 212.6 dump distances 2126153292
+Parlay time: Final prune time: 78.2623
+BUILD_DISTANCES_PIPNN clustering=59271577006 leaf=66095787656 prune=25727980611 total=151095345273
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:49.16
+  spine: HSP degree quantiles p10 16 p50 16 p90 16 p99 16 max 16 (cap 16)
+  spine: HSP over |S|=10000 sample points, out-degree mean 15.9 max 16, 159381 edges, 11.40s
+  dense: L=1 m=1 C=400 over n=10000000  leaves mean 10000000 max 0  leaders 0.00s candidates 28.45s prune 89.71s (64 threads), 20765.8M dist (leaders 0.0M, candidates 0.0M, prune 20665.8M, spine 100.0M in 11.40s)
+  candidates: 2126153292 directed (212.6/vertex); edges: 452402910 directed (45.2/vertex, max 80); memory 1890MB
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:22.07
+[pend] all done
+Thu Oct  1 07:23:12 PDT 2026

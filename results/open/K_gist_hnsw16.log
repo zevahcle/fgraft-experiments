@@ -1,0 +1,45 @@
+hnswlib M16 efC200: build 181.8 s, n=1000000 d=960
+  native k=10 ef=10: recall 0.3999  QPS 34814
+  native k=10 ef=20: recall 0.5249  QPS 25318
+  native k=10 ef=40: recall 0.6665  QPS 17901
+  native k=10 ef=80: recall 0.7890  QPS 10614
+  native k=10 ef=120: recall 0.8503  QPS 7647
+  native k=10 ef=200: recall 0.9034  QPS 4991
+  native k=10 ef=300: recall 0.9367  QPS 3553
+  native k=10 ef=400: recall 0.9511  QPS 2772
+  native k=10 ef=600: recall 0.9688  QPS 1981
+  native k=10 ef=800: recall 0.9769  QPS 1576
+  native k=10 ef=1200: recall 0.9854  QPS 1131
+  native k=10 ef=1600: recall 0.9875  QPS 902
+  native k=100 ef=120: recall 0.7375  QPS 7653
+  native k=100 ef=200: recall 0.8227  QPS 4922
+  native k=100 ef=300: recall 0.8764  QPS 3522
+  native k=100 ef=400: recall 0.9060  QPS 2785
+  native k=100 ef=600: recall 0.9382  QPS 2003
+  native k=100 ef=800: recall 0.9546  QPS 1581
+  native k=100 ef=1200: recall 0.9709  QPS 1133
+  native k=100 ef=1600: recall 0.9784  QPS 902
+level-0 graph: n=1000000 maxM0=32 mean degree 12.6 max 32; maxlevel 5 entry 572226 -> /mnt/raid/fgraft-campaign-2026-09-22/open/K_gist_hnsw16_level0.graph
+	Command being timed: "/mnt/claude/graft-work/misifu/.venv/bin/python bench/hnsw_export.py /mnt/claude/graft-work/fgraft/data/gist_X.npy /mnt/claude/graft-work/fgraft/data/gist_Q.npy /mnt/claude/graft-work/fgraft/data/gist_gold.npy 16 /mnt/raid/fgraft-campaign-2026-09-22/open/K_gist_hnsw16 64"
+	User time (seconds): 11937.26
+	System time (seconds): 68.62
+	Percent of CPU this job got: 5866%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:24.64
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 8273348
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2214228
+	Voluntary context switches: 719029
+	Involuntary context switches: 64963
+	Swaps: 0
+	File system inputs: 8
+	File system outputs: 7896216
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

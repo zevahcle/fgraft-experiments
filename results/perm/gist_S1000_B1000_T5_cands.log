@@ -1,0 +1,8 @@
+perm_cands n=1000000 d=960 S=1000 k=8 B=1000 Bmin=100 lmax=4 swaps=0 C=8000
+  permutations: 28s (1.00 G pairs)
+  table 0: trie cut 2554 blocks; depth counts [729, 1787, 38]; size mean 392 median 194 p99 2640 max 4492; pairs/2 0.55 G
+  table 1: trie cut 2533 blocks; depth counts [715, 1752, 61, 5]; size mean 395 median 195 p99 2854 max 4699; pairs/2 0.56 G
+  table 2: trie cut 2518 blocks; depth counts [727, 1741, 50]; size mean 397 median 193 p99 2824 max 4266; pairs/2 0.56 G
+  table 3: trie cut 2539 blocks; depth counts [734, 1738, 67]; size mean 394 median 184 p99 2666 max 4472; pairs/2 0.56 G
+  table 4: trie cut 2478 blocks; depth counts [734, 1662, 78, 4]; size mean 404 median 199 p99 2648 max 6091; pairs/2 0.57 G
+  all tables: sum(block^2)/2 = 2.79 G pairs; memberships per object 5.00

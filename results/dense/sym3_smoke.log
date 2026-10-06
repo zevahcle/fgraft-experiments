@@ -1,0 +1,10 @@
+fg: AVX2+FMA kernels, 64 hw threads available
+=== synthetic clustered: N=200000 d=128 queries=1000 (cosine) ===
+  exact gold top-100: 0.6s
+  determinism: hash(threads=1)=1c54d259e8bae5fa hash(threads=64)=1c54d259e8bae5fa -> IDENTICAL
+  dense: L=40 m=5 C=200 over n=200000  leaves mean 25000 max 28601  leaders 0.59s candidates 20.74s prune 2.75s (64 threads), 12774.6M dist (leaders 88.0M, candidates 12559.0M, prune 127.6M)
+  candidates: 40000000 directed (200.0/vertex); edges: 2193038 directed (11.0/vertex, max 64); memory 10MB
+  local completeness (k=10, sample): 0.489
+
+     ef  recall@10  dist/query     QPS(mt)
+     64     0.0020         256      213915

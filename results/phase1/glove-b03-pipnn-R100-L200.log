@@ -1,0 +1,56 @@
+Vary degree = 0
+Ground truth: detected 10000 points with num results 100
+Data: detected 1183514 points with dimension 100
+Aligning bytes to 448
+Data: detected 10000 points with dimension 100
+Aligning bytes to 448
+Parlay time: SketchHash construction time: 0.0263
+Size of SketchHash (bytes): 56813472
+Allocate = 0
+Set MSTDeg to: 2 fanout: 1
+Sizeof indexType = 4
+Fanout scheme: 10 3 1 
+Allocating: 1524366032 bytes of space for the candidates lists.
+Sizeof T = 8
+Cleared degree
+FANOUT = 1 FANOUT_PER_LEVEL = 0
+number of levels to fanout: 1
+fanout per level: 1
+total fanout: 1
+total fanout allowance: 1
+leader method: random
+Parlay time: first level assign time: 0.3015
+Parlay time: buckets time: 1.7902
+buckets size (bytes): 143673648
+Total buckets: 103469
+Total points: 35504536
+Computed buckets!
+Building leaves:
+Parlay time: build leaf time: 7.2096
+Built cluster 0 of 1
+Leaf count: 103469
+# of comparisons during clustering: 3210336828
+Allocating graph, prune_degree = 64
+Average table size: 66
+Parlay time: Final prune time: 1.1709
+Average distance traversed: 65
+PiPNN graph built with 1183514 points and parameters Trees = 1
+Graph has average degree 30.72 and maximum degree 64
+Graph built in 10.44 seconds
+For 10@10 recall = 0.1981, QPS = 4.643e+05, Q = 10, cut = 1.35, visited limit = 10, degree limit: 50, average visited = 10, average cmps = 370
+For 10@10 recall = 0.2422, QPS = 4.025e+05, Q = 11, cut = 1.35, visited limit = 11, degree limit: 55, average visited = 11, average cmps = 420
+For 10@10 recall = 0.3185, QPS = 3.151e+05, Q = 13, cut = 1.35, visited limit = 13, degree limit: 64, average visited = 13, average cmps = 512
+For 10@10 recall = 0.4045, QPS = 2.587e+05, Q = 16, cut = 1.35, visited limit = 16, degree limit: 64, average visited = 16, average cmps = 622
+For 10@10 recall = 0.5021, QPS = 1.975e+05, Q = 21, cut = 1.35, visited limit = 21, degree limit: 64, average visited = 21, average cmps = 802
+For 10@10 recall = 0.6055, QPS = 1.391e+05, Q = 30, cut = 1.35, visited limit = 30, degree limit: 64, average visited = 30, average cmps = 1122
+For 10@10 recall = 0.7054, QPS = 9.006e+04, Q = 32, cut = 1.35, visited limit = 1183514, degree limit: 64, average visited = 44, average cmps = 1662
+For 10@10 recall = 0.7513, QPS = 7.071e+04, Q = 45, cut = 1.35, visited limit = 1183514, degree limit: 64, average visited = 58, average cmps = 2136
+For 10@10 recall = 0.8062, QPS = 4.935e+04, Q = 70, cut = 1.35, visited limit = 1183514, degree limit: 64, average visited = 84, average cmps = 3036
+For 10@10 recall = 0.8621, QPS = 2.955e+04, Q = 120, cut = 1.35, visited limit = 1183514, degree limit: 64, average visited = 136, average cmps = 4763
+For 10@10 recall = 0.9053, QPS = 1.919e+04, Q = 200, cut = 1.35, visited limit = 1183514, degree limit: 64, average visited = 217, average cmps = 7242
+For 10@10 recall = 0.9329, QPS = 1.374e+04, Q = 300, cut = 1.35, visited limit = 1183514, degree limit: 64, average visited = 308, average cmps = 10096
+For 10@10 recall = 0.9596, QPS = 8790, Q = 500, cut = 1.35, visited limit = 1183514, degree limit: 64, average visited = 475, average cmps = 15186
+For 10@10 recall = 0.9752, QPS = 5779, Q = 750, cut = 1.35, visited limit = 1183514, degree limit: 64, average visited = 670, average cmps = 20784
+For 10@10 recall = 0.9838, QPS = 4646, Q = 1000, cut = 1.35, visited limit = 1183514, degree limit: 64, average visited = 843, average cmps = 25797
+
+Parlay time: 41.7938

@@ -1,0 +1,15 @@
+solo_cands n=1000000 d=960 alpha=0.02 k_b=32 C=[4000] scoring=count cap=0 threads=64
+  fit: |S|=20000 signatures+postings 395.6s (20.0 G sample pairs, GEMM); posting length mean 1600 max 44038
+  signature check vs misifu brute kNN: mean set agreement 0.9998
+  merge lists descending by score: True (single merge at C=4000 with prefixes; otherwise one merge per C)
+  rows 100000/1000000  merge 37s  write 6s
+  rows 200000/1000000  merge 75s  write 11s
+  rows 300000/1000000  merge 113s  write 17s
+  rows 400000/1000000  merge 151s  write 23s
+  rows 500000/1000000  merge 190s  write 28s
+  rows 600000/1000000  merge 230s  write 34s
+  rows 700000/1000000  merge 270s  write 39s
+  rows 800000/1000000  merge 310s  write 45s
+  rows 900000/1000000  merge 349s  write 51s
+  rows 1000000/1000000  merge 388s  write 56s
+  done: fit 395.6s merge 388.1s (0.388 ms/row) write 56.4s; short rows 18; files /mnt/raid/fgraft-campaign-2026-09-22/capped/gist_a0.02_kb32_C*.i32

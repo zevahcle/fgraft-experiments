@@ -1,0 +1,39 @@
+fg: AVX2+FMA kernels, 64 hw threads available
+=== /mnt/claude/data/deep-10M.X.npy : N=10000000 d=96 queries=10000 (L2) ===
+  dense: L=2400 m=5 C=200 over n=10000000  leaves mean 20833 max 71892  leaders 20.74s candidates 599.34s prune 98.69s (64 threads), 661349.9M dist (leaders 28800.0M, candidates 614163.7M, prune 14626.1M, spine 3760.1M in 38.16s)
+  candidates: 2000000000 directed (200.0/vertex); edges: 336803561 directed (33.7/vertex, max 203); memory 1427MB
+  dumped graph -> /mnt/raid/fgraft-campaign-2026-09-22/warm/deep10m_gate.graph (n=10000000 max degree=203)
+  local completeness (k=10, sample): 0.604
+
+  entry=hub
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.9541        2224       36734
+     80     0.9694        2746       29513
+    120     0.9839        3734       21427
+    200     0.9929        5563       13953
+    300     0.9965        7662        9800
+    400     0.9977        9622        7582
+    600     0.9987       13262        5300
+	Command being timed: "/mnt/claude/graft-work/fgraft/graft-ann/src/fg --data /mnt/claude/data/deep-10M.X.npy --queries /mnt/claude/data/deep-10M.Q.npy --gold /mnt/claude/data/deep-10M.gold.npy --metric l2 --T 1 --harvest 400 --harvest-cap 64 --harvest-alpha 1.0 --dense 2400 --dense-m 5 --dense-C 200 --dense-prune 1 --dense-spine 1 --threads 64 --seed 1 --ef 60 80 120 200 300 400 600 --dump-graph /mnt/raid/fgraft-campaign-2026-09-22/warm/deep10m_gate.graph"
+	User time (seconds): 42885.98
+	System time (seconds): 653.46
+	Percent of CPU this job got: 5564%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 13:02.39
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 34706240
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 40607251
+	Voluntary context switches: 354134
+	Involuntary context switches: 218114
+	Swaps: 0
+	File system inputs: 44256
+	File system outputs: 2709416
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

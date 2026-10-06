@@ -1,0 +1,9 @@
+
+== /mnt/claude/data/deep-10M.X.npy sub  n=1000000 d=96  (graph stats 59s, total 127s)
+  LID(MLE,k10) median 26.0   reciprocity 0.291   clustering 0.122   shared-nbr 0.110   2-hop expansion 8.43 (of 1..11)
+  k-means L=714: m1:0.480@1.6k  m2:0.792@6.4k  m3:0.911@14.4k  m4:0.957@25.5k  m5:0.977@39.7k  m6:0.987@57.1k  m7:0.993@77.6k  m8:0.996@101.0k  m9:0.997@127.7k  m10:0.998@157.2k  m11:0.999@190.1k  m12:1.000@226.1k
+  local clustering: q10 0.022 q25 0.056 median 0.089  frac cc<0.03 0.125  frac cc==0 0.027
+  within-corpus m=2: cover by clustering quartile 0.630 0.744 0.838 0.925   Spearman(cover, clustering) +0.50  (cover, reciprocity) +0.17  (cover, LID) -0.26
+  within-corpus m=4: cover by clustering quartile 0.894 0.953 0.982 0.994   Spearman(cover, clustering) +0.31  (cover, reciprocity) +0.11  (cover, LID) -0.16
+  memberships needed: m@0.85 2.49  m@0.90 2.91  m@0.95 3.84
+  pool/pt at cover 0.85: 10.3k (1.03% of n)   at 0.90: 13.6k (1.36% of n)

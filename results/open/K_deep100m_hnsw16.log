@@ -1,0 +1,45 @@
+hnswlib M16 efC200: build 5684.1 s, n=100000000 d=96
+  native k=10 ef=10: recall 0.5209  QPS 153209
+  native k=10 ef=20: recall 0.6569  QPS 108098
+  native k=10 ef=40: recall 0.7775  QPS 70938
+  native k=10 ef=80: recall 0.8705  QPS 41783
+  native k=10 ef=120: recall 0.9095  QPS 29283
+  native k=10 ef=200: recall 0.9450  QPS 18845
+  native k=10 ef=300: recall 0.9647  QPS 12970
+  native k=10 ef=400: recall 0.9745  QPS 9852
+  native k=10 ef=600: recall 0.9841  QPS 6645
+  native k=10 ef=800: recall 0.9884  QPS 5004
+  native k=10 ef=1200: recall 0.9928  QPS 3331
+  native k=10 ef=1600: recall 0.9949  QPS 2503
+  native k=100 ef=120: recall 0.8077  QPS 29286
+  native k=100 ef=200: recall 0.8757  QPS 18548
+  native k=100 ef=300: recall 0.9158  QPS 12738
+  native k=100 ef=400: recall 0.9374  QPS 9671
+  native k=100 ef=600: recall 0.9600  QPS 6554
+  native k=100 ef=800: recall 0.9713  QPS 4927
+  native k=100 ef=1200: recall 0.9823  QPS 3286
+  native k=100 ef=1600: recall 0.9877  QPS 2474
+level-0 graph: n=100000000 maxM0=32 mean degree 22.0 max 32; maxlevel 6 entry 1718840 -> /mnt/raid/fgraft-campaign-2026-09-22/open/K_deep100m_hnsw16_level0.graph
+	Command being timed: "/mnt/claude/graft-work/misifu/.venv/bin/python bench/hnsw_export.py /mnt/claude/data/deep-100M.X.npy /mnt/claude/data/deep-100M.Q.npy /mnt/claude/data/deep-100M.gold.npy 16 /mnt/raid/fgraft-campaign-2026-09-22/open/K_deep100m_hnsw16 64"
+	User time (seconds): 350201.82
+	System time (seconds): 1356.54
+	Percent of CPU this job got: 5786%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:41:16
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 112286320
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 121973649
+	Voluntary context switches: 2606488
+	Involuntary context switches: 1897071
+	Swaps: 0
+	File system inputs: 11272
+	File system outputs: 121958880
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

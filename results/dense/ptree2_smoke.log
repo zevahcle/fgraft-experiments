@@ -1,0 +1,2 @@
+  determinism: hash(threads=1)=a3de8366f1e006b2 hash(threads=64)=a3de8366f1e006b2 -> IDENTICAL
+  dense: L=40 m=5 C=200 over n=200000  leaves mean 25000 max 28601  leaders 0.14s candidates 9.82s prune 3.92s (64 threads), 12797.2M dist (leaders 88.0M, candidates 12559.0M, prune 127.6M, spine 22.7M in 0.98s)

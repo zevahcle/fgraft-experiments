@@ -1,0 +1,15 @@
+fg: AVX2+FMA kernels, 64 hw threads available
+=== data/sift_X.npy : N=1000000 d=128 queries=10000 (L2) ===
+  dense: L=700 m=5 C=200 over n=1000000  leaves mean 7143 max 19017  leaders 1.85s candidates 39.26s prune 6.77s (64 threads), 43743.4M dist (leaders 2100.0M, candidates 40456.0M, prune 1187.4M)
+  candidates: 200000000 directed (200.0/vertex); edges: 25731348 directed (25.7/vertex, max 64); memory 111MB
+  dumped graph -> results/dense/fg_dense_sift_L700.graph (n=1000000 max degree=64)
+  local completeness (k=10, sample): 0.551
+
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.9783        1607       37862
+     80     0.9881        1984       31514
+    120     0.9951        2693       22725
+    200     0.9980        3990       15061
+    300     0.9989        5459       10977
+    400     0.9991        6815        8926
+    600     0.9993        9298        6404

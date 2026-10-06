@@ -1,0 +1,43 @@
+dense build n=1183514 d=100 L=700 m=5 C=200 R=64 alpha=1.0
+leaves: mean 8454 max 33305 min 1693  (51s)
+  leaf 0/700 |M|=5128 pairs so far 0.0G  2s
+  leaf 20/700 |M|=7704 pairs so far 1.6G  62s
+  leaf 40/700 |M|=5914 pairs so far 3.1G  117s
+  leaf 60/700 |M|=7476 pairs so far 4.9G  181s
+  leaf 80/700 |M|=10708 pairs so far 6.4G  240s
+  leaf 100/700 |M|=13145 pairs so far 8.9G  319s
+  leaf 120/700 |M|=7650 pairs so far 10.7G  381s
+  leaf 140/700 |M|=7893 pairs so far 12.1G  435s
+  leaf 160/700 |M|=9611 pairs so far 13.7G  495s
+  leaf 180/700 |M|=8067 pairs so far 15.3G  554s
+  leaf 200/700 |M|=11868 pairs so far 16.8G  614s
+  leaf 220/700 |M|=6817 pairs so far 20.4G  715s
+  leaf 240/700 |M|=9083 pairs so far 22.2G  781s
+  leaf 260/700 |M|=5662 pairs so far 23.5G  832s
+  leaf 280/700 |M|=8333 pairs so far 25.2G  895s
+  leaf 300/700 |M|=4384 pairs so far 26.4G  943s
+  leaf 320/700 |M|=10563 pairs so far 28.3G  1019s
+  leaf 340/700 |M|=6013 pairs so far 30.3G  1094s
+  leaf 360/700 |M|=9727 pairs so far 31.5G  1144s
+  leaf 380/700 |M|=4462 pairs so far 34.2G  1228s
+  leaf 400/700 |M|=7495 pairs so far 36.5G  1305s
+  leaf 420/700 |M|=3708 pairs so far 38.5G  1378s
+  leaf 440/700 |M|=7423 pairs so far 40.5G  1448s
+  leaf 460/700 |M|=6366 pairs so far 42.1G  1509s
+  leaf 480/700 |M|=12652 pairs so far 43.2G  1556s
+  leaf 500/700 |M|=12574 pairs so far 44.6G  1611s
+  leaf 520/700 |M|=3706 pairs so far 46.9G  1690s
+  leaf 540/700 |M|=9259 pairs so far 48.7G  1756s
+  leaf 560/700 |M|=8831 pairs so far 50.2G  1813s
+  leaf 580/700 |M|=7719 pairs so far 52.0G  1876s
+  leaf 600/700 |M|=8713 pairs so far 53.0G  1922s
+  leaf 620/700 |M|=11064 pairs so far 54.5G  1982s
+  leaf 640/700 |M|=4636 pairs so far 55.6G  2030s
+  leaf 660/700 |M|=13923 pairs so far 57.1G  2085s
+  leaf 680/700 |M|=8605 pairs so far 59.5G  2166s
+stage 1: 61.1 G pairs, 2225s; mean candidates/pt 200
+stage 2: pruned to mean degree 30.3, 23.6 G candidate-candidate distances, 1359s
+stage 3: after reverse edges mean degree 60.7 max 275; re-pruning 457486 lists
+final: mean degree 39.8 max 64  (695s)
+{"leaves_s": 51.445029497146606, "stage1_s": 2225.021948337555, "stage1_pairs": 61098076700, "stage2_s": 1358.8003973960876, "stage2_dist": 23551928600, "stage3_dist": 17235785050, "stage3_s": 694.7731478214264, "total_s": 4330.040523052216}
+wrote results/dense/glove_B.graph

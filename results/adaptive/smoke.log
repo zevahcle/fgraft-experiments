@@ -1,0 +1,22 @@
+[      0s] /mnt/raid/fgraft-campaign-2026-09-22/adaptive/smoke_X.npy: n=100000 d=128 L=70
+[      0s] exact 10-NN done
+[      1s] oracle cc: mean 0.209 q10 0.078 frac0 0.001
+[      7s] leaders + memberships done
+[     22s] pilot graph recall@10 0.866; spearman(cc, cc_pilot) 0.937
+[     23s] uniform m= 1: cover 0.5818  pairs    0.08 G
+[     23s] uniform m= 2: cover 0.9039  pairs    0.32 G
+[     23s] uniform m= 3: cover 0.9797  pairs    0.73 G
+[     23s] uniform m= 4: cover 0.9958  pairs    1.31 G
+[     23s] uniform m= 5: cover 0.9992  pairs    2.06 G
+[     23s] uniform m= 6: cover 0.9998  pairs    2.99 G
+[     23s] uniform m= 7: cover 1.0000  pairs    4.10 G
+[     23s] uniform m= 8: cover 1.0000  pairs    5.38 G
+[     23s] uniform m= 9: cover 1.0000  pairs    6.84 G
+[     23s] uniform m=10: cover 1.0000  pairs    8.46 G
+[     38s] oracle A: f=0.5 m_lo=4 m_hi=6 (mean m 5.00)  cover 0.9991 (uniform m5 0.9992)  pairs 2.06 G (uniform m5 2.06)
+[     38s] oracle B: f=0.5 m_lo=4 m_hi=7 (mean m 5.50)  cover 0.9994 (uniform m5 0.9992)  pairs 2.50 G (uniform m5 2.06)
+[     53s] pilot A: f=0.3 m_lo=4 m_hi=7 (mean m 4.90)  cover 0.9990 (uniform m5 0.9992)  pairs 1.97 G (uniform m5 2.06)
+[     53s] pilot B: f=0.5 m_lo=4 m_hi=6 (mean m 5.00)  cover 0.9993 (uniform m5 0.9992)  pairs 2.06 G (uniform m5 2.06)
+[     68s] margin A: f=0.3 m_lo=4 m_hi=7 (mean m 4.90)  cover 0.9988 (uniform m5 0.9992)  pairs 1.97 G (uniform m5 2.06)
+[     68s] margin B: f=0.5 m_lo=4 m_hi=6 (mean m 5.00)  cover 0.9994 (uniform m5 0.9992)  pairs 2.06 G (uniform m5 2.06)
+[     68s] done

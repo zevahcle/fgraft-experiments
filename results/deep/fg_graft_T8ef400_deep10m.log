@@ -1,0 +1,15 @@
+fg: AVX2+FMA kernels, 64 hw threads available
+=== /mnt/claude/data/deep-10M.X.npy : N=10000000 d=96 queries=10000 (L2) ===
+  forest: 8 SATs (proximal) over n=10000000  trees 107.40s (64 threads), 104629.5M dist
+  overlay+backlinks 4.36s (151739186 directed edges, raw max deg 240); harvest ef=400 cap=64 rounds=1 874.08s
+  edges: 285459343 directed (28.5/vertex, max 205); memory 1222MB
+  local completeness (k=10, sample): 0.521
+
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.9379        1940       17319
+     80     0.9571        2413       17617
+    120     0.9756        3312       14497
+    200     0.9888        4980       10996
+    300     0.9942        6899        8469
+    400     0.9965        8694        6958
+    600     0.9983       12033        5173

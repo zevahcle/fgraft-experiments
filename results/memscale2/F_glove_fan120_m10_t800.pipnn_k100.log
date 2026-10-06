@@ -1,0 +1,29 @@
+Vary degree = 0
+Ground truth: detected 10000 points with num results 100
+Data: detected 1183514 points with dimension 100
+Aligning bytes to 448
+Data: detected 10000 points with dimension 100
+Aligning bytes to 448
+Graph: detected 1183514 points with max degree 64
+Total edges read from file: 70389656
+start index = 0
+Average visited: 0, Tail visited: 0
+Vamana graph built with 1183514 points and parameters R = 100, L = 200
+Graph has average degree 59.4751 and maximum degree 64
+Graph built in 0 seconds
+BUILD_DISTANCES 0
+For 100@100 recall = 0.150368, QPS = 298365, Q = 100, cut = 1.35, visited limit = 10, degree limit: 50, average visited = 10, average cmps = 483
+For 100@100 recall = 0.224474, QPS = 213972, Q = 100, cut = 1.35, visited limit = 12, degree limit: 60, average visited = 12, average cmps = 680
+For 100@100 recall = 0.316663, QPS = 152117, Q = 100, cut = 1.35, visited limit = 16, degree limit: 64, average visited = 16, average cmps = 942
+For 100@100 recall = 0.400332, QPS = 121458, Q = 100, cut = 1.35, visited limit = 21, degree limit: 64, average visited = 21, average cmps = 1214
+For 100@100 recall = 0.504174, QPS = 88223.1, Q = 100, cut = 1.35, visited limit = 30, degree limit: 64, average visited = 30, average cmps = 1693
+For 100@100 recall = 0.792796, QPS = 23082.7, Q = 100, cut = 1.35, visited limit = 1183514, degree limit: 64, average visited = 111, average cmps = 5922
+For 100@100 recall = 0.818165, QPS = 18563.3, Q = 120, cut = 1.35, visited limit = 1183514, degree limit: 64, average visited = 131, average cmps = 6976
+For 100@100 recall = 0.854616, QPS = 15170.7, Q = 160, cut = 1.35, visited limit = 1183514, degree limit: 64, average visited = 173, average cmps = 8846
+For 100@100 recall = 0.900606, QPS = 11290.8, Q = 250, cut = 1.35, visited limit = 1183514, degree limit: 64, average visited = 265, average cmps = 12956
+For 100@100 recall = 0.934555, QPS = 7447.22, Q = 375, cut = 1.35, visited limit = 1183514, degree limit: 64, average visited = 399, average cmps = 18168
+For 100@100 recall = 0.952247, QPS = 6024.69, Q = 500, cut = 1.35, visited limit = 1183514, degree limit: 64, average visited = 524, average cmps = 23365
+For 100@100 recall = 0.972553, QPS = 3916.9, Q = 750, cut = 1.35, visited limit = 1183514, degree limit: 64, average visited = 791, average cmps = 32974
+For 100@100 recall = 0.982121, QPS = 3063.88, Q = 1000, cut = 1.35, visited limit = 1183514, degree limit: 64, average visited = 1037, average cmps = 41998
+
+Parlay time: 30.6059

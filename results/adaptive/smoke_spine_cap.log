@@ -1,0 +1,16 @@
+s=1000 cap=0  recall(ef64,128)= 0.5310 0.6110   19881 edges  deg[p10 17 p50 20 p90 23 p99 26 max 29 (cap 0)] 1)
+s=1000 cap=8  recall(ef64,128)= 0.2370 0.3100   8000 edges  deg[p10 8 p50 8 p90 8 p99 8 max 8 (cap 8)] 
+s=1000 cap=16  recall(ef64,128)= 0.4670 0.5610   15972 edges  deg[p10 16 p50 16 p90 16 p99 16 max 16 (cap 16)] 
+s=1000 cap=32  recall(ef64,128)= 0.5310 0.6110   19881 edges  deg[p10 17 p50 20 p90 23 p99 26 max 29 (cap 32)] 
+s=3000 cap=0  recall(ef64,128)= 0.8650 0.9490   73575 edges  deg[p10 21 p50 24 p90 28 p99 32 max 36 (cap 0)] 
+s=3000 cap=8  recall(ef64,128)= 0.4410 0.5990   24000 edges  deg[p10 8 p50 8 p90 8 p99 8 max 8 (cap 8)] 
+s=3000 cap=16  recall(ef64,128)= 0.7560 0.9030   48000 edges  deg[p10 16 p50 16 p90 16 p99 16 max 16 (cap 16)] 
+s=3000 cap=32  recall(ef64,128)= 0.8650 0.9490   73558 edges  deg[p10 21 p50 24 p90 28 p99 32 max 32 (cap 32)] 
+s=10000 cap=0  recall(ef64,128)= 0.9930 1.0000   282491 edges  deg[p10 24 p50 28 p90 32 p99 36 max 41 (cap 0)] 1)
+s=10000 cap=8  recall(ef64,128)= 0.6570 0.8280   80000 edges  deg[p10 8 p50 8 p90 8 p99 8 max 8 (cap 8)] 
+s=10000 cap=16  recall(ef64,128)= 0.9680 0.9960   160000 edges  deg[p10 16 p50 16 p90 16 p99 16 max 16 (cap 16)] 
+s=10000 cap=32  recall(ef64,128)= 0.9920 1.0000   280392 edges  deg[p10 24 p50 28 p90 32 p99 32 max 32 (cap 32)] 
+s=30000 cap=0  recall(ef64,128)= 1.0000 1.0000   934495 edges  deg[p10 27 p50 31 p90 36 p99 40 max 48 (cap 0)] 
+s=30000 cap=8  recall(ef64,128)= 0.8080 0.9180   240000 edges  deg[p10 8 p50 8 p90 8 p99 8 max 8 (cap 8)] 
+s=30000 cap=16  recall(ef64,128)= 0.9980 1.0000   480000 edges  deg[p10 16 p50 16 p90 16 p99 16 max 16 (cap 16)] 
+s=30000 cap=32  recall(ef64,128)= 1.0000 1.0000   905253 edges  deg[p10 27 p50 31 p90 32 p99 32 max 32 (cap 32)] 

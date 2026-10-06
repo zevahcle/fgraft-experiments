@@ -1,0 +1,8 @@
+  forest: 4 SATs (proximal) over n=1000000  trees 1.44s (10 threads), 758.2M dist
+n=1000000 block roots=18756 with size in [128,512]: 2169; coverage of all roots: 0.999
+coherent sizes: median 214, min 128, max 510; random blocks: 64 x 214; masked points 30406 -> results/density/sift_T4_c512.mask
+  forest: 4 SATs (proximal) over n=1000000  trees 1.55s (10 threads), 5151.9M dist
+  overlay+backlinks 0.05s (7455966 directed edges, raw max deg 127); harvest ef=400 cap=64 rounds=1 63.82s
+  forest: 16 SATs (proximal) over n=1183514  trees 11.84s (10 threads), 17176.3M dist
+  overlay+backlinks 0.20s (35165532 directed edges, raw max deg 683); harvest ef=100 cap=64 rounds=1 75.61s
+RUNS_DONE

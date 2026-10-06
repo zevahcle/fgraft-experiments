@@ -1,0 +1,25 @@
+Vary degree = 0
+Ground truth: detected 10000 points with num results 100
+Data: detected 6350000 points with dimension 1024
+Data: detected 10000 points with dimension 1024
+Graph: detected 6350000 points with max degree 64
+Total edges read from file: 404551899
+start index = 0
+Average visited: 0, Tail visited: 0
+Vamana graph built with 6350000 points and parameters R = 64, L = 128
+Graph has average degree 63.709 and maximum degree 64
+Graph built in 0 seconds
+BUILD_DISTANCES 0
+For 100@100 recall = 0.212262, QPS = 39421.6, Q = 100, cut = 1.35, visited limit = 10, degree limit: 50, average visited = 10, average cmps = 454
+For 100@100 recall = 0.341315, QPS = 26956.6, Q = 100, cut = 1.35, visited limit = 12, degree limit: 60, average visited = 12, average cmps = 641
+For 100@100 recall = 0.423961, QPS = 21206.7, Q = 100, cut = 1.35, visited limit = 14, degree limit: 64, average visited = 14, average cmps = 783
+For 100@100 recall = 0.500132, QPS = 17876.3, Q = 100, cut = 1.35, visited limit = 17, degree limit: 64, average visited = 17, average cmps = 926
+For 100@100 recall = 0.60397, QPS = 13549.2, Q = 100, cut = 1.35, visited limit = 23, degree limit: 64, average visited = 23, average cmps = 1199
+For 100@100 recall = 0.720799, QPS = 9353.2, Q = 100, cut = 1.35, visited limit = 35, degree limit: 64, average visited = 35, average cmps = 1720
+For 100@100 recall = 0.903136, QPS = 2625.15, Q = 100, cut = 1.35, visited limit = 6350000, degree limit: 64, average visited = 110, average cmps = 4806
+For 100@100 recall = 0.935274, QPS = 2279.23, Q = 160, cut = 1.35, visited limit = 6350000, degree limit: 64, average visited = 171, average cmps = 6837
+For 100@100 recall = 0.952716, QPS = 1759.77, Q = 225, cut = 1.35, visited limit = 6350000, degree limit: 64, average visited = 237, average cmps = 8763
+For 100@100 recall = 0.971119, QPS = 1196.35, Q = 375, cut = 1.35, visited limit = 6350000, degree limit: 64, average visited = 394, average cmps = 12738
+For 100@100 recall = 0.984834, QPS = 693.164, Q = 750, cut = 1.35, visited limit = 6350000, degree limit: 64, average visited = 791, average cmps = 22013
+
+Parlay time: 147.1536

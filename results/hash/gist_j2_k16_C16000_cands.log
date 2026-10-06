@@ -1,0 +1,7 @@
+hash_cands n=1000000 d=960 |S|=20000 k=16 j=2 C=16000
+  signatures reused from /mnt/raid/fgraft-campaign-2026-09-22/hash/gist_a0.02_sig_k16.npy
+  buckets: 11465909 keys from 120000000 memberships (33s); size mean 10.5 median 2 p90 20 p99 145 max 9834; singletons 0.389
+  per-object union bound: mean 21350 median 15565 p10 4832 p90 43810 max 207680; objects with bound < C: 0.513; sum pairs/2 = 10.67 G (all-pairs cost bound)
+  rows 20000/1000000  185s
+  rows 40000/1000000  366s
+  rows 60000/1000000  549s

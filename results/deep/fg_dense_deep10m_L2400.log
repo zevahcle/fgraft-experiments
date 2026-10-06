@@ -1,0 +1,15 @@
+fg: AVX2+FMA kernels, 64 hw threads available
+=== /mnt/claude/data/deep-10M.X.npy : N=10000000 d=96 queries=10000 (L2) ===
+  dense: L=2400 m=5 C=200 over n=10000000  leaves mean 20833 max 71892  leaders 20.47s candidates 606.81s prune 106.38s (64 threads), 661349.9M dist (leaders 28800.0M, candidates 614163.7M, prune 14626.1M, spine 3760.1M in 37.03s)
+  candidates: 2000000000 directed (200.0/vertex); edges: 336803561 directed (33.7/vertex, max 203); memory 1427MB
+  dumped graph -> results/deep/fg_dense_deep10m_L2400.graph (n=10000000 max degree=203)
+  local completeness (k=10, sample): 0.604
+
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.9541        2224       37847
+     80     0.9694        2746       30391
+    120     0.9839        3734       21868
+    200     0.9929        5563       14231
+    300     0.9965        7662       10009
+    400     0.9977        9622        7795
+    600     0.9987       13262        5401

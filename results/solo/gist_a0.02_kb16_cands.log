@@ -1,0 +1,38 @@
+solo_cands n=1000000 d=960 alpha=0.02 k_b=16 C=[500, 1000, 2000, 4000] scoring=count threads=64
+  fit: |S|=20000 signatures+postings 388.8s (20.0 G sample pairs, GEMM); posting length mean 800 max 26486
+  signature check vs misifu brute kNN: mean set agreement 1.0000
+  merge lists descending by count: True (single merge at C=4000, prefixes otherwise per-C)
+  rows 100000/1000000  merge 15s  write 14s
+  rows 200000/1000000  merge 31s  write 29s
+  rows 300000/1000000  merge 49s  write 43s
+  rows 400000/1000000  merge 65s  write 59s
+  rows 500000/1000000  merge 80s  write 75s
+  rows 600000/1000000  merge 97s  write 90s
+  rows 700000/1000000  merge 115s  write 104s
+  rows 800000/1000000  merge 130s  write 119s
+  rows 900000/1000000  merge 148s  write 134s
+  rows 1000000/1000000  merge 164s  write 149s
+  done: fit 388.8s merge 164.0s (0.164 ms/row) write 149.1s; short rows 4190; files /mnt/raid/fgraft-campaign-2026-09-22/solo/gist_a0.02_kb16_C*.i32
+	Command being timed: "/mnt/claude/graft-work/misifu/.venv/bin/python /mnt/claude/graft-work/fgraft/bench/solo_cands.py --data /mnt/claude/graft-work/fgraft/data/gist_X.npy --alpha 0.02 --kb 16 --C 500,1000,2000,4000 --threads 64 --seed 1 --out /mnt/raid/fgraft-campaign-2026-09-22/solo/gist_a0.02_kb16"
+	User time (seconds): 10480.98
+	System time (seconds): 1416.90
+	Percent of CPU this job got: 1670%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 11:52.20
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 38719200
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 4
+	Minor (reclaiming a frame) page faults: 14955778
+	Voluntary context switches: 39709
+	Involuntary context switches: 71543
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 58593968
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

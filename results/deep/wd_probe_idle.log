@@ -1,0 +1,123 @@
+=== dense kernel (OpenBLAS f32, n*b ~ 2e9 pairs, best of 3) ===
+    d  G pairs/s  TFLOP/s  cyc/pair  %peak
+   96      2.606    0.500      24.6     24
+  100      2.805    0.561      22.8     27
+  128      2.499    0.640      25.6     31
+  256      1.664    0.852      38.5     42
+  384      1.298    0.997      49.3     49
+  768      0.781    1.200      81.9     59
+  960      0.606    1.163     105.7     57
+
+=== adaptive SEARCH rate from existing logs (QPS x cmps, all threads) ===
+   dataset    d                    system  recall  G pairs/s  cyc/pair
+      deep   96fg_dense_deep10m_L2400.log   0.954     0.0842       760
+      deep   96 fg_dense_deep10m_L800.log   0.957     0.0845       757
+      deep   96fg_graft_T8ef400_deep10m.l   0.957     0.0425      1506
+      deep   96parlay_search_deep10m_L240   0.951     0.1280       500
+      deep   96parlay_search_deep10m_L800   0.954     0.1370       467
+      deep   96        vamana_deep10m.log   0.951     0.1738       368
+     glove  100     fg_dense_A_prune0.log   0.943     0.0832       769
+     glove  100     fg_dense_A_prune1.log   0.939     0.0814       786
+     glove  100fg_dense_A_prune1_spine.lo   0.940     0.1054       607
+     glove  100fg_dense_A_prune1_spine2.l   0.939     0.0797       803
+     glove  100fg_dense_A_prune1_spine3.l   0.958     0.0823       778
+     glove  100 fg_dense_A_prune1_sym.log   0.939     0.0818       782
+     glove  100fg_dense_A_prune1_sym2.log   0.939     0.0807       794
+     glove  100fg_dense_A_prune1_sym3.log   0.939     0.0793       807
+     glove  100  fg_dense_A_prune1_v2.log   0.939     0.0816       785
+      sift  128parlay_search_sift_L1400.l   0.953     0.1280       500
+      sift  128parlay_search_sift_L700.lo   0.952     0.1297       493
+      sift  128parlay_search_sift_a1.0.lo   0.950     0.1303       491
+      sift  128parlay_search_sift_a1.15.l   0.951     0.1394       459
+     glove  100glove-b00-fgraft-T8-ef400-   0.939     0.0819       781
+     glove  100glove-b00-fgraft-T8-ef400-   0.938     0.0824       777
+     glove  100glove-b00-graft-T16-ef400.   0.955     0.0821       780
+     glove  100glove-b00-graft-T32-ef600.   0.946     0.0818       782
+     glove  100glove-b00-pipnn-R100-L200.   0.960     0.1403       456
+     glove  100glove-b00-vamana-R100-L200   0.954     0.1618       396
+     glove  100glove-b01-fgraft-T8-ef400-   0.939     0.0808       792
+     glove  100glove-b01-fgraft-T8-ef400-   0.938     0.0811       789
+     glove  100glove-b01-graft-T16-ef400.   0.955     0.0821       779
+     glove  100glove-b01-graft-T32-ef600.   0.946     0.0823       777
+     glove  100glove-b01-pipnn-R100-L200.   0.960     0.1375       466
+     glove  100glove-b01-vamana-R100-L200   0.954     0.1627       393
+     glove  100glove-b02-fgraft-T8-ef400-   0.939     0.0814       786
+     glove  100glove-b02-fgraft-T8-ef400-   0.938     0.0823       778
+     glove  100glove-b02-graft-T16-ef400.   0.955     0.0819       782
+     glove  100glove-b02-graft-T32-ef600.   0.946     0.0819       782
+     glove  100glove-b02-pipnn-R100-L200.   0.960     0.1188       539
+     glove  100glove-b02-vamana-R100-L200   0.954     0.1626       394
+     glove  100glove-b03-fgraft-T8-ef400-   0.939     0.0809       791
+     glove  100glove-b03-fgraft-T8-ef400-   0.938     0.0819       781
+     glove  100glove-b03-graft-T16-ef400.   0.955     0.0824       777
+     glove  100glove-b03-graft-T32-ef600.   0.946     0.0824       777
+     glove  100glove-b03-pipnn-R100-L200.   0.960     0.1335       479
+     glove  100glove-b03-vamana-R100-L200   0.954     0.1621       395
+     glove  100glove-b04-fgraft-T8-ef400-   0.939     0.0821       779
+     glove  100glove-b04-fgraft-T8-ef400-   0.938     0.0820       780
+     glove  100glove-b04-graft-T16-ef400.   0.955     0.0811       789
+     glove  100glove-b04-graft-T32-ef600.   0.946     0.0812       788
+     glove  100glove-b04-pipnn-R100-L200.   0.960     0.1392       460
+     glove  100glove-b04-vamana-R100-L200   0.954     0.1632       392
+     glove  100glove-b05-fgraft-T8-ef400-   0.939     0.0819       782
+     glove  100glove-b05-fgraft-T8-ef400-   0.938     0.0827       774
+     glove  100glove-b05-graft-T16-ef400.   0.955     0.0810       790
+     glove  100glove-b05-graft-T32-ef600.   0.946     0.0819       781
+     glove  100glove-b05-pipnn-R100-L200.   0.960     0.1283       499
+     glove  100glove-b05-vamana-R100-L200   0.954     0.1632       392
+     glove  100glove-b06-fgraft-T8-ef400-   0.939     0.0815       785
+     glove  100glove-b06-fgraft-T8-ef400-   0.938     0.0823       777
+     glove  100glove-b06-graft-T16-ef400.   0.955     0.0815       786
+     glove  100glove-b06-graft-T32-ef600.   0.946     0.0829       772
+     glove  100glove-b06-pipnn-R100-L200.   0.960     0.1364       469
+     glove  100glove-b06-vamana-R100-L200   0.954     0.1624       394
+     glove  100glove-b07-fgraft-T8-ef400-   0.939     0.0819       782
+     glove  100glove-b07-fgraft-T8-ef400-   0.938     0.0823       778
+     glove  100glove-b07-graft-T16-ef400.   0.955     0.0812       788
+     glove  100glove-b07-graft-T32-ef600.   0.946     0.0818       783
+     glove  100glove-b07-pipnn-R100-L200.   0.960     0.1102       581
+     glove  100glove-b07-vamana-R100-L200   0.954     0.1615       396
+     glove  100glove-b08-fgraft-T8-ef400-   0.939     0.0826       775
+     glove  100glove-b08-fgraft-T8-ef400-   0.938     0.0801       799
+     glove  100glove-b08-graft-T16-ef400.   0.955     0.0818       783
+     glove  100glove-b08-graft-T32-ef600.   0.946     0.0815       785
+     glove  100glove-b08-pipnn-R100-L200.   0.960     0.1380       464
+     glove  100glove-b08-vamana-R100-L200   0.954     0.1637       391
+     glove  100glove-b09-fgraft-T8-ef400-   0.939     0.0816       784
+     glove  100glove-b09-fgraft-T8-ef400-   0.938     0.0819       782
+     glove  100glove-b09-graft-T16-ef400.   0.955     0.0819       782
+     glove  100glove-b09-graft-T32-ef600.   0.946     0.0823       778
+     glove  100glove-b09-pipnn-R100-L200.   0.960     0.1285       498
+     glove  100glove-b09-vamana-R100-L200   0.954     0.1631       393
+      sift  128sift-b00-pipnn-R64-L128.lo   0.951     0.1254       510
+      sift  128sift-b00-vamana-R64-L128-a   0.951     0.1565       409
+      sift  128sift-b01-pipnn-R64-L128.lo   0.950     0.0930       688
+      sift  128sift-b01-vamana-R64-L128-a   0.951     0.1546       414
+      sift  128sift-b02-pipnn-R64-L128.lo   0.951     0.1366       468
+      sift  128sift-b02-vamana-R64-L128-a   0.951     0.1565       409
+      sift  128sift-b03-pipnn-R64-L128.lo   0.951     0.0908       705
+      sift  128sift-b03-vamana-R64-L128-a   0.951     0.1568       408
+      sift  128sift-b04-pipnn-R64-L128.lo   0.951     0.1350       474
+      sift  128sift-b04-vamana-R64-L128-a   0.951     0.1538       416
+      sift  128sift-b05-pipnn-R64-L128.lo   0.951     0.1349       475
+      sift  128sift-b05-vamana-R64-L128-a   0.951     0.1568       408
+      sift  128sift-b06-pipnn-R64-L128.lo   0.951     0.0876       730
+      sift  128sift-b06-vamana-R64-L128-a   0.951     0.1560       410
+      sift  128sift-b07-pipnn-R64-L128.lo   0.951     0.1044       613
+      sift  128sift-b07-vamana-R64-L128-a   0.951     0.1565       409
+      sift  128sift-b08-pipnn-R64-L128.lo   0.951     0.1363       470
+      sift  128sift-b08-vamana-R64-L128-a   0.951     0.1455       440
+      sift  128sift-b09-pipnn-R64-L128.lo   0.951     0.1137       563
+      sift  128sift-b09-vamana-R64-L128-a   0.951     0.1564       409
+     glove  100glove-b00-dense-L240-m5-C2   0.939     0.0815       785
+     glove  100glove-b01-dense-L240-m5-C2   0.939     0.0817       784
+     glove  100glove-b02-dense-L240-m5-C2   0.939     0.0814       787
+     glove  100glove-b03-dense-L240-m5-C2   0.939     0.0816       784
+     glove  100glove-b04-dense-L240-m5-C2   0.939     0.0817       783
+     glove  100glove-b05-dense-L240-m5-C2   0.939     0.0810       790
+     glove  100glove-b06-dense-L240-m5-C2   0.939     0.0811       790
+     glove  100glove-b07-dense-L240-m5-C2   0.939     0.0820       781
+     glove  100glove-b08-dense-L240-m5-C2   0.939     0.0810       790
+     glove  100glove-b09-dense-L240-m5-C2   0.939     0.0817       784
+     glove  100   pipnn_glove_counted.log   0.960     0.1379       464
+      sift  128    pipnn_sift_counted.log   0.950     0.1346       475

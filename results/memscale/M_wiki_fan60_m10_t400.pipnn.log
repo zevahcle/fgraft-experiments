@@ -1,0 +1,81 @@
+Vary degree = 0
+Ground truth: detected 10000 points with num results 100
+Data: detected 6350000 points with dimension 1024
+Data: detected 10000 points with dimension 1024
+Parlay time: SketchHash construction time: 0.5807
+Size of SketchHash (bytes): 304849152
+Allocate = 0
+Set MSTDeg to: 10 fanout: 1
+Sizeof indexType = 4
+Fanout scheme: 20 3 1 
+Allocating: 20370800000 bytes of space for the candidates lists.
+Sizeof T = 8
+Cleared degree
+FANOUT = 1 FANOUT_PER_LEVEL = 0
+number of levels to fanout: 1
+fanout per level: 1
+total fanout: 1
+total fanout allowance: 1
+leader method: random
+Parlay time: first level assign time: 6.0018
+Parlay time: buckets time: 171.7883
+buckets size (bytes): 1545058660
+Total buckets: 1316215
+Total points: 380999805
+Computed buckets!
+Building leaves:
+Parlay time: build leaf time: 371.4109
+Built cluster 0 of 1
+Leaf count: 1316215
+# of comparisons during clustering: 72508934248
+Allocating graph, prune_degree = 64
+Average table size: 296
+GRAFT-DUMP /mnt/raid/fgraft-campaign-2026-09-22/memscale/M_wiki_fan60_m10_t400.cands C=400 mean reservoir 296.5 dump distances 1882725152
+Parlay time: Final prune time: 269.3488
+Average distance traversed: 117
+LEAF_POINTS 380999805 leaves 1316215
+BUILD_DISTANCES_PIPNN clustering=72508934248 leaf=76997702143 prune=17476219555 total=166982855946
+Writing graph to /mnt/raid/fgraft-campaign-2026-09-22/memscale/M_wiki_fan60_m10_t400.pipnn.graph
+Writing graph with 6350000 points and max degree 64
+PiPNN graph built with 6350000 points and parameters Trees = 1
+Graph has average degree 63.71 and maximum degree 64
+Graph built in 814.3 seconds
+For 10@10 recall = 0.3587, QPS = 4.348e+04, Q = 10, cut = 1.35, visited limit = 10, degree limit: 50, average visited = 10, average cmps = 457
+For 10@10 recall = 0.456, QPS = 3.545e+04, Q = 11, cut = 1.35, visited limit = 11, degree limit: 55, average visited = 11, average cmps = 548
+For 10@10 recall = 0.5353, QPS = 2.948e+04, Q = 12, cut = 1.35, visited limit = 12, degree limit: 60, average visited = 12, average cmps = 647
+For 10@10 recall = 0.6312, QPS = 2.347e+04, Q = 14, cut = 1.35, visited limit = 14, degree limit: 64, average visited = 14, average cmps = 793
+For 10@10 recall = 0.7071, QPS = 1.944e+04, Q = 17, cut = 1.35, visited limit = 17, degree limit: 64, average visited = 17, average cmps = 942
+For 10@10 recall = 0.7724, QPS = 1.707e+04, Q = 10, cut = 1.35, visited limit = 6350000, degree limit: 64, average visited = 18, average cmps = 1024
+For 10@10 recall = 0.8084, QPS = 1.486e+04, Q = 13, cut = 1.35, visited limit = 6350000, degree limit: 64, average visited = 21, average cmps = 1177
+For 10@10 recall = 0.8547, QPS = 1.165e+04, Q = 19, cut = 1.35, visited limit = 6350000, degree limit: 64, average visited = 28, average cmps = 1489
+For 10@10 recall = 0.9009, QPS = 8053, Q = 32, cut = 1.35, visited limit = 6350000, degree limit: 64, average visited = 41, average cmps = 2132
+For 10@10 recall = 0.9336, QPS = 5235, Q = 55, cut = 1.35, visited limit = 6350000, degree limit: 64, average visited = 64, average cmps = 3255
+For 10@10 recall = 0.9508, QPS = 3979, Q = 80, cut = 1.35, visited limit = 6350000, degree limit: 64, average visited = 89, average cmps = 4211
+For 10@10 recall = 0.9715, QPS = 2385, Q = 160, cut = 1.35, visited limit = 6350000, degree limit: 64, average visited = 170, average cmps = 6834
+For 10@10 recall = 0.9803, QPS = 1683, Q = 250, cut = 1.35, visited limit = 6350000, degree limit: 64, average visited = 261, average cmps = 9550
+For 10@10 recall = 0.9901, QPS = 747.2, Q = 750, cut = 1.35, visited limit = 6350000, degree limit: 64, average visited = 744, average cmps = 21041
+
+Parlay time: 1044.0291
+	Command being timed: "/mnt/claude/graft-work/fgraft/PiPNN/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN -base_path /mnt/raid/fgraft-campaign-2026-09-22/wiki_base.fbin -query_path /mnt/raid/fgraft-campaign-2026-09-22/wiki_query.fbin -gt_path /mnt/raid/fgraft-campaign-2026-09-22/wiki_gt100 -file_type bin -data_type float -dist_func Euclidian -alpha 1.2 -prune_degree 64 -R 64 -L 128 -two_pass 0 -k 10 -num_clusters 1 -top_level_leaders 1000 -fraction_leaders 0.005 -hash_bits 12 -graph_outfile /mnt/raid/fgraft-campaign-2026-09-22/memscale/M_wiki_fan60_m10_t400.pipnn.graph -cluster_size 1024 -fanout_scheme 20,3,1 -mst_deg 10 -table_size 400"
+	User time (seconds): 60799.73
+	System time (seconds): 270.41
+	Percent of CPU this job got: 5661%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 17:58.60
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 65631744
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 13402564
+	Voluntary context switches: 1127303
+	Involuntary context switches: 289203
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 23053992
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

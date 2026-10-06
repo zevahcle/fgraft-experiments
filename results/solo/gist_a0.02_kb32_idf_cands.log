@@ -1,0 +1,38 @@
+solo_cands n=1000000 d=960 alpha=0.02 k_b=32 C=[1000, 2000, 4000] scoring=idf cap=0 threads=64
+  fit: |S|=20000 signatures+postings 396.0s (20.0 G sample pairs, GEMM); posting length mean 1600 max 44038
+  signature check vs misifu brute kNN: mean set agreement 0.9998
+  merge lists descending by score: False (single merge at C=4000 with prefixes; otherwise one merge per C)
+  rows 100000/1000000  merge 100s  write 11s
+  rows 200000/1000000  merge 205s  write 21s
+  rows 300000/1000000  merge 313s  write 32s
+  rows 400000/1000000  merge 418s  write 43s
+  rows 500000/1000000  merge 523s  write 53s
+  rows 600000/1000000  merge 633s  write 64s
+  rows 700000/1000000  merge 745s  write 75s
+  rows 800000/1000000  merge 854s  write 85s
+  rows 900000/1000000  merge 964s  write 96s
+  rows 1000000/1000000  merge 1075s  write 107s
+  done: fit 396.0s merge 1075.3s (1.075 ms/row) write 107.0s; short rows 18; files /mnt/raid/fgraft-campaign-2026-09-22/solo/gist_a0.02_kb32_idf_C*.i32
+	Command being timed: "/mnt/claude/graft-work/misifu/.venv/bin/python /mnt/claude/graft-work/fgraft/bench/solo_cands.py --data /mnt/claude/graft-work/fgraft/data/gist_X.npy --alpha 0.02 --kb 32 --C 1000,2000,4000 --threads 64 --seed 1 --scoring idf --cap 0 --out /mnt/raid/fgraft-campaign-2026-09-22/solo/gist_a0.02_kb32_idf"
+	User time (seconds): 60898.72
+	System time (seconds): 1410.63
+	Percent of CPU this job got: 3922%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 26:28.57
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 38494272
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 3
+	Minor (reclaiming a frame) page faults: 18235262
+	Voluntary context switches: 31706
+	Involuntary context switches: 317658
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 54687720
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

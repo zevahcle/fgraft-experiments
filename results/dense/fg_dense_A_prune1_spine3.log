@@ -1,0 +1,16 @@
+fg: AVX2+FMA kernels, 64 hw threads available
+=== data/glove_norm_X.npy : N=1183514 d=100 queries=10000 (cosine) ===
+  rows padded d=100 -> 112 (whole cache lines)
+  dense: L=240 m=5 C=200 over n=1183514  leaves mean 24657 max 61122  leaders 0.72s candidates 73.73s prune 11.93s (64 threads), 92383.4M dist (leaders 764.0M, candidates 88596.2M, prune 3023.2M, spine 0.1M in 2.06s)
+  candidates: 236702800 directed (200.0/vertex); edges: 53687320 directed (45.4/vertex, max 300); memory 224MB
+  dumped graph -> results/dense/fg_dense_A_prune1_spine3.graph (n=1183514 max degree=300)
+  local completeness (k=10, sample): 0.605
+
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.8493        2896       30726
+     80     0.8751        3599       24407
+    120     0.9064        4965       17322
+    200     0.9380        7579       11032
+    300     0.9577       10710        7683
+    400     0.9694       13725        5980
+    600     0.9813       19519        4117

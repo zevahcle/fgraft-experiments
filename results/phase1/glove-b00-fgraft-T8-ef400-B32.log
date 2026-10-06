@@ -1,0 +1,16 @@
+fg: AVX2+FMA kernels, 64 hw threads available
+=== data/glove_norm_X.npy : N=1183514 d=100 queries=10000 (cosine) ===
+  rows padded d=100 -> 112 (whole cache lines)
+  forest: 8 SATs (proximal) over n=1183514  trees 22.06s (64 threads), 28864.4M dist
+  overlay+backlinks 0.51s (18207868 directed edges, raw max deg 616); harvest ef=400 cap=64 rounds=1 265.82s
+  edges: 54622158 directed (46.2/vertex, max 474); memory 228MB
+  local completeness (k=10, sample): 0.574
+
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.8472        2971       27500
+     80     0.8744        3718       22311
+    120     0.9066        5159       16044
+    200     0.9393        7922       10343
+    300     0.9596       11223        7260
+    400     0.9709       14410        5636
+    600     0.9828       20519        3893

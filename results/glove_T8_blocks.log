@@ -1,0 +1,90 @@
+### RUN T8_ef600_frozen
+fg: NEON kernels, 10 hw threads available
+=== data/glove_norm_X.npy : N=1183514 d=100 queries=10000 (cosine) ===
+  rows padded d=100 -> 112 (whole cache lines)
+  forest: 8 SATs (proximal) over n=1183514  trees 5.17s (10 threads), 23049.7M dist
+  overlay+backlinks 0.10s (18207868 directed edges, raw max deg 616); harvest ef=600 cap=64 rounds=1 254.53s
+  edges: 53877400 directed (45.5/vertex, max 475); memory 225MB
+  local completeness (k=10, sample): 0.525
+
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.8400        3012       22839
+     80     0.8653        3762       19543
+    120     0.8973        5210       14099
+    200     0.9304        7977        9027
+    300     0.9520       11275        5969
+    400     0.9639       14453        4699
+    600     0.9771       20542        3178
+### END
+### RUN T8_ef600_B8
+fg: NEON kernels, 10 hw threads available
+=== data/glove_norm_X.npy : N=1183514 d=100 queries=10000 (cosine) ===
+  rows padded d=100 -> 112 (whole cache lines)
+  forest: 8 SATs (proximal) over n=1183514  trees 8.31s (10 threads), 38878.7M dist
+  overlay+backlinks 0.10s (18207868 directed edges, raw max deg 616); harvest ef=600 cap=64 rounds=1 572.33s
+  edges: 61258283 directed (51.8/vertex, max 474); memory 255MB
+  local completeness (k=10, sample): 0.583
+
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.8539        3186       16058
+     80     0.8805        3992       17479
+    120     0.9122        5547       12642
+    200     0.9439        8528        7940
+    300     0.9638       12088        5283
+    400     0.9741       15512        3970
+    600     0.9850       22069        2693
+### END
+### RUN T8_ef600_B32
+fg: NEON kernels, 10 hw threads available
+=== data/glove_norm_X.npy : N=1183514 d=100 queries=10000 (cosine) ===
+  rows padded d=100 -> 112 (whole cache lines)
+  forest: 8 SATs (proximal) over n=1183514  trees 9.38s (10 threads), 40760.8M dist
+  overlay+backlinks 0.10s (18207868 directed edges, raw max deg 616); harvest ef=600 cap=64 rounds=1 665.93s
+  edges: 61865693 directed (52.3/vertex, max 474); memory 257MB
+  local completeness (k=10, sample): 0.587
+
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.8549        3194       18521
+     80     0.8815        4007       16542
+    120     0.9129        5572       13439
+    200     0.9444        8567        8337
+    300     0.9644       12145        5419
+    400     0.9747       15585        4136
+    600     0.9853       22178        2906
+### END
+### RUN T8_ef400_B32
+fg: NEON kernels, 10 hw threads available
+=== data/glove_norm_X.npy : N=1183514 d=100 queries=10000 (cosine) ===
+  rows padded d=100 -> 112 (whole cache lines)
+  forest: 8 SATs (proximal) over n=1183514  trees 9.13s (10 threads), 28864.4M dist
+  overlay+backlinks 0.10s (18207868 directed edges, raw max deg 616); harvest ef=400 cap=64 rounds=1 391.69s
+  edges: 54622148 directed (46.2/vertex, max 474); memory 228MB
+  local completeness (k=10, sample): 0.574
+
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.8472        2971       19059
+     80     0.8744        3718       15234
+    120     0.9066        5159       11602
+    200     0.9392        7922        7221
+    300     0.9596       11223        5563
+    400     0.9708       14410        4252
+    600     0.9828       20519        2974
+### END
+### RUN T4_ef600_B32
+fg: NEON kernels, 10 hw threads available
+=== data/glove_norm_X.npy : N=1183514 d=100 queries=10000 (cosine) ===
+  rows padded d=100 -> 112 (whole cache lines)
+  forest: 4 SATs (proximal) over n=1183514  trees 6.61s (10 threads), 34481.8M dist
+  overlay+backlinks 0.05s (9286770 directed edges, raw max deg 497); harvest ef=600 cap=64 rounds=1 594.05s
+  edges: 60488003 directed (51.1/vertex, max 474); memory 251MB
+  local completeness (k=10, sample): 0.581
+
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.8525        3206       16126
+     80     0.8794        4007       15121
+    120     0.9115        5553       10950
+    200     0.9433        8514        6723
+    300     0.9628       12052        4861
+    400     0.9737       15455        3324
+    600     0.9848       21978        2388
+### END

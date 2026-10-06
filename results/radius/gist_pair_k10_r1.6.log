@@ -1,0 +1,40 @@
+fg: AVX2+FMA kernels, 64 hw threads available
+=== /mnt/claude/graft-work/fgraft/data/gist_X.npy : N=1000000 d=960 queries=1000 (L2) ===
+  radius prune: rho=1.60 k=10 on the first prune
+  dense: L=700 m=5 C=8000 over n=1000000  leaves mean 7143 max 0  leaders 0.00s candidates 38.20s prune 369.61s (64 threads), 9014.0M dist (leaders 0.0M, candidates 0.0M, prune 7336.3M, spine 1677.6M in 32.87s)
+  candidates: 2610764874 directed (2610.8/vertex); edges: 42721114 directed (42.7/vertex, max 1155); memory 179MB
+  dumped graph -> /mnt/raid/fgraft-campaign-2026-09-22/radius/gist_pair_k10_r1.6.graph (n=1000000 max degree=1155)
+  local completeness (k=10, sample): 0.351
+
+  entry=hub
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.8606        3490        1987
+     80     0.8984        4333        1559
+    120     0.9417        5961        1131
+    200     0.9735        8975         753
+    300     0.9861       12438         544
+    400     0.9908       15627         435
+    600     0.9958       21440         319
+	Command being timed: "/mnt/claude/graft-work/fgraft/graft-ann/src/fg --data /mnt/claude/graft-work/fgraft/data/gist_X.npy --queries /mnt/claude/graft-work/fgraft/data/gist_Q.npy --gold /mnt/claude/graft-work/fgraft/data/gist_gold.npy --metric l2 --T 1 --harvest 400 --harvest-cap 64 --harvest-alpha 1.0 --dense-prune 1 --dense-spine 1 --threads 64 --seed 1 --ef 60 80 120 200 300 400 600 --dump-graph /mnt/raid/fgraft-campaign-2026-09-22/radius/gist_pair_k10_r1.6.graph --dense 700 --dense-m 5 --dense-C 8000 --dense-cands /mnt/raid/fgraft-campaign-2026-09-22/hash/gist_j2_k10_C8000_C8000.i32 --dense-radius 1.6 --dense-radius-k 10"
+	User time (seconds): 21849.05
+	System time (seconds): 262.11
+	Percent of CPU this job got: 4862%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 7:34.71
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 27281252
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 20076660
+	Voluntary context switches: 27876
+	Involuntary context switches: 112588
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 341584
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

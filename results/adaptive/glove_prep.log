@@ -1,0 +1,22 @@
+[      0s] /mnt/claude/graft-work/fgraft/data/glove_norm_X.npy: n=1183514 d=100 L=240
+[   3573s] exact 10-NN done
+[   3583s] oracle cc: mean 0.125 q10 0.000 frac0 0.126
+[   3621s] leaders + memberships done
+[   4131s] pilot graph recall@10 0.730; spearman(cc, cc_pilot) 0.896
+[   4133s] uniform m= 1: cover 0.4778  pairs    3.26 G
+[   4133s] uniform m= 2: cover 0.7410  pairs   13.27 G
+[   4133s] uniform m= 3: cover 0.8445  pairs   30.52 G
+[   4133s] uniform m= 4: cover 0.8976  pairs   55.25 G
+[   4133s] uniform m= 5: cover 0.9299  pairs   87.64 G
+[   4133s] uniform m= 6: cover 0.9512  pairs  128.01 G
+[   4133s] uniform m= 7: cover 0.9656  pairs  176.67 G
+[   4133s] uniform m= 8: cover 0.9763  pairs  233.85 G
+[   4133s] uniform m= 9: cover 0.9834  pairs  299.76 G
+[   4133s] uniform m=10: cover 0.9883  pairs  374.66 G
+[   4164s] oracle A: f=0.3 m_lo=4 m_hi=7 (mean m 4.90)  cover 0.9295 (uniform m5 0.9299)  pairs 85.25 G (uniform m5 87.64)
+[   4164s] oracle B: f=0.5 m_lo=4 m_hi=6 (mean m 5.00)  cover 0.9329 (uniform m5 0.9299)  pairs 88.59 G (uniform m5 87.64)
+[   4195s] pilot A: f=0.3 m_lo=4 m_hi=7 (mean m 4.90)  cover 0.9314 (uniform m5 0.9299)  pairs 85.11 G (uniform m5 87.64)
+[   4195s] pilot B: f=0.3 m_lo=4 m_hi=7 (mean m 4.90)  cover 0.9314 (uniform m5 0.9299)  pairs 85.11 G (uniform m5 87.64)
+[   4226s] margin A: f=0.3 m_lo=4 m_hi=7 (mean m 4.90)  cover 0.9298 (uniform m5 0.9299)  pairs 84.46 G (uniform m5 87.64)
+[   4226s] margin B: f=0.5 m_lo=4 m_hi=6 (mean m 5.00)  cover 0.9352 (uniform m5 0.9299)  pairs 88.00 G (uniform m5 87.64)
+[   4226s] done

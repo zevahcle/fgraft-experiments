@@ -1,0 +1,81 @@
+Vary degree = 0
+Ground truth: detected 10000 points with num results 100
+Data: detected 100000000 points with dimension 96
+Data: detected 10000 points with dimension 96
+Building graph...
+number of passes = 2
+Pass 10% complete
+Pass 20% complete
+Pass 30% complete
+Pass 40% complete
+Pass 50% complete
+Pass 60% complete
+Pass 70% complete
+Pass 80% complete
+Pass 90% complete
+Pass 100% complete
+beam search time: total: 2800.1627
+bidirect time: total: 17.6947
+prune time: total: 147.7166
+Pass 10% complete
+Pass 20% complete
+Pass 30% complete
+Pass 40% complete
+Pass 50% complete
+Pass 60% complete
+Pass 70% complete
+Pass 80% complete
+Pass 90% complete
+Pass 100% complete
+beam search time: total: 3906.7847
+bidirect time: total: 53.1672
+prune time: total: 2798.4986
+start index = 0
+Average visited: 19, Tail visited: 315
+Vamana graph built with 100000000 points and parameters R = 64, L = 128
+Graph has average degree 53.84 and maximum degree 64
+Graph built in 9816 seconds
+BUILD_DISTANCES 4150553324821
+Writing graph to /mnt/raid/fgraft-campaign-2026-09-22/open/K_deep100m_vamana.graph
+Writing graph with 100000000 points and max degree 64
+For 10@10 recall = 0.2069, QPS = 3.335e+05, Q = 10, cut = 1.35, visited limit = 10, degree limit: 50, average visited = 10, average cmps = 469
+For 10@10 recall = 0.3185, QPS = 2.762e+05, Q = 11, cut = 1.35, visited limit = 11, degree limit: 55, average visited = 11, average cmps = 558
+For 10@10 recall = 0.4303, QPS = 2.297e+05, Q = 12, cut = 1.35, visited limit = 12, degree limit: 60, average visited = 12, average cmps = 651
+For 10@10 recall = 0.5096, QPS = 2.03e+05, Q = 13, cut = 1.35, visited limit = 13, degree limit: 64, average visited = 13, average cmps = 738
+For 10@10 recall = 0.6242, QPS = 1.642e+05, Q = 16, cut = 1.35, visited limit = 16, degree limit: 64, average visited = 16, average cmps = 889
+For 10@10 recall = 0.7251, QPS = 1.398e+05, Q = 10, cut = 1.35, visited limit = 100000000, degree limit: 64, average visited = 19, average cmps = 1070
+For 10@10 recall = 0.7553, QPS = 1.292e+05, Q = 12, cut = 1.35, visited limit = 100000000, degree limit: 64, average visited = 21, average cmps = 1167
+For 10@10 recall = 0.8051, QPS = 1.09e+05, Q = 16, cut = 1.35, visited limit = 100000000, degree limit: 64, average visited = 25, average cmps = 1378
+For 10@10 recall = 0.859, QPS = 8.485e+04, Q = 24, cut = 1.35, visited limit = 100000000, degree limit: 64, average visited = 33, average cmps = 1764
+For 10@10 recall = 0.9004, QPS = 6.517e+04, Q = 36, cut = 1.35, visited limit = 100000000, degree limit: 64, average visited = 45, average cmps = 2327
+For 10@10 recall = 0.9323, QPS = 4.758e+04, Q = 55, cut = 1.35, visited limit = 100000000, degree limit: 64, average visited = 63, average cmps = 3241
+For 10@10 recall = 0.9548, QPS = 3.548e+04, Q = 80, cut = 1.35, visited limit = 100000000, degree limit: 64, average visited = 88, average cmps = 4265
+For 10@10 recall = 0.9714, QPS = 2.546e+04, Q = 120, cut = 1.35, visited limit = 100000000, degree limit: 64, average visited = 128, average cmps = 5778
+For 10@10 recall = 0.9822, QPS = 1.83e+04, Q = 180, cut = 1.35, visited limit = 100000000, degree limit: 64, average visited = 182, average cmps = 7760
+For 10@10 recall = 0.9908, QPS = 1.226e+04, Q = 300, cut = 1.35, visited limit = 100000000, degree limit: 64, average visited = 280, average cmps = 10833
+For 10@10 recall = 0.995, QPS = 8156, Q = 500, cut = 1.35, visited limit = 100000000, degree limit: 64, average visited = 412, average cmps = 15172
+
+Parlay time: 9888.0926
+	Command being timed: "/mnt/claude/graft-work/fgraft/PiPNN/build/algorithms/vamana/neighbors-vamana_FLOAT_T_EUCLIDEAN -base_path /mnt/raid/fgraft-campaign-2026-09-22/deep100m_base.fbin -query_path /mnt/raid/fgraft-campaign-2026-09-22/deep100m_query.fbin -gt_path /mnt/raid/fgraft-campaign-2026-09-22/deep100m_gt100 -graph_outfile /mnt/raid/fgraft-campaign-2026-09-22/open/K_deep100m_vamana.graph -file_type bin -data_type float -dist_func Euclidian -R 64 -L 128 -alpha 1.2 -two_pass 1 -k 10"
+	User time (seconds): 627158.21
+	System time (seconds): 707.70
+	Percent of CPU this job got: 6313%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:45:44
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 85126452
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 41899121
+	Voluntary context switches: 4757394
+	Involuntary context switches: 2891981
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 42845232
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

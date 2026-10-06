@@ -1,0 +1,28 @@
+perm_cands n=1000000 d=960 S=1000 k=8 B=1000 Bmin=100 lmax=4 swaps=0 C=4000
+  permutations reused from /mnt/raid/fgraft-campaign-2026-09-22/perm/gist_S1000_B1000_sw3_perm_S1000_k8.npy
+  trie cut: 2554 blocks in 0s; depth counts [729, 1787, 38]; blocks < Bmin 207; size mean 392 median 194 p99 2640 max 4492; sum(block^2)/2 = 0.55 G pairs
+  memberships per object: mean 1.00 (own block always; variants found 0.00 of 0)
+  rows written in 1566s: effective pool (mean row length) 1088; rows truncated at C 12610 (0.013); file /mnt/raid/fgraft-campaign-2026-09-22/perm/gist_S1000_B1000_sw0_C4000.i32
+	Command being timed: "/mnt/claude/graft-work/misifu/.venv/bin/python /mnt/claude/graft-work/fgraft/bench/perm_cands.py --data /mnt/claude/graft-work/fgraft/data/gist_X.npy --C 4000 --seed 1 --out /mnt/raid/fgraft-campaign-2026-09-22/perm/gist_S1000_B1000_sw0 --S 1000 --k 8 --B 1000 --lmax 4 --swaps 0 --sig /mnt/raid/fgraft-campaign-2026-09-22/perm/gist_S1000_B1000_sw3_perm_S1000_k8.npy"
+	User time (seconds): 1521.02
+	System time (seconds): 56.85
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 26:10.51
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 18295036
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1
+	Minor (reclaiming a frame) page faults: 19365954
+	Voluntary context switches: 3825
+	Involuntary context switches: 6805
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 31250024
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,10 @@
+fg: AVX2+FMA kernels, 64 hw threads available
+=== data/sub/g50000_X.npy : N=50000 d=100 queries=10000 (cosine) ===
+  rows padded d=100 -> 112 (whole cache lines)
+  forest: 16 SATs (proximal) over n=50000  trees 0.42s (64 threads), 810.8M dist
+  overlay+backlinks 0.04s (1391062 directed edges, raw max deg 329); harvest ef=400 cap=64 rounds=1 3.12s
+  edges: 2143828 directed (42.9/vertex, max 121); memory 9MB
+  local completeness (k=10, sample): 0.601
+
+     ef  recall@10  dist/query     QPS(mt)
+    100     0.9597        3755       92078

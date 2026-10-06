@@ -1,0 +1,9 @@
+dense_gpu n=1183514 d=100 L=240 m=5 C=200 faiss 1.14.1 on NVIDIA GeForce RTX 3060 Laptop GPU
+leaves: mean 24657 max 60579  leaders 0.18s memberships 0.83s
+  leaf 0/240 sz=29094 pairs 0.8G  gpu 0.3s total 0.8s
+  leaf 40/240 sz=31580 pairs 30.6G  gpu 4.0s total 19.8s
+  leaf 80/240 sz=18489 pairs 61.7G  gpu 7.8s total 40.3s
+  leaf 120/240 sz=48710 pairs 93.6G  gpu 11.8s total 62.7s
+  leaf 160/240 sz=14641 pairs 124.4G  gpu 15.5s total 85.0s
+  leaf 200/240 sz=21813 pairs 148.1G  gpu 18.7s total 104.9s
+candidates: 174.2 G pairs (ordered; both (p,c) and (c,p)); gpu kNN 22.06s = 7.90 G pairs/s, host merge 103.58s; stage 125.65s; mean candidates/pt 200.0; total 139.7s; wrote results/cands_A.i32

@@ -1,0 +1,13 @@
+fg: AVX2+FMA kernels, 64 hw threads available
+=== /mnt/claude/graft-work/fgraft/data/sift_X.npy : N=1000000 d=128 queries=10000 (L2) ===
+  spine: HSP degree quantiles p10 10 p50 16 p90 16 p99 16 max 16 (cap 16)
+  spine: HSP over |S|=10000 sample points, out-degree mean 14.1 max 16, 140505 edges, reachable from entry 1000000/1000000
+  spine: final |S|=10000, 2.04s
+  dense: L=1 m=1 C=160 over n=1000000  leaves mean 1000000 max 0  leaders 0.00s candidates 1.12s prune 4.63s (64 threads), 510.1M dist (leaders 0.0M, candidates 0.0M, prune 410.1M, spine 100.0M in 2.04s)
+  candidates: 37137327 directed (37.1/vertex); edges: 20287851 directed (20.3/vertex, max 80); memory 89MB
+  dumped graph -> /mnt/raid/fgraft-campaign-2026-09-22/open/D_sift_t64.graph (n=1000000 max degree=80)
+  local completeness (k=10, sample): 0.580
+
+  entry=hub
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.9664        1340       46057

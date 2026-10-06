@@ -1,0 +1,14 @@
+exact 10-NN of 1000 points: 26s
+table 0: P(same first permutant)=0.222  P(same 2-prefix)=0.054  footrule(k=8) mean 26.3 (max 64); shared permutants mean 3.31 of 8
+table 0: blocks 2554 (median 194, max 4492), pairs/2 0.55 G; same-block share 0.108; coverage by best of 1 tables 0.108
+table 1: blocks 2533 (median 195, max 4699), pairs/2 0.56 G; same-block share 0.108; coverage by best of 2 tables 0.191
+table 2: blocks 2518 (median 193, max 4266), pairs/2 0.56 G; same-block share 0.109; coverage by best of 3 tables 0.257
+table 3: blocks 2539 (median 184, max 4472), pairs/2 0.56 G; same-block share 0.110; coverage by best of 4 tables 0.316
+table 4: blocks 2478 (median 199, max 6091), pairs/2 0.57 G; same-block share 0.109; coverage by best of 5 tables 0.366
+table 5: blocks 2557 (median 192, max 4423), pairs/2 0.55 G; same-block share 0.110; coverage by best of 6 tables 0.413
+table 6: blocks 2515 (median 190, max 5076), pairs/2 0.56 G; same-block share 0.105; coverage by best of 7 tables 0.451
+table 7: blocks 2505 (median 192, max 4678), pairs/2 0.56 G; same-block share 0.110; coverage by best of 8 tables 0.485
+table 8: blocks 2595 (median 183, max 4565), pairs/2 0.55 G; same-block share 0.114; coverage by best of 9 tables 0.519
+table 9: blocks 2557 (median 192, max 5218), pairs/2 0.54 G; same-block share 0.112; coverage by best of 10 tables 0.547
+coverage curve: L1=0.108 L2=0.191 L3=0.257 L4=0.316 L5=0.366 L6=0.413 L7=0.451 L8=0.485 L9=0.519 L10=0.547
+independence would give: L1=0.108 L2=0.204 L3=0.289 L4=0.366 L5=0.434 L6=0.495 L7=0.549 L8=0.598 L9=0.641 L10=0.680

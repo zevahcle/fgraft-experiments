@@ -1,0 +1,36 @@
+
+== sift sub  n=200000 d=128  (graph stats 23s, total 24s)
+  LID(MLE,k10) median 19.7   reciprocity 0.332   clustering 0.137   shared-nbr 0.123   2-hop expansion 8.21 (of 1..11)
+  k-means L=143: m1:0.509@1.5k  m2:0.849@6.2k  m3:0.956@14.0k  m4:0.987@25.0k  m5:0.997@39.4k  m6:0.999@57.1k  m7:1.000@78.1k  m8:1.000@102.3k  m9:1.000@129.7k  m10:1.000@160.7k  m11:1.000@194.8k  m12:1.000@232.3k
+  local clustering: q10 0.044 q25 0.067 median 0.111  frac cc<0.03 0.059  frac cc==0 0.007
+  within-corpus m=2: cover by clustering quartile 0.748 0.811 0.877 0.942   Spearman(cover, clustering) +0.44  (cover, reciprocity) +0.17  (cover, LID) -0.25
+  within-corpus m=4: cover by clustering quartile 0.970 0.985 0.993 0.998   Spearman(cover, clustering) +0.09  (cover, reciprocity) +0.11  (cover, LID) -0.10
+  memberships needed: m@0.85 2.01  m@0.90 2.48  m@0.95 2.95
+  pool/pt at cover 0.85: 6.2k (3.11% of n)   at 0.90: 9.9k (4.95% of n)
+
+== glove_norm sub  n=200000 d=100  (graph stats 24s, total 25s)
+  LID(MLE,k10) median 35.7   reciprocity 0.312   clustering 0.106   shared-nbr 0.095   2-hop expansion 8.67 (of 1..11)
+  k-means L=143: m1:0.468@1.6k  m2:0.727@6.4k  m3:0.833@15.0k  m4:0.891@27.3k  m5:0.927@43.5k  m6:0.952@63.6k  m7:0.969@88.1k  m8:0.981@117.2k  m9:0.988@150.3k  m10:0.992@187.7k  m11:0.995@229.8k  m12:0.998@276.0k
+  local clustering: q10 0.000 q25 0.022 median 0.067  frac cc<0.03 0.309  frac cc==0 0.120
+  within-corpus m=2: cover by clustering quartile 0.458 0.652 0.835 0.911   Spearman(cover, clustering) +0.61  (cover, reciprocity) +0.34  (cover, LID) -0.41
+  within-corpus m=4: cover by clustering quartile 0.732 0.862 0.961 0.981   Spearman(cover, clustering) +0.52  (cover, reciprocity) +0.34  (cover, LID) -0.38
+  memberships needed: m@0.85 3.30  m@0.90 4.24  m@0.95 5.91
+  pool/pt at cover 0.85: 18.6k (9.32% of n)   at 0.90: 31.2k (15.60% of n)
+
+== wiki sub  n=200000 d=1024  (graph stats 27s, total 30s)
+  LID(MLE,k10) median 35.3   reciprocity 0.517   clustering 0.162   shared-nbr 0.146   2-hop expansion 7.73 (of 1..11)
+  k-means L=143: m1:0.675@1.6k  m2:0.901@6.6k  m3:0.961@15.1k  m4:0.982@26.7k  m5:0.991@41.5k  m6:0.995@59.6k  m7:0.997@81.2k  m8:0.998@106.0k  m9:0.999@134.7k  m10:0.999@166.8k  m11:1.000@202.6k  m12:1.000@242.3k
+  local clustering: q10 0.033 q25 0.067 median 0.133  frac cc<0.03 0.083  frac cc==0 0.024
+  within-corpus m=2: cover by clustering quartile 0.829 0.897 0.920 0.952   Spearman(cover, clustering) +0.29  (cover, reciprocity) +0.19  (cover, LID) -0.16
+  within-corpus m=4: cover by clustering quartile 0.962 0.982 0.989 0.992   Spearman(cover, clustering) +0.15  (cover, reciprocity) +0.11  (cover, LID) -0.08
+  memberships needed: m@0.85 1.77  m@0.90 1.99  m@0.95 2.81
+  pool/pt at cover 0.85: 5.5k (2.74% of n)   at 0.90: 6.6k (3.29% of n)
+
+== gist sub  n=200000 d=960  (graph stats 24s, total 26s)
+  LID(MLE,k10) median 49.9   reciprocity 0.074   clustering 0.076   shared-nbr 0.069   2-hop expansion 9.08 (of 1..11)
+  k-means L=143: m1:0.354@1.8k  m2:0.687@7.7k  m3:0.858@17.5k  m4:0.937@31.3k  m5:0.971@49.5k  m6:0.986@71.9k  m7:0.994@98.6k  m8:0.997@128.6k  m9:0.999@162.8k  m10:1.000@201.3k  m11:1.000@243.8k  m12:1.000@290.7k
+  local clustering: q10 0.011 q25 0.033 median 0.056  frac cc<0.03 0.211  frac cc==0 0.043
+  within-corpus m=2: cover by clustering quartile 0.551 0.617 0.713 0.828   Spearman(cover, clustering) +0.42  (cover, reciprocity) +0.18  (cover, LID) -0.28
+  within-corpus m=4: cover by clustering quartile 0.891 0.917 0.952 0.975   Spearman(cover, clustering) +0.28  (cover, reciprocity) +0.09  (cover, LID) -0.20
+  memberships needed: m@0.85 2.95  m@0.90 3.53  m@0.95 4.38
+  pool/pt at cover 0.85: 17.0k (8.50% of n)   at 0.90: 24.8k (12.38% of n)

@@ -1,0 +1,6 @@
+/mnt/claude/graft-work/fgraft/bench/knn_transitivity_diag.py:75: RuntimeWarning: divide by zero encountered in divide
+  d = NPd; lid = -1.0 / np.mean(np.log(np.maximum(d[:, :-1], 1e-30) / d[:, -1:]), axis=1)
+
+== /mnt/claude/data/deep-100M.X.npy  n=100000000 d=96  (graph stats only, 5496s)
+  LID(MLE,k10) median 29.8   reciprocity 0.249   clustering 0.090   shared-nbr 0.081   2-hop expansion 9.19 (of 1..11)
+  local clustering: q10 0.011 q25 0.022 median 0.056  frac cc<0.03 0.284  frac cc==0 0.081

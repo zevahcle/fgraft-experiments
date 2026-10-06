@@ -1,0 +1,84 @@
+Vary degree = 0
+Ground truth: detected 10000 points with num results 100
+Data: detected 1183514 points with dimension 100
+Aligning bytes to 448
+Data: detected 10000 points with dimension 100
+Aligning bytes to 448
+Parlay time: SketchHash construction time: 0.0285
+Size of SketchHash (bytes): 56813472
+Allocate = 0
+Set MSTDeg to: 2 fanout: 1
+Sizeof indexType = 4
+Fanout scheme: 10 3 1 
+Allocating: 1524366032 bytes of space for the candidates lists.
+Sizeof T = 8
+Cleared degree
+FANOUT = 1 FANOUT_PER_LEVEL = 0
+number of levels to fanout: 1
+fanout per level: 1
+total fanout: 1
+total fanout allowance: 1
+leader method: random
+Parlay time: first level assign time: 0.3004
+Parlay time: buckets time: 1.7751
+buckets size (bytes): 143673648
+Total buckets: 103469
+Total points: 35504536
+Computed buckets!
+Building leaves:
+Parlay time: build leaf time: 7.6187
+Built cluster 0 of 1
+Leaf count: 103469
+# of comparisons during clustering: 3210336828
+Allocating graph, prune_degree = 64
+Average table size: 66
+GRAFT-DUMP /mnt/raid/fgraft-campaign-2026-09-22/open/K_glove_pipnn_det.cands C=160 mean reservoir 66.1 dump distances 78229678
+Parlay time: Final prune time: 3.4727
+Average distance traversed: 65
+LEAF_POINTS 35504536 leaves 103469
+BUILD_DISTANCES_PIPNN clustering=3210336828 leaf=8492050375 prune=858019605 total=12560406808
+Writing graph to /mnt/raid/fgraft-campaign-2026-09-22/open/K_glove_pipnn_det.pipnn.graph
+Writing graph with 1183514 points and max degree 64
+PiPNN graph built with 1183514 points and parameters Trees = 1
+Graph has average degree 30.72 and maximum degree 64
+Graph built in 13.15 seconds
+For 10@10 recall = 0.198, QPS = 4.757e+05, Q = 10, cut = 1.35, visited limit = 10, degree limit: 50, average visited = 10, average cmps = 371
+For 10@10 recall = 0.2405, QPS = 4.146e+05, Q = 11, cut = 1.35, visited limit = 11, degree limit: 55, average visited = 11, average cmps = 420
+For 10@10 recall = 0.3164, QPS = 3.324e+05, Q = 13, cut = 1.35, visited limit = 13, degree limit: 64, average visited = 13, average cmps = 513
+For 10@10 recall = 0.4016, QPS = 2.675e+05, Q = 16, cut = 1.35, visited limit = 16, degree limit: 64, average visited = 16, average cmps = 623
+For 10@10 recall = 0.5013, QPS = 1.926e+05, Q = 21, cut = 1.35, visited limit = 21, degree limit: 64, average visited = 21, average cmps = 803
+For 10@10 recall = 0.6046, QPS = 1.399e+05, Q = 30, cut = 1.35, visited limit = 30, degree limit: 64, average visited = 30, average cmps = 1124
+For 10@10 recall = 0.7039, QPS = 8.883e+04, Q = 32, cut = 1.35, visited limit = 1183514, degree limit: 64, average visited = 44, average cmps = 1667
+For 10@10 recall = 0.7508, QPS = 7.035e+04, Q = 45, cut = 1.35, visited limit = 1183514, degree limit: 64, average visited = 58, average cmps = 2140
+For 10@10 recall = 0.8002, QPS = 5.208e+04, Q = 65, cut = 1.35, visited limit = 1183514, degree limit: 64, average visited = 80, average cmps = 2880
+For 10@10 recall = 0.8636, QPS = 3.129e+04, Q = 120, cut = 1.35, visited limit = 1183514, degree limit: 64, average visited = 136, average cmps = 4766
+For 10@10 recall = 0.9059, QPS = 2.028e+04, Q = 200, cut = 1.35, visited limit = 1183514, degree limit: 64, average visited = 216, average cmps = 7245
+For 10@10 recall = 0.9327, QPS = 1.44e+04, Q = 300, cut = 1.35, visited limit = 1183514, degree limit: 64, average visited = 308, average cmps = 10091
+For 10@10 recall = 0.9599, QPS = 9135, Q = 500, cut = 1.35, visited limit = 1183514, degree limit: 64, average visited = 475, average cmps = 15183
+For 10@10 recall = 0.9753, QPS = 6045, Q = 750, cut = 1.35, visited limit = 1183514, degree limit: 64, average visited = 670, average cmps = 20788
+For 10@10 recall = 0.9837, QPS = 4840, Q = 1000, cut = 1.35, visited limit = 1183514, degree limit: 64, average visited = 842, average cmps = 25778
+
+Parlay time: 44.2039
+	Command being timed: "/mnt/claude/graft-work/fgraft/PiPNN/build/algorithms/PipNN/neighbors-pipnn_FLOAT_T_EUCLIDEAN -base_path /mnt/claude/graft-work/fgraft/data/glove_base.fbin -query_path /mnt/claude/graft-work/fgraft/data/glove_query.fbin -gt_path /mnt/claude/graft-work/fgraft/data/glove_gt100 -file_type bin -data_type float -dist_func Euclidian -alpha 1.0 -prune_degree 64 -R 64 -L 128 -two_pass 0 -k 10 -num_clusters 1 -top_level_leaders 1000 -fraction_leaders 0.005 -hash_bits 12 -graph_outfile /mnt/raid/fgraft-campaign-2026-09-22/open/K_glove_pipnn_det.pipnn.graph -cluster_size 1024 -fanout_scheme 10,3,1 -mst_deg 2 -table_size 160"
+	User time (seconds): 1891.47
+	System time (seconds): 29.72
+	Percent of CPU this job got: 4173%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:46.03
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 6321812
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1620746
+	Voluntary context switches: 217632
+	Involuntary context switches: 10652
+	Swaps: 0
+	File system inputs: 731840
+	File system outputs: 1772704
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

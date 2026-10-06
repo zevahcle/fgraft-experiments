@@ -1,0 +1,16 @@
+fg: AVX-512F kernels, 16 hw threads available
+=== data/glove_norm_X.npy : N=1183514 d=100 queries=10000 (cosine) ===
+  rows padded d=100 -> 112 (whole cache lines)
+  dense: L=240 m=5 C=200 over n=1183514  leaves mean 24657 max 0  leaders 0.00s candidates 0.83s prune 15.70s (16 threads), 4004.9M dist (leaders 0.0M, candidates 0.0M, prune 3019.5M, spine 985.5M in 3.64s)
+  candidates: 236702800 directed (200.0/vertex); edges: 55397654 directed (46.8/vertex, max 479); memory 231MB
+  dumped graph -> results/fg_gpu_A2.graph (n=1183514 max degree=479)
+  local completeness (k=10, sample): 0.609
+
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.8544        3233        7891
+     80     0.8791        3964        6203
+    120     0.9099        5379        4300
+    200     0.9398        8090        2735
+    300     0.9591       11335        1880
+    400     0.9701       14461        1440
+    600     0.9828       20457         985

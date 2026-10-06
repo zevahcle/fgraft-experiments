@@ -1,0 +1,14 @@
+fg: AVX2+FMA kernels, 64 hw threads available
+=== /mnt/claude/graft-work/fgraft/data/glove_norm_X.npy : N=1183514 d=100 queries=10000 (cosine) ===
+  rows padded d=100 -> 112 (whole cache lines)
+  spine: HSP degree quantiles p10 16 p50 16 p90 16 p99 16 max 16 (cap 16)
+  spine: HSP over |S|=10000 sample points, out-degree mean 16.0 max 16, 159936 edges, reachable from entry 1183514/1183514, orphans (in-degree 0) 0
+  spine: final |S|=10000, 3.41s
+  dense: L=1 m=1 C=600 over n=1183514  leaves mean 1183514 max 0  leaders 0.00s candidates 6.13s prune 18.01s (64 threads), 4374.4M dist (leaders 0.0M, candidates 0.0M, prune 4274.4M, spine 100.0M in 3.41s)
+  candidates: 536019932 directed (452.9/vertex); edges: 63109331 directed (53.3/vertex, max 80); memory 262MB
+  dumped graph -> /mnt/raid/fgraft-campaign-2026-09-22/open/GT_glove_fan30.graph (n=1183514 max degree=80)
+  local completeness (k=10, sample): 0.596
+
+  entry=hub
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.8517        3128       25669

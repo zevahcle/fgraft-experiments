@@ -1,0 +1,14 @@
+fg: AVX2+FMA kernels, 64 hw threads available
+=== data/gist_X.npy : N=1000000 d=960 queries=1000 (L2) ===
+  dense: L=700 m=5 C=200 over n=1000000  leaves mean 7143 max 28204  leaders 12.39s candidates 335.73s prune 50.79s (64 threads), 30905.4M dist (leaders 2100.0M, candidates 26377.7M, prune 750.1M, spine 1677.6M in 31.59s)
+  candidates: 200000000 directed (200.0/vertex); edges: 18335567 directed (18.3/vertex, max 1133); memory 81MB
+  local completeness (k=10, sample): 0.328
+
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.8736        3162        2560
+     80     0.9110        3765        2017
+    120     0.9460        4894        1492
+    200     0.9725        6978        1032
+    300     0.9838        9380         744
+    400     0.9903       11584         618
+    600     0.9950       15622         445

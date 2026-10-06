@@ -1,0 +1,24 @@
+#### L=240 TB=128
+  dense: L=240 m=5 C=200 over n=1000000  leaves mean 20833 max 41104  leaders 1.04s candidates 70.52s prune 4.98s (10 threads), 60756.3M dist (leaders 720.0M, candidates 58655.0M, prune 1200.7M, spine 180.5M in 0.61s)
+  candidates: 200000000 directed (200.0/vertex); edges: 27131886 directed (27.1/vertex, max 110); memory 117MB
+#### L=240 TB=64
+  dense: L=240 m=5 C=200 over n=1000000  leaves mean 20833 max 41104  leaders 1.22s candidates 79.89s prune 5.39s (10 threads), 60756.3M dist (leaders 720.0M, candidates 58655.0M, prune 1200.7M, spine 180.5M in 0.69s)
+  candidates: 200000000 directed (200.0/vertex); edges: 27131886 directed (27.1/vertex, max 110); memory 117MB
+#### L=240 TB=32
+  dense: L=240 m=5 C=200 over n=1000000  leaves mean 20833 max 41104  leaders 1.29s candidates 148.90s prune 6.53s (10 threads), 60756.3M dist (leaders 720.0M, candidates 58655.0M, prune 1200.7M, spine 180.5M in 0.83s)
+  candidates: 200000000 directed (200.0/vertex); edges: 27131886 directed (27.1/vertex, max 110); memory 117MB
+#### L=240 TB=16
+  dense: L=240 m=5 C=200 over n=1000000  leaves mean 20833 max 41104  leaders 1.66s candidates 156.07s prune 7.06s (10 threads), 60756.3M dist (leaders 720.0M, candidates 58655.0M, prune 1200.7M, spine 180.5M in 0.85s)
+  candidates: 200000000 directed (200.0/vertex); edges: 27131886 directed (27.1/vertex, max 110); memory 117MB
+#### L=1400 TB=128
+  dense: L=1400 m=5 C=200 over n=1000000  leaves mean 3571 max 12915  leaders 10.70s candidates 63.38s prune 7.17s (10 threads), 16027.2M dist (leaders 4200.0M, candidates 10475.0M, prune 1171.6M, spine 180.5M in 0.85s)
+  candidates: 200000000 directed (200.0/vertex); edges: 26671776 directed (26.7/vertex, max 110); memory 115MB
+#### L=1400 TB=64
+  dense: L=1400 m=5 C=200 over n=1000000  leaves mean 3571 max 12915  leaders 9.52s candidates 28.95s prune 7.12s (10 threads), 16027.2M dist (leaders 4200.0M, candidates 10475.0M, prune 1171.6M, spine 180.5M in 1.03s)
+  candidates: 200000000 directed (200.0/vertex); edges: 26671776 directed (26.7/vertex, max 110); memory 115MB
+#### L=1400 TB=32
+  dense: L=1400 m=5 C=200 over n=1000000  leaves mean 3571 max 12915  leaders 9.88s candidates 32.05s prune 7.03s (10 threads), 16027.2M dist (leaders 4200.0M, candidates 10475.0M, prune 1171.6M, spine 180.5M in 0.86s)
+  candidates: 200000000 directed (200.0/vertex); edges: 26671776 directed (26.7/vertex, max 110); memory 115MB
+#### L=1400 TB=16
+  dense: L=1400 m=5 C=200 over n=1000000  leaves mean 3571 max 12915  leaders 10.12s candidates 37.27s prune 7.44s (10 threads), 16027.2M dist (leaders 4200.0M, candidates 10475.0M, prune 1171.6M, spine 180.5M in 0.91s)
+  candidates: 200000000 directed (200.0/vertex); edges: 26671776 directed (26.7/vertex, max 110); memory 115MB

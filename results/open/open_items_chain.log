@@ -1,0 +1,231 @@
+064c4db7693cbe1a439ef395a4c5aa8a  graft-ann/src/build.cpp
+ec0805f502778f1eba1b392dd132c140  PiPNN/algorithms/PipNN/pipnn.h
+accdc415faeac6ebf2175af058eb0ec4  PiPNN/algorithms/utils/graph.h
+6a7a28df437f80843bc7dddfc57ab8e6  PiPNN/algorithms/utils/hash.h
+53b6176322310106336f285b1077efb1  bench/hnsw_export.py
+[open] D threads=64 cands a08dddd78e54efa210674cd9f8c64f53 graph f2794a2bb68701bfd351d1b96b3076c6
+[open] D threads=32 cands a08dddd78e54efa210674cd9f8c64f53 graph f2794a2bb68701bfd351d1b96b3076c6
+[open] D: composed build DETERMINISTIC
+[open] === K glove pipnn_det (pipnn: -cluster_size 1024 -fanout_scheme 10,3,1 -mst_deg 2 -table_size 160) ===
+Fri Oct  2 10:06:51 PDT 2026
+[open] pipnn rc=0
+Fri Oct  2 10:07:37 PDT 2026
+GRAFT-DUMP /mnt/raid/fgraft-campaign-2026-09-22/open/K_glove_pipnn_det.cands C=160 mean reservoir 66.1 dump distances 78229678
+Parlay time: Final prune time: 3.4727
+BUILD_DISTANCES_PIPNN clustering=3210336828 leaf=8492050375 prune=858019605 total=12560406808
+Graph built in 13.15 seconds
+	Maximum resident set size (kbytes): 6321812
+[open] grade k=100 rc=0 K_glove_pipnn_det.pipnn_k100.log
+[open] fg alpha=1.2 rc=0
+Fri Oct  2 10:08:36 PDT 2026
+  dense: L=1 m=1 C=160 over n=1183514  leaves mean 1183514 max 0  leaders 0.00s candidates 1.59s prune 12.32s (64 threads), 3484.6M dist (leaders 0.0M, candidates 0.0M, prune 3384.6M, spine 100.0M in 4.13s)
+  candidates: 78229678 directed (66.1/vertex); edges: 64792456 directed (54.7/vertex, max 80); memory 269MB
+	Maximum resident set size (kbytes): 3322940
+[open] grade k=10 rc=0 K_glove_pipnn_det.a1.2_parlay.log
+[open] grade k=100 rc=0 K_glove_pipnn_det.a1.2_k100.log
+[open] === vamana glove R100 L200 a1.0 ===
+Fri Oct  2 10:09:45 PDT 2026
+[open] vamana rc=0
+Fri Oct  2 10:12:46 PDT 2026
+[open] grade k=100 rc=0 K_glove_vamana_k100.log
+[open] === hnswlib M16 glove ===
+Fri Oct  2 10:13:16 PDT 2026
+[open] hnsw rc=0
+Fri Oct  2 10:14:32 PDT 2026
+[open] grade k=10 rc=0 K_glove_hnsw16_k10.log
+[open] grade k=100 rc=0 K_glove_hnsw16_k100.log
+[open] === dense glove + HSP auto-s ===
+Fri Oct  2 10:15:21 PDT 2026
+[open] dense rc=0
+Fri Oct  2 10:17:00 PDT 2026
+  spine: HSP degree quantiles p10 13 p50 16 p90 16 p99 16 max 16 (cap 16)
+  spine: HSP over |S|=1087 sample points, out-degree mean 15.4 max 16, 16709 edges, reachable from entry 1183514/1183514 (auto)
+  spine: final |S|=1087, 2.43s
+[open] grade k=10 rc=0 A_glove_dense_auto_parlay.log
+[open] === K sift pipnn_det (pipnn: -cluster_size 1024 -fanout_scheme 10,3,1 -mst_deg 2 -table_size 160) ===
+Fri Oct  2 10:17:40 PDT 2026
+[open] pipnn rc=0
+Fri Oct  2 10:18:18 PDT 2026
+GRAFT-DUMP /mnt/raid/fgraft-campaign-2026-09-22/open/K_sift_pipnn_det.cands C=160 mean reservoir 37.14 dump distances 37137327
+Parlay time: Final prune time: 2.4148
+BUILD_DISTANCES_PIPNN clustering=2198131395 leaf=7289822248 prune=391229238 total=9879182881
+Graph built in 10.76 seconds
+	Maximum resident set size (kbytes): 5814192
+[open] grade k=100 rc=0 K_sift_pipnn_det.pipnn_k100.log
+[open] fg alpha=1.0 rc=0
+Fri Oct  2 10:18:58 PDT 2026
+  dense: L=1 m=1 C=160 over n=1000000  leaves mean 1000000 max 0  leaders 0.00s candidates 1.12s prune 4.45s (64 threads), 510.1M dist (leaders 0.0M, candidates 0.0M, prune 410.1M, spine 100.0M in 1.89s)
+  candidates: 37137327 directed (37.1/vertex); edges: 20287851 directed (20.3/vertex, max 80); memory 89MB
+	Maximum resident set size (kbytes): 1737940
+[open] grade k=10 rc=0 K_sift_pipnn_det.a1.0_parlay.log
+[open] grade k=100 rc=0 K_sift_pipnn_det.a1.0_k100.log
+[open] === vamana sift R64 L128 a1.15 ===
+Fri Oct  2 10:19:43 PDT 2026
+[open] vamana rc=0
+Fri Oct  2 10:21:02 PDT 2026
+[open] grade k=100 rc=0 K_sift_vamana_k100.log
+[open] === hnswlib M16 sift ===
+Fri Oct  2 10:21:25 PDT 2026
+[open] hnsw rc=0
+Fri Oct  2 10:22:16 PDT 2026
+[open] grade k=10 rc=0 K_sift_hnsw16_k10.log
+[open] grade k=100 rc=0 K_sift_hnsw16_k100.log
+[open] === dense sift + HSP auto-s ===
+Fri Oct  2 10:23:00 PDT 2026
+[open] dense rc=0
+Fri Oct  2 10:23:55 PDT 2026
+  spine: HSP degree quantiles p10 6 p50 9 p90 15 p99 16 max 16 (cap 16)
+  spine: HSP over |S|=1024 sample points, out-degree mean 9.9 max 16, 10150 edges, reachable from entry 1000000/1000000 (auto)
+  spine: final |S|=1024, 1.30s
+[open] grade k=10 rc=0 A_sift_dense_auto_parlay.log
+[open] === K gist pipnn_det (pipnn: -cluster_size 1024 -fanout_scheme 10,3,1 -mst_deg 2 -table_size 160) ===
+Fri Oct  2 10:24:22 PDT 2026
+[open] pipnn rc=0
+Fri Oct  2 10:25:34 PDT 2026
+GRAFT-DUMP /mnt/raid/fgraft-campaign-2026-09-22/open/K_gist_pipnn_det.cands C=160 mean reservoir 57.14 dump distances 57137008
+Parlay time: Final prune time: 11.3545
+BUILD_DISTANCES_PIPNN clustering=3362356489 leaf=7197737492 prune=789967523 total=11350061504
+Graph built in 41.16 seconds
+	Maximum resident set size (kbytes): 9653712
+[open] grade k=100 rc=0 K_gist_pipnn_det.pipnn_k100.log
+[open] fg alpha=1.1 rc=0
+Fri Oct  2 10:27:57 PDT 2026
+  dense: L=1 m=1 C=160 over n=1000000  leaves mean 1000000 max 0  leaders 0.00s candidates 1.22s prune 25.97s (64 threads), 1827.8M dist (leaders 0.0M, candidates 0.0M, prune 1727.8M, spine 100.0M in 5.42s)
+  candidates: 57137008 directed (57.1/vertex); edges: 41591800 directed (41.6/vertex, max 80); memory 174MB
+	Maximum resident set size (kbytes): 8284004
+[open] grade k=10 rc=0 K_gist_pipnn_det.a1.1_parlay.log
+[open] grade k=100 rc=0 K_gist_pipnn_det.a1.1_k100.log
+[open] === vamana gist R64 L128 a1.2 ===
+Fri Oct  2 10:28:54 PDT 2026
+[open] vamana rc=0
+Fri Oct  2 10:38:26 PDT 2026
+[open] grade k=100 rc=0 K_gist_vamana_k100.log
+[open] === hnswlib M16 gist ===
+Fri Oct  2 10:38:46 PDT 2026
+[open] hnsw rc=0
+Fri Oct  2 10:42:10 PDT 2026
+[open] grade k=10 rc=0 K_gist_hnsw16_k10.log
+[open] grade k=100 rc=0 K_gist_hnsw16_k100.log
+[open] === dense gist + HSP auto-s ===
+Fri Oct  2 10:42:51 PDT 2026
+[open] dense rc=143
+Fri Oct  2 14:40:50 PDT 2026
+run_open_items.sh: line 36: 2100735 Aborted                 $VAM -base_path $FB/${1}_base.fbin -query_path $FB/${1}_query.fbin -gt_path $FB/${1}_gt100 -graph_path $2 -file_type bin -data_type float -dist_func Euclidian -R $RG -L $LG -alpha $AL -two_pass 1 -k $4 > $3 2>&1
+[open] grade k=10 rc=134 A_gist_dense_auto_parlay.log
+[open] === K deep10m pipnn_det (pipnn: -cluster_size 1024 -fanout_scheme 10,3,1 -mst_deg 2 -table_size 160) ===
+Fri Oct  2 14:40:56 PDT 2026
+[open] pipnn rc=0
+Fri Oct  2 14:43:29 PDT 2026
+GRAFT-DUMP /mnt/raid/fgraft-campaign-2026-09-22/open/K_deep10m_pipnn_det.cands C=160 mean reservoir 53.25 dump distances 532454040
+Parlay time: Final prune time: 27.0215
+BUILD_DISTANCES_PIPNN clustering=59271577006 leaf=66095787656 prune=8382966179 total=133750330841
+Graph built in 114.3 seconds
+	Maximum resident set size (kbytes): 32481636
+[open] grade k=100 rc=0 K_deep10m_pipnn_det.pipnn_k100.log
+[open] fg alpha=1.0 rc=0
+Fri Oct  2 14:46:30 PDT 2026
+  dense: L=1 m=1 C=160 over n=10000000  leaves mean 10000000 max 0  leaders 0.00s candidates 12.03s prune 56.19s (64 threads), 7935.4M dist (leaders 0.0M, candidates 0.0M, prune 7835.4M, spine 100.0M in 20.09s)
+  candidates: 532454040 directed (53.2/vertex); edges: 298578352 directed (29.9/vertex, max 80); memory 1274MB
+	Maximum resident set size (kbytes): 16550796
+[open] grade k=10 rc=0 K_deep10m_pipnn_det.a1.0_parlay.log
+[open] grade k=100 rc=0 K_deep10m_pipnn_det.a1.0_k100.log
+[open] === vamana deep10m R64 L128 a1.2 ===
+Fri Oct  2 14:47:40 PDT 2026
+[open] vamana rc=0
+Fri Oct  2 14:59:57 PDT 2026
+[open] grade k=100 rc=0 K_deep10m_vamana_k100.log
+[open] === hnswlib M16 deep10m ===
+Fri Oct  2 15:00:35 PDT 2026
+[open] hnsw rc=0
+Fri Oct  2 15:08:11 PDT 2026
+[open] grade k=10 rc=0 K_deep10m_hnsw16_k10.log
+[open] grade k=100 rc=0 K_deep10m_hnsw16_k100.log
+[open] === dense deep10m + HSP auto-s ===
+Fri Oct  2 15:09:13 PDT 2026
+[open] dense rc=0
+Fri Oct  2 15:21:52 PDT 2026
+  spine: HSP degree quantiles p10 14 p50 16 p90 16 p99 16 max 16 (cap 16)
+  spine: HSP over |S|=3162 sample points, out-degree mean 15.4 max 16, 48697 edges, reachable from entry 9999060/10000000, orphans (in-degree 0) 940 (auto)
+  spine: final |S|=3162, 21.54s
+[open] grade k=10 rc=0 A_deep10m_dense_auto_parlay.log
+[open] === G glove fan60_m10_t400 (pipnn: -cluster_size 1024 -fanout_scheme 20,3,1 -mst_deg 10 -table_size 400) ===
+Fri Oct  2 15:22:30 PDT 2026
+[open] pipnn rc=0
+Fri Oct  2 15:24:20 PDT 2026
+GRAFT-DUMP /mnt/raid/fgraft-campaign-2026-09-22/open/G_glove_fan60_m10_t400.cands C=400 mean reservoir 344 dump distances 407140102
+Parlay time: Final prune time: 12.4347
+BUILD_DISTANCES_PIPNN clustering=8766781671 leaf=16777138240 prune=3906078937 total=29449998848
+Graph built in 72.6 seconds
+	Maximum resident set size (kbytes): 10177400
+[open] fg alpha=1.2 rc=0
+Fri Oct  2 15:24:55 PDT 2026
+  dense: L=1 m=1 C=400 over n=1183514  leaves mean 1183514 max 0  leaders 0.00s candidates 4.38s prune 21.21s (64 threads), 6176.7M dist (leaders 0.0M, candidates 0.0M, prune 6076.7M, spine 100.0M in 4.69s)
+  candidates: 407140102 directed (344.0/vertex); edges: 75771241 directed (64.0/vertex, max 80); memory 313MB
+	Maximum resident set size (kbytes): 5848340
+[open] grade k=10 rc=0 G_glove_fan60_m10_t400.a1.2_parlay.log
+[open] === G glove fan90_m10_t600 (pipnn: -cluster_size 1024 -fanout_scheme 30,3,1 -mst_deg 10 -table_size 600) ===
+Fri Oct  2 15:25:30 PDT 2026
+[open] pipnn rc=0
+Fri Oct  2 15:28:06 PDT 2026
+GRAFT-DUMP /mnt/raid/fgraft-campaign-2026-09-22/open/G_glove_fan90_m10_t600.cands C=600 mean reservoir 452 dump distances 534916010
+Parlay time: Final prune time: 16.1470
+BUILD_DISTANCES_PIPNN clustering=15354907254 leaf=24762963258 prune=4300309342 total=44418179854
+Graph built in 117.8 seconds
+	Maximum resident set size (kbytes): 13440748
+[open] fg alpha=1.0 rc=0
+Fri Oct  2 15:28:40 PDT 2026
+  dense: L=1 m=1 C=600 over n=1183514  leaves mean 1183514 max 0  leaders 0.00s candidates 6.09s prune 17.11s (64 threads), 4377.6M dist (leaders 0.0M, candidates 0.0M, prune 4277.6M, spine 100.0M in 2.73s)
+  candidates: 534916010 directed (452.0/vertex); edges: 63180284 directed (53.4/vertex, max 80); memory 262MB
+	Maximum resident set size (kbytes): 5997136
+[open] grade k=10 rc=0 G_glove_fan90_m10_t600.a1.0_parlay.log
+[open] fg alpha=1.2 rc=0
+Fri Oct  2 15:29:55 PDT 2026
+  dense: L=1 m=1 C=600 over n=1183514  leaves mean 1183514 max 0  leaders 0.00s candidates 6.50s prune 20.00s (64 threads), 6306.6M dist (leaders 0.0M, candidates 0.0M, prune 6206.6M, spine 100.0M in 3.39s)
+  candidates: 534916010 directed (452.0/vertex); edges: 75658507 directed (63.9/vertex, max 80); memory 312MB
+	Maximum resident set size (kbytes): 6069960
+[open] grade k=10 rc=0 G_glove_fan90_m10_t600.a1.2_parlay.log
+[open] === G glove fan120_m10_t800 (pipnn: -cluster_size 1024 -fanout_scheme 40,3,1 -mst_deg 10 -table_size 800) ===
+Fri Oct  2 15:30:30 PDT 2026
+[open] pipnn rc=0
+Fri Oct  2 15:33:54 PDT 2026
+GRAFT-DUMP /mnt/raid/fgraft-campaign-2026-09-22/open/G_glove_fan120_m10_t800.cands C=800 mean reservoir 531 dump distances 628396873
+Parlay time: Final prune time: 19.2542
+BUILD_DISTANCES_PIPNN clustering=22523537561 leaf=32585144630 prune=4501618321 total=59610300512
+Graph built in 166.9 seconds
+	Maximum resident set size (kbytes): 16700340
+[open] fg alpha=1.0 rc=0
+Fri Oct  2 15:34:31 PDT 2026
+  dense: L=1 m=1 C=800 over n=1183514  leaves mean 1183514 max 0  leaders 0.00s candidates 7.21s prune 18.49s (64 threads), 4415.6M dist (leaders 0.0M, candidates 0.0M, prune 4315.7M, spine 100.0M in 2.84s)
+  candidates: 628396873 directed (531.0/vertex); edges: 62713984 directed (53.0/vertex, max 80); memory 260MB
+	Maximum resident set size (kbytes): 6820600
+[open] grade k=10 rc=0 G_glove_fan120_m10_t800.a1.0_parlay.log
+[open] fg alpha=1.2 rc=0
+Fri Oct  2 15:35:52 PDT 2026
+  dense: L=1 m=1 C=800 over n=1183514  leaves mean 1183514 max 0  leaders 0.00s candidates 7.62s prune 24.55s (64 threads), 6383.8M dist (leaders 0.0M, candidates 0.0M, prune 6283.8M, spine 100.0M in 3.05s)
+  candidates: 628396873 directed (531.0/vertex); edges: 75542131 directed (63.8/vertex, max 80); memory 312MB
+	Maximum resident set size (kbytes): 6887584
+[open] grade k=10 rc=0 G_glove_fan120_m10_t800.a1.2_parlay.log
+[open] === vamana wiki R64 L128 a1.2 ===
+Fri Oct  2 15:36:31 PDT 2026
+[open] vamana rc=0
+Fri Oct  2 17:03:36 PDT 2026
+[open] grade k=100 rc=0 K_wiki_vamana_k100.log
+[open] === hnswlib M16 wiki ===
+Fri Oct  2 17:06:27 PDT 2026
+[open] hnsw rc=0
+Fri Oct  2 17:37:35 PDT 2026
+[open] grade k=10 rc=0 K_wiki_hnsw16_k10.log
+[open] grade k=100 rc=0 K_wiki_hnsw16_k100.log
+[open] === vamana deep100m R64 L128 a1.2 ===
+Fri Oct  2 17:42:52 PDT 2026
+[open] vamana rc=0
+Fri Oct  2 20:28:37 PDT 2026
+[open] grade k=100 rc=0 K_deep100m_vamana_k100.log
+[open] === hnswlib M16 deep100m ===
+Fri Oct  2 20:30:37 PDT 2026
+[open] hnsw rc=0
+Fri Oct  2 22:11:53 PDT 2026
+[open] grade k=10 rc=0 K_deep100m_hnsw16_k10.log
+[open] grade k=100 rc=0 K_deep100m_hnsw16_k100.log
+[open] all done
+Fri Oct  2 22:15:10 PDT 2026

@@ -1,0 +1,15 @@
+fg: AVX2+FMA kernels, 64 hw threads available
+=== data/sift_X.npy : N=1000000 d=128 queries=10000 (L2) ===
+  forest: 4 SATs (proximal) over n=1000000  trees 7.76s (64 threads), 5151.9M dist
+  overlay+backlinks 0.22s (7455966 directed edges, raw max deg 127); harvest ef=400 cap=64 rounds=1 43.60s
+  edges: 21211927 directed (21.2/vertex, max 102); memory 93MB
+  local completeness (k=10, sample): 0.483
+
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.9654        1363       44293
+     80     0.9792        1693       36412
+    120     0.9900        2317       26845
+    200     0.9962        3468       17858
+    300     0.9982        4781       12998
+    400     0.9988        5999       10281
+    600     0.9992        8237        7360

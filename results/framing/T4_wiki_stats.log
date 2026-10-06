@@ -1,0 +1,4 @@
+
+== /mnt/raid/wikifull_X.npy  n=6350000 d=1024  (graph stats only, 838s)
+  LID(MLE,k10) median 24.9   reciprocity 0.511   clustering 0.206   shared-nbr 0.186   2-hop expansion 7.38 (of 1..11)
+  local clustering: q10 0.033 q25 0.078 median 0.156  frac cc<0.03 0.096  frac cc==0 0.024

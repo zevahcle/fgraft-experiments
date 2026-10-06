@@ -1,0 +1,108 @@
+### RUN scaffold_cap=0
+fg: NEON kernels, 10 hw threads available
+=== data/glove_norm_X.npy : N=1183514 d=100 queries=10000 (cosine) ===
+  rows padded d=100 -> 112 (whole cache lines)
+  forest: 32 SATs (proximal) over n=1183514  trees 18.64s (10 threads), 63873.1M dist
+  overlay+backlinks 0.45s (66606844 directed edges, raw max deg 1511); harvest ef=600 cap=64 rounds=1 634.92s
+  edges: 63143510 directed (53.4/vertex, max 474); memory 262MB
+  local completeness (k=10, sample): 0.590
+
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.8574        3209       19825
+     80     0.8832        4022       18712
+    120     0.9149        5606       13381
+    200     0.9460        8638        7901
+    300     0.9650       12259        5757
+    400     0.9752       15741        4290
+    600     0.9857       22413        2925
+### END
+### RUN scaffold_cap=96
+fg: NEON kernels, 10 hw threads available
+=== data/glove_norm_X.npy : N=1183514 d=100 queries=10000 (cosine) ===
+  rows padded d=100 -> 112 (whole cache lines)
+  forest: 32 SATs (proximal) over n=1183514  trees 32.60s (10 threads), 57844.6M dist
+  overlay+backlinks 0.75s (63392836 directed edges, raw max deg 96); harvest ef=600 cap=64 rounds=1 545.69s
+  edges: 62372492 directed (52.7/vertex, max 474); memory 259MB
+  local completeness (k=10, sample): 0.586
+
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.8571        3194       19100
+     80     0.8828        4003       17845
+    120     0.9140        5578       13118
+    200     0.9451        8598        8065
+    300     0.9641       12197        5396
+    400     0.9743       15660        4095
+    600     0.9850       22293        2798
+### END
+### RUN scaffold_cap=64
+fg: NEON kernels, 10 hw threads available
+=== data/glove_norm_X.npy : N=1183514 d=100 queries=10000 (cosine) ===
+  rows padded d=100 -> 112 (whole cache lines)
+  forest: 32 SATs (proximal) over n=1183514  trees 33.33s (10 threads), 52605.6M dist
+  overlay+backlinks 0.96s (58260017 directed edges, raw max deg 64); harvest ef=600 cap=64 rounds=1 481.78s
+  edges: 60906790 directed (51.5/vertex, max 474); memory 253MB
+  local completeness (k=10, sample): 0.578
+
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.8552        3169       16573
+     80     0.8810        3975       15916
+    120     0.9121        5533        9187
+    200     0.9432        8518        5933
+    300     0.9629       12079        4529
+    400     0.9733       15506        3664
+    600     0.9840       22065        2475
+### END
+### RUN scaffold_cap=48
+fg: NEON kernels, 10 hw threads available
+=== data/glove_norm_X.npy : N=1183514 d=100 queries=10000 (cosine) ===
+  rows padded d=100 -> 112 (whole cache lines)
+  forest: 32 SATs (proximal) over n=1183514  trees 36.95s (10 threads), 47765.2M dist
+  overlay+backlinks 1.27s (51680945 directed edges, raw max deg 48); harvest ef=600 cap=64 rounds=1 424.82s
+  edges: 58535634 directed (49.5/vertex, max 474); memory 244MB
+  local completeness (k=10, sample): 0.569
+
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.8530        3130       18270
+     80     0.8785        3921       17164
+    120     0.9092        5455       12098
+    200     0.9395        8390        7482
+    300     0.9594       11887        4994
+    400     0.9702       15248        3949
+    600     0.9822       21685        2629
+### END
+### RUN scaffold_cap=32
+fg: NEON kernels, 10 hw threads available
+=== data/glove_norm_X.npy : N=1183514 d=100 queries=10000 (cosine) ===
+  rows padded d=100 -> 112 (whole cache lines)
+  forest: 32 SATs (proximal) over n=1183514  trees 36.39s (10 threads), 40561.9M dist
+  overlay+backlinks 1.64s (37789301 directed edges, raw max deg 32); harvest ef=600 cap=64 rounds=1 302.53s
+  edges: 52176342 directed (44.1/vertex, max 474); memory 218MB
+  local completeness (k=10, sample): 0.543
+
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.8445        3010       18825
+     80     0.8700        3766       17152
+    120     0.9006        5223       12915
+    200     0.9325        8007        8447
+    300     0.9522       11314        5672
+    400     0.9641       14488        4408
+    600     0.9766       20558        3031
+### END
+### RUN scaffold_cap=24
+fg: NEON kernels, 10 hw threads available
+=== data/glove_norm_X.npy : N=1183514 d=100 queries=10000 (cosine) ===
+  rows padded d=100 -> 112 (whole cache lines)
+  forest: 32 SATs (proximal) over n=1183514  trees 34.95s (10 threads), 36723.0M dist
+  overlay+backlinks 1.61s (28399255 directed edges, raw max deg 24); harvest ef=600 cap=64 rounds=1 238.91s
+  edges: 46699950 directed (39.5/vertex, max 476); memory 196MB
+  local completeness (k=10, sample): 0.518
+
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.8350        2886       20384
+     80     0.8615        3609       19540
+    120     0.8916        4993       14681
+    200     0.9234        7624        8688
+    300     0.9438       10744        5865
+    400     0.9555       13735        4674
+    600     0.9699       19451        3123
+### END

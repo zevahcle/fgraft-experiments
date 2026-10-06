@@ -1,0 +1,63 @@
+[glove] n=1183514 systems=['dense-L240-spine1', 'dense-L240-spine0', 'vamana-R100-L200-a1.0-2pass', 'graft-T32-ef600', 'pipnn-defaults-d64', 'hnswlib-M16'] blocks=10 cool=5.0s threads=64
+[glove] block 0 pos 0 dense-L240-spine1              build     93.9 s (process 112 s) gdist 93.37G compl 0.613
+[glove] block 0 pos 1 dense-L240-spine0              build     85.9 s (process 100 s) gdist 92.38G compl 0.605
+[glove] block 0 pos 2 vamana-R100-L200-a1.0-2pass    build    146.3 s (process 181 s) gdist 31.56G
+[glove] block 0 pos 3 pipnn-defaults-d64             build     10.4 s (process 43 s)
+[glove] block 0 pos 4 hnswlib-M16                    build     41.6 s (process 42 s)
+[glove] block 0 pos 5 graft-T32-ef600                build    398.2 s (process 413 s) gdist 63.87G compl 0.590
+[glove] block 1 pos 0 hnswlib-M16                    build     41.3 s (process 41 s)
+[glove] block 1 pos 1 dense-L240-spine1              build     94.6 s (process 111 s) gdist 93.37G compl 0.613
+[glove] block 1 pos 2 graft-T32-ef600                build    395.6 s (process 410 s) gdist 63.87G compl 0.590
+[glove] block 1 pos 3 dense-L240-spine0              build     85.2 s (process 100 s) gdist 92.38G compl 0.605
+[glove] block 1 pos 4 pipnn-defaults-d64             build     10.5 s (process 43 s)
+[glove] block 1 pos 5 vamana-R100-L200-a1.0-2pass    build    146.3 s (process 181 s) gdist 31.56G
+[glove] block 2 pos 0 dense-L240-spine0              build     86.9 s (process 103 s) gdist 92.38G compl 0.605
+[glove] block 2 pos 1 graft-T32-ef600                build    393.6 s (process 408 s) gdist 63.87G compl 0.590
+[glove] block 2 pos 2 dense-L240-spine1              build     94.7 s (process 110 s) gdist 93.37G compl 0.613
+[glove] block 2 pos 3 hnswlib-M16                    build     41.0 s (process 41 s)
+[glove] block 2 pos 4 vamana-R100-L200-a1.0-2pass    build    146.6 s (process 182 s) gdist 31.56G
+[glove] block 2 pos 5 pipnn-defaults-d64             build     10.6 s (process 43 s)
+[glove] block 3 pos 0 vamana-R100-L200-a1.0-2pass    build    146.1 s (process 181 s) gdist 31.56G
+[glove] block 3 pos 1 graft-T32-ef600                build    399.3 s (process 414 s) gdist 63.87G compl 0.590
+[glove] block 3 pos 2 dense-L240-spine0              build     85.3 s (process 104 s) gdist 92.38G compl 0.605
+[glove] block 3 pos 3 dense-L240-spine1              build     95.0 s (process 110 s) gdist 93.37G compl 0.613
+[glove] block 3 pos 4 pipnn-defaults-d64             build     10.1 s (process 43 s)
+[glove] block 3 pos 5 hnswlib-M16                    build     41.2 s (process 41 s)
+[glove] block 4 pos 0 hnswlib-M16                    build     41.2 s (process 41 s)
+[glove] block 4 pos 1 pipnn-defaults-d64             build     10.6 s (process 43 s)
+[glove] block 4 pos 2 dense-L240-spine0              build     84.2 s (process 103 s) gdist 92.38G compl 0.605
+[glove] block 4 pos 3 dense-L240-spine1              build     94.7 s (process 112 s) gdist 93.37G compl 0.613
+[glove] block 4 pos 4 graft-T32-ef600                build    397.5 s (process 412 s) gdist 63.87G compl 0.590
+[glove] block 4 pos 5 vamana-R100-L200-a1.0-2pass    build    146.2 s (process 181 s) gdist 31.56G
+[glove] block 5 pos 0 pipnn-defaults-d64             build     10.6 s (process 43 s)
+[glove] block 5 pos 1 graft-T32-ef600                build    394.0 s (process 409 s) gdist 63.87G compl 0.590
+[glove] block 5 pos 2 dense-L240-spine0              build     85.4 s (process 100 s) gdist 92.38G compl 0.605
+[glove] block 5 pos 3 hnswlib-M16                    build     41.1 s (process 41 s)
+[glove] block 5 pos 4 vamana-R100-L200-a1.0-2pass    build    146.7 s (process 182 s) gdist 31.56G
+[glove] block 5 pos 5 dense-L240-spine1              build     96.6 s (process 114 s) gdist 93.37G compl 0.613
+[glove] block 6 pos 0 dense-L240-spine0              build     84.5 s (process 99 s) gdist 92.38G compl 0.605
+[glove] block 6 pos 1 dense-L240-spine1              build     95.2 s (process 110 s) gdist 93.37G compl 0.613
+[glove] block 6 pos 2 hnswlib-M16                    build     41.2 s (process 41 s)
+[glove] block 6 pos 3 vamana-R100-L200-a1.0-2pass    build    146.4 s (process 181 s) gdist 31.56G
+[glove] block 6 pos 4 graft-T32-ef600                build    399.8 s (process 414 s) gdist 63.87G compl 0.590
+[glove] block 6 pos 5 pipnn-defaults-d64             build     10.6 s (process 43 s)
+[glove] block 7 pos 0 dense-L240-spine1              build     96.0 s (process 112 s) gdist 93.37G compl 0.613
+[glove] block 7 pos 1 graft-T32-ef600                build    394.9 s (process 409 s) gdist 63.87G compl 0.590
+[glove] block 7 pos 2 dense-L240-spine0              build     85.0 s (process 100 s) gdist 92.38G compl 0.605
+[glove] block 7 pos 3 pipnn-defaults-d64             build     10.5 s (process 43 s)
+[glove] block 7 pos 4 hnswlib-M16                    build     41.1 s (process 41 s)
+[glove] block 7 pos 5 vamana-R100-L200-a1.0-2pass    build    146.3 s (process 181 s) gdist 31.56G
+[glove] block 8 pos 0 dense-L240-spine1              build     94.3 s (process 109 s) gdist 93.37G compl 0.613
+[glove] block 8 pos 1 dense-L240-spine0              build     84.1 s (process 101 s) gdist 92.38G compl 0.605
+[glove] block 8 pos 2 pipnn-defaults-d64             build     10.2 s (process 44 s)
+[glove] block 8 pos 3 vamana-R100-L200-a1.0-2pass    build    146.2 s (process 181 s) gdist 31.56G
+[glove] block 8 pos 4 hnswlib-M16                    build     41.1 s (process 41 s)
+[glove] block 8 pos 5 graft-T32-ef600                build    395.7 s (process 410 s) gdist 63.87G compl 0.590
+[glove] block 9 pos 0 graft-T32-ef600                build    397.0 s (process 411 s) gdist 63.87G compl 0.590
+[glove] block 9 pos 1 vamana-R100-L200-a1.0-2pass    build    146.1 s (process 181 s) gdist 31.56G
+[glove] block 9 pos 2 dense-L240-spine0              build     85.6 s (process 100 s) gdist 92.38G compl 0.605
+[glove] block 9 pos 3 hnswlib-M16                    build     41.0 s (process 41 s)
+[glove] block 9 pos 4 dense-L240-spine1              build     94.5 s (process 111 s) gdist 93.37G compl 0.613
+[glove] block 9 pos 5 pipnn-defaults-d64             build     10.5 s (process 43 s)
+[glove] wrote results/table3/phase1-table3-glove-d0-s1.json
+DONE

@@ -1,0 +1,20 @@
+dense build n=1183514 d=100 L=240 m=5 C=200 R=64 alpha=1.0
+leaves: mean 24657 max 69385 min 6261  (24s)
+  leaf 0/240 |M|=36270 pairs so far 1.3G  26s
+  leaf 20/240 |M|=19595 pairs so far 16.5G  351s
+  leaf 40/240 |M|=14130 pairs so far 28.6G  619s
+  leaf 60/240 |M|=37766 pairs so far 47.1G  1005s
+  leaf 80/240 |M|=18470 pairs so far 60.2G  1290s
+  leaf 100/240 |M|=42659 pairs so far 73.8G  1586s
+  leaf 120/240 |M|=17798 pairs so far 91.9G  1969s
+  leaf 140/240 |M|=19721 pairs so far 105.5G  2268s
+  leaf 160/240 |M|=42452 pairs so far 119.3G  2568s
+  leaf 180/240 |M|=38368 pairs so far 133.4G  2878s
+  leaf 200/240 |M|=27655 pairs so far 144.3G  3129s
+  leaf 220/240 |M|=17487 pairs so far 159.2G  3450s
+stage 1: 174.3 G pairs, 3775s; mean candidates/pt 200
+stage 2: pruned to mean degree 32.6, 23.6 G candidate-candidate distances, 1374s
+stage 3: after reverse edges mean degree 65.3 max 336; re-pruning 540757 lists
+final: mean degree 42.9 max 64  (1131s)
+{"leaves_s": 24.410276174545288, "stage1_s": 3775.058140516281, "stage1_pairs": 174288258484, "stage2_s": 1374.4757447242737, "stage2_dist": 23551928600, "stage3_dist": 30433803960, "stage3_s": 1130.890053510666, "total_s": 6304.834214925766}
+wrote results/dense/glove_A.graph

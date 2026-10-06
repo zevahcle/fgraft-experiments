@@ -1,0 +1,4 @@
+perm_cands n=1000000 d=960 S=1000 k=8 B=1000 Bmin=100 lmax=4 swaps=6 C=8000
+  permutations reused from /mnt/raid/fgraft-campaign-2026-09-22/perm/gist_S1000_B1000_sw3_perm_S1000_k8.npy
+  trie cut: 2554 blocks in 0s; depth counts [729, 1787, 38]; blocks < Bmin 207; size mean 392 median 194 p99 2640 max 4492; sum(block^2)/2 = 0.55 G pairs
+  memberships per object: mean 2.48 (own block always; variants found 1.48 of 6)

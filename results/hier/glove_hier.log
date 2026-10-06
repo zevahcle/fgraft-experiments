@@ -1,0 +1,45 @@
+############ dense-top 0 ############
+fg: NEON kernels, 10 hw threads available
+=== /Users/elchavez/code/claude/sat-forest/data/glove_norm_X.npy : N=1183514 d=100 queries=10000 (cosine) ===
+  rows padded d=100 -> 112 (whole cache lines)
+  dense: L=240 m=5 C=200 over n=1183514  leaves mean 24657 max 61122  leaders 0.90s candidates 83.61s prune 10.33s (10 threads), 93368.8M dist (leaders 764.0M, candidates 88596.2M, prune 3023.2M, spine 985.5M in 2.88s)
+  candidates: 236702800 directed (200.0/vertex); edges: 55410275 directed (46.8/vertex, max 483); memory 231MB
+  local completeness (k=10, sample): 0.613
+
+  entry=hub
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.8540        3231       24347
+    120     0.9097        5379       15223
+    200     0.9403        8095        9930
+    300     0.9594       11341        7740
+    400     0.9708       14470        5572
+############ dense-top 16 ############
+fg: NEON kernels, 10 hw threads available
+=== /Users/elchavez/code/claude/sat-forest/data/glove_norm_X.npy : N=1183514 d=100 queries=10000 (cosine) ===
+  rows padded d=100 -> 112 (whole cache lines)
+  dense: L=240 m=5 C=200 over n=1183514  leaves mean 24657 max 68907  leaders 0.83s candidates 101.51s prune 14.11s (10 threads), 96742.5M dist (leaders 582.4M, candidates 92183.5M, prune 2991.2M, spine 985.5M in 3.67s)
+  candidates: 236702800 directed (200.0/vertex); edges: 55088128 directed (46.5/vertex, max 476); memory 230MB
+  local completeness (k=10, sample): 0.602
+
+  entry=hub
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.8514        3228       23398
+    120     0.9076        5372       14379
+    200     0.9383        8079        9450
+    300     0.9578       11318        5767
+    400     0.9690       14436        4505
+############ dense-top 32 ############
+fg: NEON kernels, 10 hw threads available
+=== /Users/elchavez/code/claude/sat-forest/data/glove_norm_X.npy : N=1183514 d=100 queries=10000 (cosine) ===
+  rows padded d=100 -> 112 (whole cache lines)
+  dense: L=240 m=5 C=200 over n=1183514  leaves mean 24657 max 68174  leaders 1.01s candidates 111.96s prune 12.64s (10 threads), 96547.2M dist (leaders 557.9M, candidates 92067.4M, prune 2936.4M, spine 985.5M in 3.66s)
+  candidates: 236702800 directed (200.0/vertex); edges: 54545417 directed (46.1/vertex, max 481); memory 228MB
+  local completeness (k=10, sample): 0.590
+
+  entry=hub
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.8504        3209       23164
+    120     0.9058        5332       14284
+    200     0.9367        8009        9200
+    300     0.9561       11205        6360
+    400     0.9674       14284        4947

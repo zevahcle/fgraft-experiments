@@ -1,0 +1,38 @@
+fg: AVX2+FMA kernels, 64 hw threads available
+=== /mnt/raid/wikifull_X.npy : N=6350000 d=1024 queries=10000 (cosine) ===
+  spine: HSP degree quantiles p10 16 p50 16 p90 16 p99 16 max 16 (cap 16)
+  spine: HSP over |S|=10000 sample points, out-degree mean 16.0 max 16, 159864 edges, 12.84s
+  dense: L=1 m=1 C=400 over n=6350000  leaves mean 6350000 max 0  leaders 0.00s candidates 19.20s prune 322.88s (64 threads), 31721.2M dist (leaders 0.0M, candidates 0.0M, prune 31621.2M, spine 100.0M in 12.84s)
+  candidates: 1273244975 directed (200.5/vertex); edges: 401349476 directed (63.2/vertex, max 80); memory 1656MB
+  dumped graph -> /mnt/raid/fgraft-campaign-2026-09-22/framing/T1_wiki_m10_t400.a1.2.graph (n=6350000 max degree=80)
+  local completeness (k=10, sample): 0.723
+
+  entry=hub
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.9334        2977        2895
+    120     0.9608        4968        1749
+    200     0.9743        7384        1159
+    400     0.9846       12782         654
+	Command being timed: "/mnt/claude/graft-work/fgraft/graft-ann/src/fg --data /mnt/raid/wikifull_X.npy --queries /mnt/raid/fgraft-campaign-2026-09-22/wiki_Q.npy --gold /mnt/raid/fgraft-campaign-2026-09-22/wiki_gold_full.npy --metric cosine --T 1 --harvest 400 --harvest-cap 64 --harvest-alpha 1.2 --harvest-cand 200 --dense 1 --dense-C 400 --dense-cands /mnt/raid/fgraft-campaign-2026-09-22/framing/T1_wiki_m10_t400.cands --dense-prune 1 --dense-spine 3 --dense-spine-s 10000 --dense-spine-cap 16 --threads 64 --seed 1 --ef 60 120 200 400 --dump-graph /mnt/raid/fgraft-campaign-2026-09-22/framing/T1_wiki_m10_t400.a1.2.graph"
+	User time (seconds): 29861.68
+	System time (seconds): 2219.65
+	Percent of CPU this job got: 4730%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 11:18.12
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 59664324
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 102508494
+	Voluntary context switches: 576868
+	Involuntary context switches: 168563
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 3185192
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

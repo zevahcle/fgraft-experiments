@@ -1,0 +1,14 @@
+fg: AVX2+FMA kernels, 64 hw threads available
+=== data/sift_X.npy : N=1000000 d=128 queries=10000 (L2) ===
+  dense: L=240 m=5 C=200 over n=1000000  leaves mean 20833 max 41104  leaders 0.74s candidates 104.96s prune 7.03s (64 threads), 119233.5M dist (leaders 720.0M, candidates 117312.8M, prune 1200.7M)
+  candidates: 200000000 directed (200.0/vertex); edges: 25948192 directed (25.9/vertex, max 64); memory 112MB
+  local completeness (k=10, sample): 0.557
+
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.9805        1606       36946
+     80     0.9893        1985       30948
+    120     0.9953        2700       23084
+    200     0.9983        4010       15405
+    300     0.9991        5494       11224
+    400     0.9993        6866        8981
+    600     0.9993        9376        6311

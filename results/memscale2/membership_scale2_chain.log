@@ -1,0 +1,108 @@
+485fa3612f807c4a5cf2a5c2775e3e38  graft-ann/src/build.cpp
+ec0805f502778f1eba1b392dd132c140  PiPNN/algorithms/PipNN/pipnn.h
+19735ea3bb603468a3e756c8852fd1c5  PiPNN/algorithms/utils/graph.h
+6a7a28df437f80843bc7dddfc57ab8e6  PiPNN/algorithms/utils/hash.h
+[open] === F glove fan120_m10_t800 (pipnn: -cluster_size 1024 -fanout_scheme 40,3,1 -mst_deg 10 -table_size 800) ===
+Sat Oct  3 18:23:17 PDT 2026
+[open] pipnn rc=0
+Sat Oct  3 18:25:11 PDT 2026
+GRAFT-DUMP /mnt/raid/fgraft-campaign-2026-09-22/memscale2/F_glove_fan120_m10_t800.cands C=800 mean reservoir 531 dump distances 628396873
+Parlay time: Final prune time: 19.0522
+BUILD_DISTANCES_PIPNN clustering=22523537561 leaf=32585144630 prune=4501618321 total=59610300512
+Graph built in 75.61 seconds
+	Maximum resident set size (kbytes): 16693184
+[open] grade k=100 rc=0 F_glove_fan120_m10_t800.pipnn_k100.log
+[open] fg alpha=1.0 rc=0
+Sat Oct  3 18:26:18 PDT 2026
+  dense: L=1 m=1 C=800 over n=1183514  leaves mean 1183514 max 0  leaders 0.00s candidates 7.06s prune 17.52s (64 threads), 4415.6M dist (leaders 0.0M, candidates 0.0M, prune 4315.7M, spine 100.0M in 2.87s)
+  candidates: 628396873 directed (531.0/vertex); edges: 62713984 directed (53.0/vertex, max 80); memory 260MB
+	Maximum resident set size (kbytes): 6819420
+[open] grade k=10 rc=0 F_glove_fan120_m10_t800.a1.0_parlay.log
+[open] grade k=100 rc=0 F_glove_fan120_m10_t800.a1.0_k100.log
+[open] === F gist fan60_m10_t400 (pipnn: -cluster_size 1024 -fanout_scheme 20,3,1 -mst_deg 10 -table_size 400) ===
+Sat Oct  3 18:27:23 PDT 2026
+[open] pipnn rc=0
+Sat Oct  3 18:29:41 PDT 2026
+GRAFT-DUMP /mnt/raid/fgraft-campaign-2026-09-22/memscale2/F_gist_fan60_m10_t400.cands C=400 mean reservoir 275.3 dump distances 275336686
+Parlay time: Final prune time: 39.7730
+BUILD_DISTANCES_PIPNN clustering=8630322281 leaf=14335792110 prune=2181503057 total=25147617448
+Graph built in 105.7 seconds
+	Maximum resident set size (kbytes): 12927648
+[open] grade k=100 rc=0 F_gist_fan60_m10_t400.pipnn_k100.log
+[open] fg alpha=1.0 rc=0
+Sat Oct  3 18:32:11 PDT 2026
+  dense: L=1 m=1 C=400 over n=1000000  leaves mean 1000000 max 0  leaders 0.00s candidates 3.32s prune 48.11s (64 threads), 1233.2M dist (leaders 0.0M, candidates 0.0M, prune 1133.2M, spine 100.0M in 4.92s)
+  candidates: 275336686 directed (275.3/vertex); edges: 29377078 directed (29.4/vertex, max 80); memory 126MB
+	Maximum resident set size (kbytes): 9333872
+[open] grade k=10 rc=0 F_gist_fan60_m10_t400.a1.0_parlay.log
+[open] grade k=100 rc=0 F_gist_fan60_m10_t400.a1.0_k100.log
+[open] === F gist fan120_m10_t800 (pipnn: -cluster_size 1024 -fanout_scheme 40,3,1 -mst_deg 10 -table_size 800) ===
+Sat Oct  3 18:33:03 PDT 2026
+[open] pipnn rc=0
+Sat Oct  3 18:36:41 PDT 2026
+GRAFT-DUMP /mnt/raid/fgraft-campaign-2026-09-22/memscale2/F_gist_fan120_m10_t800.cands C=800 mean reservoir 403.1 dump distances 403142048
+Parlay time: Final prune time: 53.7356
+BUILD_DISTANCES_PIPNN clustering=20730008550 leaf=28384981905 prune=2419990268 total=51534980723
+Graph built in 187.9 seconds
+	Maximum resident set size (kbytes): 18540128
+[open] grade k=100 rc=0 F_gist_fan120_m10_t800.pipnn_k100.log
+[open] fg alpha=1.0 rc=0
+Sat Oct  3 18:39:00 PDT 2026
+  dense: L=1 m=1 C=800 over n=1000000  leaves mean 1000000 max 0  leaders 0.00s candidates 5.39s prune 55.40s (64 threads), 1228.3M dist (leaders 0.0M, candidates 0.0M, prune 1128.3M, spine 100.0M in 4.77s)
+  candidates: 403142048 directed (403.1/vertex); edges: 24370400 directed (24.4/vertex, max 80); memory 105MB
+	Maximum resident set size (kbytes): 10094356
+[open] grade k=10 rc=0 F_gist_fan120_m10_t800.a1.0_parlay.log
+[open] grade k=100 rc=0 F_gist_fan120_m10_t800.a1.0_k100.log
+[open] === F deep10m fan60_m10_t400 (pipnn: -cluster_size 1024 -fanout_scheme 20,3,1 -mst_deg 10 -table_size 400) ===
+Sat Oct  3 18:39:50 PDT 2026
+[open] pipnn rc=0
+Sat Oct  3 18:45:52 PDT 2026
+GRAFT-DUMP /mnt/raid/fgraft-campaign-2026-09-22/memscale2/F_deep10m_fan60_m10_t400.cands C=400 mean reservoir 303.1 dump distances 3030784309
+Parlay time: Final prune time: 94.5461
+BUILD_DISTANCES_PIPNN clustering=121796507528 leaf=119424738358 prune=29095812557 total=270317058443
+Graph built in 314.6 seconds
+	Maximum resident set size (kbytes): 65104460
+[open] grade k=100 rc=0 F_deep10m_fan60_m10_t400.pipnn_k100.log
+[open] fg alpha=1.0 rc=0
+Sat Oct  3 18:50:53 PDT 2026
+  dense: L=1 m=1 C=400 over n=10000000  leaves mean 10000000 max 0  leaders 0.00s candidates 33.85s prune 129.21s (64 threads), 20439.2M dist (leaders 0.0M, candidates 0.0M, prune 20339.2M, spine 100.0M in 24.69s)
+  candidates: 3030784309 directed (303.1/vertex); edges: 426313007 directed (42.6/vertex, max 80); memory 1785MB
+	Maximum resident set size (kbytes): 34404504
+[open] grade k=10 rc=0 F_deep10m_fan60_m10_t400.a1.0_parlay.log
+[open] grade k=100 rc=0 F_deep10m_fan60_m10_t400.a1.0_k100.log
+[open] === F deep10m fan120_m10_t800 (pipnn: -cluster_size 1024 -fanout_scheme 40,3,1 -mst_deg 10 -table_size 800) ===
+Sat Oct  3 18:52:16 PDT 2026
+[open] pipnn rc=0
+Sat Oct  3 19:02:42 PDT 2026
+GRAFT-DUMP /mnt/raid/fgraft-campaign-2026-09-22/memscale2/F_deep10m_fan120_m10_t800.cands C=800 mean reservoir 433.9 dump distances 4338952828
+Parlay time: Final prune time: 142.3128
+BUILD_DISTANCES_PIPNN clustering=264051833847 leaf=222900881369 prune=31324360372 total=518277075588
+Graph built in 580.2 seconds
+	Maximum resident set size (kbytes): 119420936
+[open] grade k=100 rc=0 F_deep10m_fan120_m10_t800.pipnn_k100.log
+[open] fg alpha=1.0 rc=0
+Sat Oct  3 19:08:32 PDT 2026
+  dense: L=1 m=1 C=800 over n=10000000  leaves mean 10000000 max 0  leaders 0.00s candidates 53.08s prune 138.88s (64 threads), 20387.7M dist (leaders 0.0M, candidates 0.0M, prune 20287.7M, spine 100.0M in 22.39s)
+  candidates: 4338952828 directed (433.9/vertex); edges: 395117954 directed (39.5/vertex, max 80); memory 1660MB
+	Maximum resident set size (kbytes): 46463664
+[open] grade k=10 rc=0 F_deep10m_fan120_m10_t800.a1.0_parlay.log
+[open] grade k=100 rc=0 F_deep10m_fan120_m10_t800.a1.0_k100.log
+[open] === F deep100m fan120_m10_t400 (pipnn: -cluster_size 1024 -fanout_scheme 40,3,1 -mst_deg 10 -table_size 400) ===
+Sat Oct  3 19:09:55 PDT 2026
+[open] pipnn rc=0
+Sat Oct  3 21:16:19 PDT 2026
+GRAFT-DUMP /mnt/raid/fgraft-campaign-2026-09-22/memscale2/F_deep100m_fan120_m10_t400.cands C=400 mean reservoir 381.1 dump distances 38110229556
+Parlay time: Final prune time: 1079.2190
+BUILD_DISTANCES_PIPNN clustering=6126272321603 leaf=2304701501459 prune=308533202663 total=8739507025725
+Graph built in 7431 seconds
+	Maximum resident set size (kbytes): 715989256
+[open] grade k=100 rc=0 F_deep100m_fan120_m10_t400.pipnn_k100.log
+[open] fg alpha=1.0 rc=0
+Sat Oct  3 22:09:40 PDT 2026
+  dense: L=1 m=1 C=400 over n=100000000  leaves mean 100000000 max 0  leaders 0.00s candidates 396.27s prune 1532.83s (64 threads), 218885.5M dist (leaders 0.0M, candidates 0.0M, prune 218785.5M, spine 100.0M in 403.18s)
+  candidates: 38110229537 directed (381.1/vertex); edges: 4127345658 directed (41.3/vertex, max 80); memory 17309MB
+	Maximum resident set size (kbytes): 398316252
+[open] grade k=10 rc=0 F_deep100m_fan120_m10_t400.a1.0_parlay.log
+[open] grade k=100 rc=0 F_deep100m_fan120_m10_t400.a1.0_k100.log
+[open] all done
+Sat Oct  3 22:13:58 PDT 2026

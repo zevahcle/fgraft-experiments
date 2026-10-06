@@ -1,0 +1,4 @@
+hash_cands n=1000000 d=960 |S|=20000 k=16 j=2 C=2000
+  signatures: 405s (20.0 G pairs), saved
+  buckets: 11465909 keys from 120000000 memberships (33s); size mean 10.5 median 2 p90 20 p99 145 max 9834; singletons 0.389
+  per-object union bound: mean 21350 median 15565 p10 4832 p90 43810 max 207680; objects with bound < C: 0.016; sum pairs/2 = 10.67 G (all-pairs cost bound)

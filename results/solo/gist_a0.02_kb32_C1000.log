@@ -1,0 +1,39 @@
+fg: AVX2+FMA kernels, 64 hw threads available
+=== /mnt/claude/graft-work/fgraft/data/gist_X.npy : N=1000000 d=960 queries=1000 (L2) ===
+  dense: L=700 m=5 C=1000 over n=1000000  leaves mean 7143 max 0  leaders 0.00s candidates 7.36s prune 175.25s (64 threads), 5153.9M dist (leaders 0.0M, candidates 0.0M, prune 3476.3M, spine 1677.6M in 32.82s)
+  candidates: 1000000000 directed (1000.0/vertex); edges: 38899802 directed (38.9/vertex, max 1144); memory 164MB
+  dumped graph -> /mnt/raid/fgraft-campaign-2026-09-22/solo/gist_a0.02_kb32_C1000.graph (n=1000000 max degree=1144)
+  local completeness (k=10, sample): 0.382
+
+  entry=hub
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.8813        3311        2090
+     80     0.9136        4089        1710
+    120     0.9495        5583        1225
+    200     0.9773        8318         828
+    300     0.9880       11448         599
+    400     0.9935       14325         480
+    600     0.9972       19550         342
+	Command being timed: "/mnt/claude/graft-work/fgraft/graft-ann/src/fg --data /mnt/claude/graft-work/fgraft/data/gist_X.npy --queries /mnt/claude/graft-work/fgraft/data/gist_Q.npy --gold /mnt/claude/graft-work/fgraft/data/gist_gold.npy --metric l2 --T 1 --harvest 400 --harvest-cap 64 --harvest-alpha 1.0 --dense 700 --dense-m 5 --dense-C 1000 --dense-cands /mnt/raid/fgraft-campaign-2026-09-22/solo/gist_a0.02_kb32_C1000.i32 --dense-prune 1 --dense-spine 1 --threads 64 --seed 1 --ef 60 80 120 200 300 400 600 --dump-graph /mnt/raid/fgraft-campaign-2026-09-22/solo/gist_a0.02_kb32_C1000.graph"
+	User time (seconds): 10460.66
+	System time (seconds): 2301.56
+	Percent of CPU this job got: 4899%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:20.46
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 11850060
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 69074122
+	Voluntary context switches: 64253
+	Involuntary context switches: 62663
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 311736
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

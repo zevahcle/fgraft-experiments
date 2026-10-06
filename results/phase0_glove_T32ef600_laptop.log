@@ -1,0 +1,16 @@
+fg: NEON kernels, 10 hw threads available
+=== /Users/elchavez/code/claude/sat-forest/data/glove_norm_X.npy : N=1183514 d=100 queries=10000 (cosine) ===
+  rows padded d=100 -> 112 (whole cache lines)
+  forest: 32 SATs (proximal) over n=1183514  trees 16.52s (10 threads), 63873.1M dist
+  overlay+backlinks 0.40s (66606844 directed edges, raw max deg 1511); harvest ef=600 cap=64 rounds=1 553.43s
+  edges: 63143510 directed (53.4/vertex, max 474); memory 262MB
+  local completeness (k=10, sample): 0.590
+
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.8574        3209       23063
+     80     0.8832        4022       19253
+    120     0.9149        5606       14000
+    200     0.9460        8638        8724
+    300     0.9650       12259        5905
+    400     0.9752       15741        4556
+    600     0.9857       22413        3168

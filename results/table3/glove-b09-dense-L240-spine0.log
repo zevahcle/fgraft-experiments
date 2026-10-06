@@ -1,0 +1,16 @@
+fg: AVX2+FMA kernels, 64 hw threads available
+=== data/glove_norm_X.npy : N=1183514 d=100 queries=10000 (cosine) ===
+  rows padded d=100 -> 112 (whole cache lines)
+  dense: L=240 m=5 C=200 over n=1183514  leaves mean 24657 max 61122  leaders 0.74s candidates 76.55s prune 8.31s (64 threads), 92383.4M dist (leaders 764.0M, candidates 88596.2M, prune 3023.2M, spine 0.0M in 0.00s)
+  candidates: 236702800 directed (200.0/vertex); edges: 53684160 directed (45.4/vertex, max 64); memory 224MB
+  local completeness (k=10, sample): 0.605
+
+  entry=hub
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.8501        2820       28623
+     80     0.8765        3526       23126
+    120     0.9072        4887       16567
+    200     0.9385        7497       10757
+    300     0.9579       10624        7571
+    400     0.9695       13634        5866
+    600     0.9814       19418        4099

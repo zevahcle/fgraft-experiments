@@ -1,0 +1,31 @@
+Vary degree = 0
+Ground truth: detected 1000 points with num results 100
+Data: detected 1000000 points with dimension 960
+Data: detected 1000 points with dimension 960
+Graph: detected 1000000 points with max degree 1151
+Total edges read from file: 33267807
+start index = 0
+Average visited: 0, Tail visited: 0
+Vamana graph built with 1000000 points and parameters R = 64, L = 128
+Graph has average degree 33.2678 and maximum degree 1151
+Graph built in 0 seconds
+BUILD_DISTANCES 0
+For 10@10 recall = 0.1769, QPS = 34627.2, Q = 10, cut = 1.35, visited limit = 10, degree limit: 50, average visited = 10, average cmps = 413
+For 10@10 recall = 0.2277, QPS = 28777, Q = 11, cut = 1.35, visited limit = 11, degree limit: 55, average visited = 11, average cmps = 482
+For 10@10 recall = 0.3206, QPS = 21021.7, Q = 13, cut = 1.35, visited limit = 13, degree limit: 65, average visited = 13, average cmps = 620
+For 10@10 recall = 0.4186, QPS = 16065.3, Q = 16, cut = 1.35, visited limit = 16, degree limit: 80, average visited = 16, average cmps = 785
+For 10@10 recall = 0.503, QPS = 14782.6, Q = 10, cut = 1.35, visited limit = 1000000, degree limit: 1151, average visited = 19, average cmps = 1006
+For 10@10 recall = 0.6202, QPS = 9562.61, Q = 17, cut = 1.35, visited limit = 1000000, degree limit: 1151, average visited = 27, average cmps = 1391
+For 10@10 recall = 0.7081, QPS = 5245.38, Q = 28, cut = 1.35, visited limit = 1000000, degree limit: 1151, average visited = 38, average cmps = 1937
+For 10@10 recall = 0.7506, QPS = 4410.49, Q = 36, cut = 1.35, visited limit = 1000000, degree limit: 1151, average visited = 46, average cmps = 2319
+For 10@10 recall = 0.8038, QPS = 3402.74, Q = 50, cut = 1.35, visited limit = 1000000, degree limit: 1151, average visited = 60, average cmps = 3004
+For 10@10 recall = 0.8551, QPS = 2661.65, Q = 70, cut = 1.35, visited limit = 1000000, degree limit: 1151, average visited = 80, average cmps = 3846
+For 10@10 recall = 0.9176, QPS = 1728.43, Q = 120, cut = 1.35, visited limit = 1000000, degree limit: 1151, average visited = 130, average cmps = 5924
+For 10@10 recall = 0.9309, QPS = 1542.76, Q = 140, cut = 1.35, visited limit = 1000000, degree limit: 1151, average visited = 151, average cmps = 6582
+For 10@10 recall = 0.9567, QPS = 1175, Q = 200, cut = 1.35, visited limit = 1000000, degree limit: 1151, average visited = 213, average cmps = 8702
+For 10@10 recall = 0.974, QPS = 908.228, Q = 300, cut = 1.35, visited limit = 1000000, degree limit: 1151, average visited = 312, average cmps = 11935
+For 10@10 recall = 0.9816, QPS = 763.52, Q = 375, cut = 1.35, visited limit = 1000000, degree limit: 1151, average visited = 388, average cmps = 14092
+For 10@10 recall = 0.9939, QPS = 455.697, Q = 750, cut = 1.35, visited limit = 1000000, degree limit: 1151, average visited = 751, average cmps = 23598
+For 10@10 recall = 0.9965, QPS = 376.445, Q = 1000, cut = 1.35, visited limit = 1000000, degree limit: 1151, average visited = 970, average cmps = 28964
+
+Parlay time: 33.9751

@@ -1,0 +1,78 @@
+hash_cands n=1000000 d=960 |S|=20000 k=16 j=2 C=2000
+  signatures reused from /mnt/raid/fgraft-campaign-2026-09-22/hash/gist_a0.02_sig_k16.npy
+  buckets: 11465909 keys from 120000000 memberships (33s); size mean 10.5 median 2 p90 20 p99 145 max 9834; singletons 0.389
+  per-object union bound: mean 21350 median 15565 p10 4832 p90 43810 max 207680; objects with bound < C: 0.016; sum pairs/2 = 10.67 G (all-pairs cost bound)
+  rows 20000/1000000  70s
+  rows 40000/1000000  140s
+  rows 60000/1000000  210s
+  rows 80000/1000000  281s
+  rows 100000/1000000  351s
+  rows 120000/1000000  421s
+  rows 140000/1000000  492s
+  rows 160000/1000000  562s
+  rows 180000/1000000  633s
+  rows 200000/1000000  703s
+  rows 220000/1000000  774s
+  rows 240000/1000000  845s
+  rows 260000/1000000  916s
+  rows 280000/1000000  986s
+  rows 300000/1000000  1057s
+  rows 320000/1000000  1126s
+  rows 340000/1000000  1197s
+  rows 360000/1000000  1268s
+  rows 380000/1000000  1338s
+  rows 400000/1000000  1408s
+  rows 420000/1000000  1478s
+  rows 440000/1000000  1548s
+  rows 460000/1000000  1618s
+  rows 480000/1000000  1688s
+  rows 500000/1000000  1758s
+  rows 520000/1000000  1829s
+  rows 540000/1000000  1898s
+  rows 560000/1000000  1968s
+  rows 580000/1000000  2039s
+  rows 600000/1000000  2109s
+  rows 620000/1000000  2180s
+  rows 640000/1000000  2251s
+  rows 660000/1000000  2321s
+  rows 680000/1000000  2392s
+  rows 700000/1000000  2463s
+  rows 720000/1000000  2533s
+  rows 740000/1000000  2604s
+  rows 760000/1000000  2674s
+  rows 780000/1000000  2744s
+  rows 800000/1000000  2815s
+  rows 820000/1000000  2885s
+  rows 840000/1000000  2956s
+  rows 860000/1000000  3026s
+  rows 880000/1000000  3097s
+  rows 900000/1000000  3168s
+  rows 920000/1000000  3239s
+  rows 940000/1000000  3309s
+  rows 960000/1000000  3379s
+  rows 980000/1000000  3450s
+  rows 1000000/1000000  3521s
+  done: rows truncated to C 938857 (0.939), rows shorter than C 61039 (0.061); file /mnt/raid/fgraft-campaign-2026-09-22/hash/gist_j2_k16_C2000_C2000.i32
+	Command being timed: "/mnt/claude/graft-work/misifu/.venv/bin/python /mnt/claude/graft-work/fgraft/bench/hash_cands.py --data /mnt/claude/graft-work/fgraft/data/gist_X.npy --alpha 0.02 --k 16 --j 2 --C 2000 --seed 1 --sig /mnt/raid/fgraft-campaign-2026-09-22/hash/gist_a0.02_sig_k16.npy --out /mnt/raid/fgraft-campaign-2026-09-22/hash/gist_j2_k16_C2000"
+	User time (seconds): 3027.50
+	System time (seconds): 563.90
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 59:46.42
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 23917376
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1
+	Minor (reclaiming a frame) page faults: 27728273
+	Voluntary context switches: 1472
+	Involuntary context switches: 15289
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 15625624
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

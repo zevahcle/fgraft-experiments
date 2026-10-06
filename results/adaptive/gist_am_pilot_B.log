@@ -1,0 +1,40 @@
+fg: AVX2+FMA kernels, 64 hw threads available
+=== /mnt/claude/graft-work/fgraft/data/gist_X.npy : N=1000000 d=960 queries=1000 (L2) ===
+  per-point memberships from /mnt/raid/fgraft-campaign-2026-09-22/adaptive/gist_pilot_B.u8: mean 5.500 (max 10)
+  dense: L=700 m=10 C=200 over n=1000000  leaves mean 14286 max 29341  leaders 13.03s candidates 186.09s prune 50.28s (64 threads), 36747.6M dist (leaders 2100.0M, candidates 32218.2M, prune 751.8M, spine 1677.6M in 31.92s)
+  candidates: 200000000 directed (200.0/vertex); edges: 18377000 directed (18.4/vertex, max 1143); memory 82MB
+  dumped graph -> /mnt/raid/fgraft-campaign-2026-09-22/adaptive/gist_am_pilot_B.graph (n=1000000 max degree=1143)
+  local completeness (k=10, sample): 0.329
+
+  entry=hub
+     ef  recall@10  dist/query     QPS(mt)
+     60     0.8739        3157        2572
+     80     0.9102        3754        2023
+    120     0.9459        4889        1505
+    200     0.9733        6976        1022
+    300     0.9846        9381         743
+    400     0.9906       11592         610
+    600     0.9944       15639         451
+	Command being timed: "/mnt/claude/graft-work/fgraft/graft-ann/src/fg --data /mnt/claude/graft-work/fgraft/data/gist_X.npy --queries /mnt/claude/graft-work/fgraft/data/gist_Q.npy --gold /mnt/claude/graft-work/fgraft/data/gist_gold.npy --metric l2 --T 1 --harvest 400 --harvest-cap 64 --harvest-alpha 1.0 --dense 700 --dense-C 200 --dense-prune 1 --threads 64 --seed 1 --ef 60 80 120 200 300 400 600 --dump-graph /mnt/raid/fgraft-campaign-2026-09-22/adaptive/gist_am_pilot_B.graph --dense-m 10 --dense-m-file /mnt/raid/fgraft-campaign-2026-09-22/adaptive/gist_pilot_B.u8 --dense-spine 1"
+	User time (seconds): 15155.61
+	System time (seconds): 149.77
+	Percent of CPU this job got: 5314%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:48.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 7922324
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 10559555
+	Voluntary context switches: 85502
+	Involuntary context switches: 84835
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 151392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

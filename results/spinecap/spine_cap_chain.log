@@ -1,0 +1,415 @@
+e08dc8491b21f6eec64bef708556f0ed  graft-ann/src/build.cpp
+211054ce56a8ef6832e9833c50589815  graft-ann/src/fg.hpp
+e0bd25e346366393ff80dfd1764c4043  graft-ann/src/main.cpp
+[spcap] === glove hsp1000_c0 (--dense-m 5 --dense-spine 3 --dense-spine-s 1000 --dense-spine-cap 0) ===
+Wed Sep 30 20:42:02 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 20:43:41 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 20:44:16 PDT 2026
+  spine: HSP degree quantiles p10 13 p50 19 p90 28 p99 38 max 61 (cap 0)
+  spine: HSP over |S|=1000 sample points, out-degree mean 20.0 max 61, 20039 edges, 1.59s
+  dense: L=240 m=5 C=200 over n=1183514  leaves mean 24657 max 61122  leaders 0.76s candidates 73.47s prune 9.77s (64 threads), 92384.4M dist (leaders 764.0M, candidates 88596.2M, prune 3023.2M, spine 1.0M in 1.59s)
+  candidates: 236702800 directed (200.0/vertex); edges: 53704153 directed (45.4/vertex, max 117); memory 224MB
+  local completeness (k=10, sample): 0.605
+	Maximum resident set size (kbytes): 3753276
+[spcap] === glove hsp1000_c8 (--dense-m 5 --dense-spine 3 --dense-spine-s 1000 --dense-spine-cap 8) ===
+Wed Sep 30 20:44:16 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 20:45:57 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 20:46:32 PDT 2026
+  spine: HSP degree quantiles p10 8 p50 8 p90 8 p99 8 max 8 (cap 8)
+  spine: HSP over |S|=1000 sample points, out-degree mean 8.0 max 8, 7999 edges, 1.61s
+  dense: L=240 m=5 C=200 over n=1183514  leaves mean 24657 max 61122  leaders 0.78s candidates 75.10s prune 9.86s (64 threads), 92384.4M dist (leaders 764.0M, candidates 88596.2M, prune 3023.2M, spine 1.0M in 1.61s)
+  candidates: 236702800 directed (200.0/vertex); edges: 53692113 directed (45.4/vertex, max 72); memory 224MB
+  local completeness (k=10, sample): 0.605
+	Maximum resident set size (kbytes): 3752336
+[spcap] === glove hsp1000_c16 (--dense-m 5 --dense-spine 3 --dense-spine-s 1000 --dense-spine-cap 16) ===
+Wed Sep 30 20:46:32 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 20:48:11 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 20:48:46 PDT 2026
+  spine: HSP degree quantiles p10 13 p50 16 p90 16 p99 16 max 16 (cap 16)
+  spine: HSP over |S|=1000 sample points, out-degree mean 15.3 max 16, 15267 edges, 1.62s
+  dense: L=240 m=5 C=200 over n=1183514  leaves mean 24657 max 61122  leaders 0.82s candidates 73.37s prune 9.87s (64 threads), 92384.4M dist (leaders 764.0M, candidates 88596.2M, prune 3023.2M, spine 1.0M in 1.62s)
+  candidates: 236702800 directed (200.0/vertex); edges: 53699381 directed (45.4/vertex, max 80); memory 224MB
+  local completeness (k=10, sample): 0.605
+	Maximum resident set size (kbytes): 3761956
+[spcap] === glove hsp1000_c32 (--dense-m 5 --dense-spine 3 --dense-spine-s 1000 --dense-spine-cap 32) ===
+Wed Sep 30 20:48:46 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 20:50:26 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 20:51:01 PDT 2026
+  spine: HSP degree quantiles p10 13 p50 19 p90 28 p99 32 max 32 (cap 32)
+  spine: HSP over |S|=1000 sample points, out-degree mean 19.8 max 32, 19804 edges, 1.61s
+  dense: L=240 m=5 C=200 over n=1183514  leaves mean 24657 max 61122  leaders 0.74s candidates 74.78s prune 9.87s (64 threads), 92384.4M dist (leaders 764.0M, candidates 88596.2M, prune 3023.2M, spine 1.0M in 1.61s)
+  candidates: 236702800 directed (200.0/vertex); edges: 53703918 directed (45.4/vertex, max 96); memory 224MB
+  local completeness (k=10, sample): 0.605
+	Maximum resident set size (kbytes): 3752804
+[spcap] === glove hsp3000_c0 (--dense-m 5 --dense-spine 3 --dense-spine-s 3000 --dense-spine-cap 0) ===
+Wed Sep 30 20:51:01 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 20:52:41 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 20:53:16 PDT 2026
+  spine: HSP degree quantiles p10 18 p50 28 p90 41 p99 59 max 132 (cap 0)
+  spine: HSP over |S|=3000 sample points, out-degree mean 29.2 max 132, 87622 edges, 1.69s
+  dense: L=240 m=5 C=200 over n=1183514  leaves mean 24657 max 61122  leaders 0.74s candidates 74.40s prune 9.96s (64 threads), 92392.4M dist (leaders 764.0M, candidates 88596.2M, prune 3023.2M, spine 9.0M in 1.69s)
+  candidates: 236702800 directed (200.0/vertex); edges: 53771451 directed (45.4/vertex, max 182); memory 225MB
+  local completeness (k=10, sample): 0.605
+	Maximum resident set size (kbytes): 3760700
+[spcap] === glove hsp3000_c8 (--dense-m 5 --dense-spine 3 --dense-spine-s 3000 --dense-spine-cap 8) ===
+Wed Sep 30 20:53:16 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 20:55:01 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 20:55:36 PDT 2026
+  spine: HSP degree quantiles p10 8 p50 8 p90 8 p99 8 max 8 (cap 8)
+  spine: HSP over |S|=3000 sample points, out-degree mean 8.0 max 8, 24000 edges, 1.65s
+  dense: L=240 m=5 C=200 over n=1183514  leaves mean 24657 max 61122  leaders 0.74s candidates 75.61s prune 9.92s (64 threads), 92392.4M dist (leaders 764.0M, candidates 88596.2M, prune 3023.2M, spine 9.0M in 1.65s)
+  candidates: 236702800 directed (200.0/vertex); edges: 53707831 directed (45.4/vertex, max 72); memory 224MB
+  local completeness (k=10, sample): 0.605
+	Maximum resident set size (kbytes): 3751548
+[spcap] === glove hsp3000_c16 (--dense-m 5 --dense-spine 3 --dense-spine-s 3000 --dense-spine-cap 16) ===
+Wed Sep 30 20:55:37 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 20:57:17 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 20:57:52 PDT 2026
+  spine: HSP degree quantiles p10 16 p50 16 p90 16 p99 16 max 16 (cap 16)
+  spine: HSP over |S|=3000 sample points, out-degree mean 15.9 max 16, 47747 edges, 1.65s
+  dense: L=240 m=5 C=200 over n=1183514  leaves mean 24657 max 61122  leaders 0.74s candidates 74.28s prune 9.94s (64 threads), 92392.4M dist (leaders 764.0M, candidates 88596.2M, prune 3023.2M, spine 9.0M in 1.65s)
+  candidates: 236702800 directed (200.0/vertex); edges: 53731576 directed (45.4/vertex, max 80); memory 224MB
+  local completeness (k=10, sample): 0.605
+	Maximum resident set size (kbytes): 3753236
+[spcap] === glove hsp3000_c32 (--dense-m 5 --dense-spine 3 --dense-spine-s 3000 --dense-spine-cap 32) ===
+Wed Sep 30 20:57:52 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 20:59:32 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 21:00:06 PDT 2026
+  spine: HSP degree quantiles p10 18 p50 28 p90 32 p99 32 max 32 (cap 32)
+  spine: HSP over |S|=3000 sample points, out-degree mean 26.6 max 32, 79731 edges, 1.61s
+  dense: L=240 m=5 C=200 over n=1183514  leaves mean 24657 max 61122  leaders 0.74s candidates 73.53s prune 9.69s (64 threads), 92392.4M dist (leaders 764.0M, candidates 88596.2M, prune 3023.2M, spine 9.0M in 1.61s)
+  candidates: 236702800 directed (200.0/vertex); edges: 53763560 directed (45.4/vertex, max 96); memory 225MB
+  local completeness (k=10, sample): 0.605
+	Maximum resident set size (kbytes): 3754004
+[spcap] === glove hsp10000_c0 (--dense-m 5 --dense-spine 3 --dense-spine-s 10000 --dense-spine-cap 0) ===
+Wed Sep 30 21:00:06 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 21:01:46 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 21:02:20 PDT 2026
+  spine: HSP degree quantiles p10 27 p50 41 p90 62 p99 87 max 182 (cap 0)
+  spine: HSP over |S|=10000 sample points, out-degree mean 43.1 max 182, 430670 edges, 2.78s
+  dense: L=240 m=5 C=200 over n=1183514  leaves mean 24657 max 61122  leaders 0.76s candidates 73.76s prune 11.02s (64 threads), 92483.4M dist (leaders 764.0M, candidates 88596.2M, prune 3023.2M, spine 100.0M in 2.78s)
+  candidates: 236702800 directed (200.0/vertex); edges: 54111212 directed (45.7/vertex, max 233); memory 226MB
+  local completeness (k=10, sample): 0.605
+	Maximum resident set size (kbytes): 3858048
+[spcap] === glove hsp10000_c8 (--dense-m 5 --dense-spine 3 --dense-spine-s 10000 --dense-spine-cap 8) ===
+Wed Sep 30 21:02:20 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 21:04:03 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 21:04:43 PDT 2026
+  spine: HSP degree quantiles p10 8 p50 8 p90 8 p99 8 max 8 (cap 8)
+  spine: HSP over |S|=10000 sample points, out-degree mean 8.0 max 8, 80000 edges, 2.49s
+  dense: L=240 m=5 C=200 over n=1183514  leaves mean 24657 max 61122  leaders 0.75s candidates 74.40s prune 10.71s (64 threads), 92483.4M dist (leaders 764.0M, candidates 88596.2M, prune 3023.2M, spine 100.0M in 2.49s)
+  candidates: 236702800 directed (200.0/vertex); edges: 53760677 directed (45.4/vertex, max 72); memory 225MB
+  local completeness (k=10, sample): 0.605
+	Maximum resident set size (kbytes): 3833736
+[spcap] === glove hsp10000_c16 (--dense-m 5 --dense-spine 3 --dense-spine-s 10000 --dense-spine-cap 16) ===
+Wed Sep 30 21:04:43 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 21:06:24 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 21:07:00 PDT 2026
+  spine: HSP degree quantiles p10 16 p50 16 p90 16 p99 16 max 16 (cap 16)
+  spine: HSP over |S|=10000 sample points, out-degree mean 16.0 max 16, 159936 edges, 2.25s
+  dense: L=240 m=5 C=200 over n=1183514  leaves mean 24657 max 61122  leaders 0.74s candidates 75.77s prune 10.53s (64 threads), 92483.4M dist (leaders 764.0M, candidates 88596.2M, prune 3023.2M, spine 100.0M in 2.25s)
+  candidates: 236702800 directed (200.0/vertex); edges: 53840497 directed (45.5/vertex, max 80); memory 225MB
+  local completeness (k=10, sample): 0.605
+	Maximum resident set size (kbytes): 3869848
+[spcap] === glove hsp10000_c32 (--dense-m 5 --dense-spine 3 --dense-spine-s 10000 --dense-spine-cap 32) ===
+Wed Sep 30 21:07:00 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 21:08:43 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 21:09:18 PDT 2026
+  spine: HSP degree quantiles p10 27 p50 32 p90 32 p99 32 max 32 (cap 32)
+  spine: HSP over |S|=10000 sample points, out-degree mean 30.8 max 32, 307716 edges, 2.34s
+  dense: L=240 m=5 C=200 over n=1183514  leaves mean 24657 max 61122  leaders 0.77s candidates 75.05s prune 10.53s (64 threads), 92483.4M dist (leaders 764.0M, candidates 88596.2M, prune 3023.2M, spine 100.0M in 2.34s)
+  candidates: 236702800 directed (200.0/vertex); edges: 53988259 directed (45.6/vertex, max 96); memory 225MB
+  local completeness (k=10, sample): 0.605
+	Maximum resident set size (kbytes): 3840076
+[spcap] === glove hsp30000_c0 (--dense-m 5 --dense-spine 3 --dense-spine-s 30000 --dense-spine-cap 0) ===
+Wed Sep 30 21:09:18 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 21:11:13 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 21:11:49 PDT 2026
+  spine: HSP degree quantiles p10 37 p50 57 p90 88 p99 124 max 273 (cap 0)
+  spine: HSP over |S|=30000 sample points, out-degree mean 60.3 max 273, 1809021 edges, 15.29s
+  dense: L=240 m=5 C=200 over n=1183514  leaves mean 24657 max 61122  leaders 0.77s candidates 74.80s prune 23.64s (64 threads), 93283.3M dist (leaders 764.0M, candidates 88596.2M, prune 3023.2M, spine 900.0M in 15.29s)
+  candidates: 236702800 directed (200.0/vertex); edges: 55460780 directed (46.9/vertex, max 334); memory 231MB
+  local completeness (k=10, sample): 0.606
+	Maximum resident set size (kbytes): 7012772
+[spcap] === glove hsp30000_c8 (--dense-m 5 --dense-spine 3 --dense-spine-s 30000 --dense-spine-cap 8) ===
+Wed Sep 30 21:11:49 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 21:13:39 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 21:14:15 PDT 2026
+  spine: HSP degree quantiles p10 8 p50 8 p90 8 p99 8 max 8 (cap 8)
+  spine: HSP over |S|=30000 sample points, out-degree mean 8.0 max 8, 240000 edges, 9.51s
+  dense: L=240 m=5 C=200 over n=1183514  leaves mean 24657 max 61122  leaders 0.76s candidates 74.80s prune 17.76s (64 threads), 93283.3M dist (leaders 764.0M, candidates 88596.2M, prune 3023.2M, spine 900.0M in 9.51s)
+  candidates: 236702800 directed (200.0/vertex); edges: 53895338 directed (45.5/vertex, max 72); memory 225MB
+  local completeness (k=10, sample): 0.606
+	Maximum resident set size (kbytes): 6960372
+[spcap] === glove hsp30000_c16 (--dense-m 5 --dense-spine 3 --dense-spine-s 30000 --dense-spine-cap 16) ===
+Wed Sep 30 21:14:15 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 21:16:02 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 21:16:36 PDT 2026
+  spine: HSP degree quantiles p10 16 p50 16 p90 16 p99 16 max 16 (cap 16)
+  spine: HSP over |S|=30000 sample points, out-degree mean 16.0 max 16, 479989 edges, 9.54s
+  dense: L=240 m=5 C=200 over n=1183514  leaves mean 24657 max 61122  leaders 0.78s candidates 73.55s prune 17.72s (64 threads), 93283.3M dist (leaders 764.0M, candidates 88596.2M, prune 3023.2M, spine 900.0M in 9.54s)
+  candidates: 236702800 directed (200.0/vertex); edges: 54132844 directed (45.7/vertex, max 80); memory 226MB
+  local completeness (k=10, sample): 0.606
+	Maximum resident set size (kbytes): 6983604
+[spcap] === glove hsp30000_c32 (--dense-m 5 --dense-spine 3 --dense-spine-s 30000 --dense-spine-cap 32) ===
+Wed Sep 30 21:16:36 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 21:18:28 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 21:19:02 PDT 2026
+  spine: HSP degree quantiles p10 32 p50 32 p90 32 p99 32 max 32 (cap 32)
+  spine: HSP over |S|=30000 sample points, out-degree mean 31.7 max 32, 952241 edges, 9.98s
+  dense: L=240 m=5 C=200 over n=1183514  leaves mean 24657 max 61122  leaders 0.76s candidates 75.60s prune 18.26s (64 threads), 93283.3M dist (leaders 764.0M, candidates 88596.2M, prune 3023.2M, spine 900.0M in 9.98s)
+  candidates: 236702800 directed (200.0/vertex); edges: 54604135 directed (46.1/vertex, max 96); memory 228MB
+  local completeness (k=10, sample): 0.606
+	Maximum resident set size (kbytes): 6975252
+[spcap] === glove hsp100000_c0 (--dense-m 5 --dense-spine 3 --dense-spine-s 100000) ===
+Wed Sep 30 21:19:02 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 21:24:19 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 21:24:59 PDT 2026
+  spine: HSP degree quantiles p10 50 p50 81 p90 125 p99 182 max 381 (cap 0)
+  spine: HSP over |S|=100000 sample points, out-degree mean 85.3 max 381, 8532269 edges, 213.01s
+  dense: L=240 m=5 C=200 over n=1183514  leaves mean 24657 max 61122  leaders 0.81s candidates 75.94s prune 221.20s (64 threads), 102383.3M dist (leaders 764.0M, candidates 88596.2M, prune 3023.2M, spine 9999.9M in 213.01s)
+  candidates: 236702800 directed (200.0/vertex); edges: 61879620 directed (52.3/vertex, max 439); memory 257MB
+  local completeness (k=10, sample): 0.608
+	Maximum resident set size (kbytes): 42674680
+[spcap] === gist hsp1000_c0 (--dense-m 5 --dense-spine 3 --dense-spine-s 1000 --dense-spine-cap 0) ===
+Wed Sep 30 21:24:59 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 21:29:10 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 21:29:43 PDT 2026
+  spine: HSP degree quantiles p10 3 p50 9 p90 21 p99 36 max 52 (cap 0)
+  spine: HSP over |S|=1000 sample points, out-degree mean 10.8 max 52, 10837 edges, 0.53s
+  dense: L=700 m=5 C=200 over n=1000000  leaves mean 7143 max 28204  leaders 12.56s candidates 164.95s prune 32.95s (64 threads), 29228.7M dist (leaders 2100.0M, candidates 26377.7M, prune 750.1M, spine 1.0M in 0.53s)
+  candidates: 200000000 directed (200.0/vertex); edges: 16778882 directed (16.8/vertex, max 116); memory 75MB
+  local completeness (k=10, sample): 0.318
+	Maximum resident set size (kbytes): 8343628
+[spcap] === gist hsp1000_c8 (--dense-m 5 --dense-spine 3 --dense-spine-s 1000 --dense-spine-cap 8) ===
+Wed Sep 30 21:29:43 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 21:33:42 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 21:34:11 PDT 2026
+  spine: HSP degree quantiles p10 3 p50 8 p90 8 p99 8 max 8 (cap 8)
+  spine: HSP over |S|=1000 sample points, out-degree mean 6.6 max 8, 6633 edges, 0.51s
+  dense: L=700 m=5 C=200 over n=1000000  leaves mean 7143 max 28204  leaders 12.90s candidates 157.34s prune 18.10s (64 threads), 29228.7M dist (leaders 2100.0M, candidates 26377.7M, prune 750.1M, spine 1.0M in 0.51s)
+  candidates: 200000000 directed (200.0/vertex); edges: 16774678 directed (16.8/vertex, max 72); memory 75MB
+  local completeness (k=10, sample): 0.318
+	Maximum resident set size (kbytes): 8344928
+[spcap] === gist hsp1000_c16 (--dense-m 5 --dense-spine 3 --dense-spine-s 1000 --dense-spine-cap 16) ===
+Wed Sep 30 21:34:11 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 21:38:20 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 21:38:47 PDT 2026
+  spine: HSP degree quantiles p10 3 p50 9 p90 16 p99 16 max 16 (cap 16)
+  spine: HSP over |S|=1000 sample points, out-degree mean 9.4 max 16, 9435 edges, 0.53s
+  dense: L=700 m=5 C=200 over n=1000000  leaves mean 7143 max 28204  leaders 12.67s candidates 161.06s prune 33.27s (64 threads), 29228.7M dist (leaders 2100.0M, candidates 26377.7M, prune 750.1M, spine 1.0M in 0.53s)
+  candidates: 200000000 directed (200.0/vertex); edges: 16777480 directed (16.8/vertex, max 80); memory 75MB
+  local completeness (k=10, sample): 0.318
+	Maximum resident set size (kbytes): 8338612
+[spcap] === gist hsp1000_c32 (--dense-m 5 --dense-spine 3 --dense-spine-s 1000 --dense-spine-cap 32) ===
+Wed Sep 30 21:38:47 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 21:42:56 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 21:43:26 PDT 2026
+  spine: HSP degree quantiles p10 3 p50 9 p90 21 p99 32 max 32 (cap 32)
+  spine: HSP over |S|=1000 sample points, out-degree mean 10.7 max 32, 10722 edges, 0.53s
+  dense: L=700 m=5 C=200 over n=1000000  leaves mean 7143 max 28204  leaders 12.66s candidates 163.01s prune 18.31s (64 threads), 29228.7M dist (leaders 2100.0M, candidates 26377.7M, prune 750.1M, spine 1.0M in 0.53s)
+  candidates: 200000000 directed (200.0/vertex); edges: 16778767 directed (16.8/vertex, max 96); memory 75MB
+  local completeness (k=10, sample): 0.318
+	Maximum resident set size (kbytes): 8339040
+[spcap] === gist hsp3000_c0 (--dense-m 5 --dense-spine 3 --dense-spine-s 3000 --dense-spine-cap 0) ===
+Wed Sep 30 21:43:26 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 21:47:16 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 21:47:49 PDT 2026
+  spine: HSP degree quantiles p10 5 p50 12 p90 29 p99 51 max 83 (cap 0)
+  spine: HSP over |S|=3000 sample points, out-degree mean 15.2 max 83, 45560 edges, 0.65s
+  dense: L=700 m=5 C=200 over n=1000000  leaves mean 7143 max 28204  leaders 12.72s candidates 160.16s prune 18.20s (64 threads), 29236.7M dist (leaders 2100.0M, candidates 26377.7M, prune 750.1M, spine 9.0M in 0.65s)
+  candidates: 200000000 directed (200.0/vertex); edges: 16813436 directed (16.8/vertex, max 146); memory 75MB
+  local completeness (k=10, sample): 0.318
+	Maximum resident set size (kbytes): 8395556
+[spcap] === gist hsp3000_c8 (--dense-m 5 --dense-spine 3 --dense-spine-s 3000 --dense-spine-cap 8) ===
+Wed Sep 30 21:47:49 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 21:51:50 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 21:52:18 PDT 2026
+  spine: HSP degree quantiles p10 5 p50 8 p90 8 p99 8 max 8 (cap 8)
+  spine: HSP over |S|=3000 sample points, out-degree mean 7.2 max 8, 21665 edges, 0.66s
+  dense: L=700 m=5 C=200 over n=1000000  leaves mean 7143 max 28204  leaders 12.96s candidates 158.83s prune 18.29s (64 threads), 29236.7M dist (leaders 2100.0M, candidates 26377.7M, prune 750.1M, spine 9.0M in 0.66s)
+  candidates: 200000000 directed (200.0/vertex); edges: 16789545 directed (16.8/vertex, max 72); memory 75MB
+  local completeness (k=10, sample): 0.318
+	Maximum resident set size (kbytes): 8338056
+[spcap] === gist hsp3000_c16 (--dense-m 5 --dense-spine 3 --dense-spine-s 3000 --dense-spine-cap 16) ===
+Wed Sep 30 21:52:18 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 21:56:13 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 21:56:45 PDT 2026
+  spine: HSP degree quantiles p10 5 p50 12 p90 16 p99 16 max 16 (cap 16)
+  spine: HSP over |S|=3000 sample points, out-degree mean 11.4 max 16, 34297 edges, 0.67s
+  dense: L=700 m=5 C=200 over n=1000000  leaves mean 7143 max 28204  leaders 12.91s candidates 163.85s prune 18.35s (64 threads), 29236.7M dist (leaders 2100.0M, candidates 26377.7M, prune 750.1M, spine 9.0M in 0.67s)
+  candidates: 200000000 directed (200.0/vertex); edges: 16802176 directed (16.8/vertex, max 80); memory 75MB
+  local completeness (k=10, sample): 0.318
+	Maximum resident set size (kbytes): 8336872
+[spcap] === gist hsp3000_c32 (--dense-m 5 --dense-spine 3 --dense-spine-s 3000 --dense-spine-cap 32) ===
+Wed Sep 30 21:56:45 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 22:00:40 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 22:01:09 PDT 2026
+  spine: HSP degree quantiles p10 5 p50 12 p90 29 p99 32 max 32 (cap 32)
+  spine: HSP over |S|=3000 sample points, out-degree mean 14.4 max 32, 43328 edges, 0.67s
+  dense: L=700 m=5 C=200 over n=1000000  leaves mean 7143 max 28204  leaders 13.01s candidates 159.56s prune 18.67s (64 threads), 29236.7M dist (leaders 2100.0M, candidates 26377.7M, prune 750.1M, spine 9.0M in 0.67s)
+  candidates: 200000000 directed (200.0/vertex); edges: 16811205 directed (16.8/vertex, max 96); memory 75MB
+  local completeness (k=10, sample): 0.318
+	Maximum resident set size (kbytes): 8343040
+[spcap] === gist hsp10000_c0 (--dense-m 5 --dense-spine 3 --dense-spine-s 10000 --dense-spine-cap 0) ===
+Wed Sep 30 22:01:09 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 22:05:04 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 22:05:33 PDT 2026
+  spine: HSP degree quantiles p10 6 p50 17 p90 43 p99 79 max 177 (cap 0)
+  spine: HSP over |S|=10000 sample points, out-degree mean 21.7 max 177, 217100 edges, 4.03s
+  dense: L=700 m=5 C=200 over n=1000000  leaves mean 7143 max 28204  leaders 12.91s candidates 160.34s prune 21.61s (64 threads), 29327.7M dist (leaders 2100.0M, candidates 26377.7M, prune 750.1M, spine 100.0M in 4.03s)
+  candidates: 200000000 directed (200.0/vertex); edges: 16983513 directed (17.0/vertex, max 240); memory 76MB
+  local completeness (k=10, sample): 0.318
+	Maximum resident set size (kbytes): 8341536
+[spcap] === gist hsp10000_c8 (--dense-m 5 --dense-spine 3 --dense-spine-s 10000 --dense-spine-cap 8) ===
+Wed Sep 30 22:05:33 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 22:09:28 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 22:10:00 PDT 2026
+  spine: HSP degree quantiles p10 6 p50 8 p90 8 p99 8 max 8 (cap 8)
+  spine: HSP over |S|=10000 sample points, out-degree mean 7.6 max 8, 76221 edges, 4.21s
+  dense: L=700 m=5 C=200 over n=1000000  leaves mean 7143 max 28204  leaders 12.82s candidates 163.14s prune 22.00s (64 threads), 29327.7M dist (leaders 2100.0M, candidates 26377.7M, prune 750.1M, spine 100.0M in 4.21s)
+  candidates: 200000000 directed (200.0/vertex); edges: 16842694 directed (16.8/vertex, max 72); memory 75MB
+  local completeness (k=10, sample): 0.318
+	Maximum resident set size (kbytes): 8337968
+[spcap] === gist hsp10000_c16 (--dense-m 5 --dense-spine 3 --dense-spine-s 10000 --dense-spine-cap 16) ===
+Wed Sep 30 22:10:00 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 22:14:01 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 22:14:35 PDT 2026
+  spine: HSP degree quantiles p10 6 p50 16 p90 16 p99 16 max 16 (cap 16)
+  spine: HSP over |S|=10000 sample points, out-degree mean 13.1 max 16, 131319 edges, 4.16s
+  dense: L=700 m=5 C=200 over n=1000000  leaves mean 7143 max 28204  leaders 13.34s candidates 159.79s prune 21.90s (64 threads), 29327.7M dist (leaders 2100.0M, candidates 26377.7M, prune 750.1M, spine 100.0M in 4.16s)
+  candidates: 200000000 directed (200.0/vertex); edges: 16897747 directed (16.9/vertex, max 80); memory 76MB
+  local completeness (k=10, sample): 0.318
+	Maximum resident set size (kbytes): 8337336
+[spcap] === gist hsp10000_c32 (--dense-m 5 --dense-spine 3 --dense-spine-s 10000 --dense-spine-cap 32) ===
+Wed Sep 30 22:14:35 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 22:18:25 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 22:18:53 PDT 2026
+  spine: HSP degree quantiles p10 6 p50 17 p90 32 p99 32 max 32 (cap 32)
+  spine: HSP over |S|=10000 sample points, out-degree mean 18.6 max 32, 185628 edges, 3.72s
+  dense: L=700 m=5 C=200 over n=1000000  leaves mean 7143 max 28204  leaders 13.04s candidates 158.25s prune 21.44s (64 threads), 29327.7M dist (leaders 2100.0M, candidates 26377.7M, prune 750.1M, spine 100.0M in 3.72s)
+  candidates: 200000000 directed (200.0/vertex); edges: 16952044 directed (17.0/vertex, max 96); memory 76MB
+  local completeness (k=10, sample): 0.318
+	Maximum resident set size (kbytes): 8335872
+[spcap] === gist hsp30000_c0 (--dense-m 5 --dense-spine 3 --dense-spine-s 30000 --dense-spine-cap 0) ===
+Wed Sep 30 22:18:53 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 22:23:19 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 22:23:45 PDT 2026
+  spine: HSP degree quantiles p10 9 p50 23 p90 58 p99 112 max 371 (cap 0)
+  spine: HSP over |S|=30000 sample points, out-degree mean 29.7 max 371, 890431 edges, 34.13s
+  dense: L=700 m=5 C=200 over n=1000000  leaves mean 7143 max 28204  leaders 12.94s candidates 157.48s prune 51.72s (64 threads), 30127.7M dist (leaders 2100.0M, candidates 26377.7M, prune 750.1M, spine 900.0M in 34.13s)
+  candidates: 200000000 directed (200.0/vertex); edges: 17644841 directed (17.6/vertex, max 433); memory 79MB
+  local completeness (k=10, sample): 0.319
+	Maximum resident set size (kbytes): 9213588
+[spcap] === gist hsp30000_c8 (--dense-m 5 --dense-spine 3 --dense-spine-s 30000 --dense-spine-cap 8) ===
+Wed Sep 30 22:23:45 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 22:28:21 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 22:28:53 PDT 2026
+  spine: HSP degree quantiles p10 8 p50 8 p90 8 p99 8 max 8 (cap 8)
+  spine: HSP over |S|=30000 sample points, out-degree mean 7.8 max 8, 234136 edges, 25.35s
+  dense: L=700 m=5 C=200 over n=1000000  leaves mean 7143 max 28204  leaders 12.58s candidates 165.90s prune 58.00s (64 threads), 30127.7M dist (leaders 2100.0M, candidates 26377.7M, prune 750.1M, spine 900.0M in 25.35s)
+  candidates: 200000000 directed (200.0/vertex); edges: 16989796 directed (17.0/vertex, max 72); memory 76MB
+  local completeness (k=10, sample): 0.319
+	Maximum resident set size (kbytes): 9205144
+[spcap] === gist hsp30000_c16 (--dense-m 5 --dense-spine 3 --dense-spine-s 30000 --dense-spine-cap 16) ===
+Wed Sep 30 22:28:53 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 22:33:26 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 22:33:54 PDT 2026
+  spine: HSP degree quantiles p10 9 p50 16 p90 16 p99 16 max 16 (cap 16)
+  spine: HSP over |S|=30000 sample points, out-degree mean 14.3 max 16, 428452 edges, 25.78s
+  dense: L=700 m=5 C=200 over n=1000000  leaves mean 7143 max 28204  leaders 12.61s candidates 162.12s prune 58.51s (64 threads), 30127.7M dist (leaders 2100.0M, candidates 26377.7M, prune 750.1M, spine 900.0M in 25.78s)
+  candidates: 200000000 directed (200.0/vertex); edges: 17183283 directed (17.2/vertex, max 80); memory 77MB
+  local completeness (k=10, sample): 0.319
+	Maximum resident set size (kbytes): 9216060
+[spcap] === gist hsp30000_c32 (--dense-m 5 --dense-spine 3 --dense-spine-s 30000 --dense-spine-cap 32) ===
+Wed Sep 30 22:33:54 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 22:38:24 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 22:38:51 PDT 2026
+  spine: HSP degree quantiles p10 9 p50 23 p90 32 p99 32 max 32 (cap 32)
+  spine: HSP over |S|=30000 sample points, out-degree mean 22.2 max 32, 666352 edges, 33.64s
+  dense: L=700 m=5 C=200 over n=1000000  leaves mean 7143 max 28204  leaders 13.34s candidates 159.99s prune 51.32s (64 threads), 30127.7M dist (leaders 2100.0M, candidates 26377.7M, prune 750.1M, spine 900.0M in 33.64s)
+  candidates: 200000000 directed (200.0/vertex); edges: 17420853 directed (17.4/vertex, max 96); memory 78MB
+  local completeness (k=10, sample): 0.319
+	Maximum resident set size (kbytes): 9211088
+[spcap] === gist hsp100000_c0 (--dense-m 5 --dense-spine 3 --dense-spine-s 100000) ===
+Wed Sep 30 22:38:51 PDT 2026
+[spcap] build rc=0
+Wed Sep 30 22:48:16 PDT 2026
+[spcap] grade rc=0
+Wed Sep 30 22:48:49 PDT 2026
+  spine: HSP degree quantiles p10 12 p50 32 p90 81 p99 163 max 1048 (cap 0)
+  spine: HSP over |S|=100000 sample points, out-degree mean 41.3 max 1048, 4125747 edges, 330.40s
+  dense: L=700 m=5 C=200 over n=1000000  leaves mean 7143 max 28204  leaders 13.15s candidates 159.45s prune 348.21s (64 threads), 39227.6M dist (leaders 2100.0M, candidates 26377.7M, prune 750.1M, spine 9999.9M in 330.40s)
+  candidates: 200000000 directed (200.0/vertex); edges: 20761185 directed (20.8/vertex, max 1100); memory 91MB
+  local completeness (k=10, sample): 0.322
+	Maximum resident set size (kbytes): 44812260
+[spcap] GloVe gate OK
+[spcap] GIST gate OK
+[spcap] all done
+Wed Sep 30 22:48:49 PDT 2026
