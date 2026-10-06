@@ -7,8 +7,8 @@ indexes for approximate nearest neighbor search:
    Construction** — [arXiv:2609.30493](https://arxiv.org/abs/2609.30493).
    Search-based builders run an order of magnitude below the machine's dense
    arithmetic; most of the gap is present with the data in cache.
-2. **A search-free construction of navigable graphs in three stages** (pool,
-   ending, spine) — preprint forthcoming. Partition, evaluate every pair
+2. **Building Navigable Graphs Without Search in Three Composable Stages**
+   (pool, ending, spine) — preprint forthcoming. Partition, evaluate every pair
    inside each part, and turn the candidates into edges; the ending composes
    with PiPNN's partition and, with enough memberships per point, matches or
    beats a full dense construction on six corpora from 10^6 to 10^8 points.
